@@ -1,0 +1,89 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Marwan Bridi',
+  description = 'Operational Excellence & Digital — Construction, PropTech, AI',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+
+    <title>{title}</title>
+
+    <!-- Prevent flash of wrong theme -->
+    <script is:inline>
+      (function () {
+        const t = localStorage.getItem('theme');
+        if (t) document.documentElement.setAttribute('data-theme', t);
+      })();
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <h1><a href="/">Marwan Bridi</a></h1>
+      <p class="subtitle">Operational Excellence & Digital — Geneva</p>
+      <nav>
+        <a href="/">About</a>
+        <a href="/thinking">Thinking</a>
+        <a href="/projects">Projects</a>
+        <a href="/tools">Tools</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <span id="theme-icon">○</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/marwanbridi/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:marwan@bridi.ch">Email</a>
+      </div>
+      <p>No tracking. No cookies. Built with Astro.</p>
+    </footer>
+
+    <script is:inline>
+      const btn = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+      function update() {
+        const current = document.documentElement.getAttribute('data-theme');
+        icon.textContent = current === 'light' ? '●' : '○';
+      }
+      btn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'light' ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        update();
+      });
+      update();
+    </script>
+  </body>
+</html>
+
+<style>
+  @import '../styles/global.css';
+</style>

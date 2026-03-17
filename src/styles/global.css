@@ -1,0 +1,261 @@
+/* ── Theme ── */
+:root {
+  --bg: #000;
+  --text: #e5e5e5;
+  --text-muted: #737373;
+  --accent: #c4b5a0;
+  --link: #e5e5e5;
+  --link-hover: #fff;
+  --border: #262626;
+  --max-width: 640px;
+  --font-sans: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+[data-theme="light"] {
+  --bg: #fafafa;
+  --text: #1a1a1a;
+  --text-muted: #6b7280;
+  --accent: #8b7355;
+  --link: #1a1a1a;
+  --link-hover: #000;
+  --border: #e5e5e5;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Base ── */
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+/* ── Typography ── */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+/* ── Links ── */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--text-muted);
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--link-hover);
+}
+
+/* ── Lists ── */
+ul, ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* ── Code ── */
+code {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  background: var(--border);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  padding: 1.25rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+/* ── Utilities ── */
+.muted {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.separator {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* ── Navigation ── */
+nav {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--text);
+}
+
+/* ── Header ── */
+.site-header {
+  margin-bottom: 1rem;
+}
+
+.site-header h1 a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* ── Post list ── */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.post-list .date {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.post-list a {
+  text-decoration: none;
+}
+
+.post-list a:hover {
+  text-decoration: underline;
+}
+
+/* ── Project cards ── */
+.project {
+  margin-bottom: 2rem;
+}
+
+.project h3 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.project .desc {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.project .meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ── Theme toggle ── */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.875rem;
+  padding: 0;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+}
+
+/* ── Footer ── */
+footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+footer a {
+  color: var(--text-muted);
+}
+
+footer a:hover {
+  color: var(--text);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  body { padding: 2rem 1rem; }
+  nav { gap: 1rem; }
+}

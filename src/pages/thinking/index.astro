@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('thinking'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title="Thinking — Marwan Bridi">
+  <h2>Thinking</h2>
+  <p class="muted" style="margin-bottom: 2rem;">
+    Notes et articles sur l'OpEx, l'IA dans la construction, et la PropTech.
+  </p>
+
+  {posts.length === 0 ? (
+    <p class="muted">Premiers articles en préparation.</p>
+  ) : (
+    <ul class="post-list">
+      {posts.map((post) => (
+        <li>
+          <span class="date">
+            {post.data.date.toLocaleDateString('fr-CH', {
+              year: 'numeric',
+              month: '2-digit',
+            })}
+          </span>
+          <a href={`/thinking/${post.id}`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  )}
+</BaseLayout>

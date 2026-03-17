@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('thinking');
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BaseLayout title={`${post.data.title} — Marwan Bridi`} description={post.data.description}>
+  <article>
+    <h2>{post.data.title}</h2>
+    <p class="muted" style="margin-bottom: 2rem;">
+      {post.data.date.toLocaleDateString('fr-CH', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      })}
+      {post.data.tags && (
+        <span> — {post.data.tags.join(', ')}</span>
+      )}
+    </p>
+    <Content />
+  </article>
+
+  <hr class="separator" />
+  <p><a href="/thinking">&larr; Tous les articles</a></p>
+</BaseLayout>
