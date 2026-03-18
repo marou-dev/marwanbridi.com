@@ -1,6 +1,6 @@
 ---
 title: "Ce qu'un immeuble de 1952 nous apprend sur la rénovation en Suisse"
-date: 2025-11-20
+date: 2025-10-15
 description: "CECB E → B, 84% de réduction énergétique, 424'000 CHF d'investissement : retour d'expérience sur une expertise technique réelle à Lausanne."
 tags: [immobilier, rénovation, énergie, expertise, suisse]
 ---

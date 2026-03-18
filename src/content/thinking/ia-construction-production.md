@@ -1,6 +1,6 @@
 ---
 title: "L'IA dans la construction : arrêtons les slides, montrons du code"
-date: 2025-06-15
+date: 2025-12-08
 description: "Pourquoi la majorité des initiatives IA dans la construction échouent — et ce que ça prend pour passer en production."
 tags: [ia, construction, opex]
 ---
