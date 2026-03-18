@@ -6,7 +6,7 @@ interface Props {
 
 const {
   title = 'Marwan Bridi',
-  description = 'Construction, PropTech, IA — Genève',
+  description = 'Ingénieur civil · Expert immobilier · Genève',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -25,7 +25,7 @@ import '../styles/global.css';
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -44,27 +44,29 @@ import '../styles/global.css';
   <body>
     <header class="site-header">
       <h1><a href="/">Marwan Bridi</a></h1>
-      <p class="tagline">Ingénieur civil · Expert immobilier · Genève</p>
+      <p class="tagline">Ingénieur civil<br />Expert immobilier<br />Genève</p>
       <nav>
         <a href="/reflexions">Réflexions</a>
         <a href="/realisations">Réalisations</a>
         <a href="/parcours">Parcours</a>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
-          <span id="theme-icon">☀</span>
-        </button>
       </nav>
+      <div class="sidebar-footer">
+        <a href="https://www.linkedin.com/in/mbridi/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
+        <span id="theme-icon">☀</span>
+      </button>
     </header>
 
-    <main>
-      <slot />
-    </main>
+    <div>
+      <main>
+        <slot />
+      </main>
 
-    <footer>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/mbridi/" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-      <p>Pas de tracking. Pas de cookies.</p>
-    </footer>
+      <footer>
+        <p>Pas de tracking. Pas de cookies.</p>
+      </footer>
+    </div>
 
     <script is:inline>
       const btn = document.getElementById('theme-toggle');
@@ -105,17 +107,17 @@ import '../styles/global.css';
 
       document.querySelectorAll('.reveal').forEach((el) => {
         gsap.fromTo(el,
-          { opacity: 0, y: 20 },
+          { opacity: 0, y: 14 },
           {
-            opacity: 1, y: 0, duration: 0.6, ease: 'power3.out',
-            scrollTrigger: { trigger: el, start: 'top 90%', once: true },
+            opacity: 1, y: 0, duration: 0.5, ease: 'power3.out',
+            scrollTrigger: { trigger: el, start: 'top 92%', once: true },
           }
         );
       });
 
       document.querySelectorAll('.card').forEach((card) => {
-        card.addEventListener('mouseenter', () => gsap.to(card, { y: -2, duration: 0.2, ease: 'power2.out' }));
-        card.addEventListener('mouseleave', () => gsap.to(card, { y: 0, duration: 0.3, ease: 'power2.out' }));
+        card.addEventListener('mouseenter', () => gsap.to(card, { y: -1, duration: 0.15, ease: 'power2.out' }));
+        card.addEventListener('mouseleave', () => gsap.to(card, { y: 0, duration: 0.2, ease: 'power2.out' }));
       });
 
       const path = window.location.pathname;
