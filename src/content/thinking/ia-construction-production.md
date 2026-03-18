@@ -18,13 +18,13 @@ L'industrie de la construction n'a pas un problème d'innovation. Elle a un prob
 
 ## Ce qui marche vraiment
 
-Sur les 18 derniers mois chez Swissroc, voici ce qui est passé en production — pas en POC :
+Sur les 18 derniers mois, voici ce que j'ai mis en production — pas en POC :
 
 **RAG sur les PV d'adjudication.** Un système de recherche sémantique qui permet de retrouver une clause contractuelle en 3 secondes au lieu de 45 minutes de recherche manuelle dans des archives PDF. Le gain n'est pas l'IA elle-même — c'est le temps récupéré par les chefs de projet.
 
 **Extraction automatique de prix unitaires.** Plutôt que de maintenir manuellement des bases de données de prix, on extrait et structure automatiquement depuis les soumissions reçues. 8'356 positions, 68 CFC, 9 projets.
 
-**Knowledge Graph opérationnel.** Un graphe Neo4j qui relie les entités du groupe — projets, fournisseurs, décisions, risques. Pas un dashboard de plus : un outil de navigation dans la complexité organisationnelle.
+**Knowledge Graph opérationnel.** Un graphe Neo4j qui relie projets, fournisseurs, décisions, risques. Pas un dashboard de plus : un outil de navigation dans la complexité organisationnelle.
 
 ## La recette
 
