@@ -1,6 +1,6 @@
 ---
 title: "Ce que j'ai vu en Chine que personne ne vous montre en conférence"
-date: 2026-02-15
+date: 2026-02-10
 description: "Une semaine entre Shanghai et Shenzhen, à toucher du doigt ce que la robotique et l'IA changent réellement dans la construction. Field report."
 tags: [chine, robotique, ia, construction, terrain]
 ---
