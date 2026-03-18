@@ -5,14 +5,23 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('thinking'))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Extraire tous les tags uniques
+const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
 ---
 
 <BaseLayout title="Réflexions — Marwan Bridi">
   <section class="section">
     <h2>Réflexions</h2>
-    <p class="muted" style="margin-bottom: 2rem;">
-      Notes sur l'IA dans la construction, la PropTech, et ce qui marche en production.
+    <p class="muted" style="margin-bottom: 1.5rem;">
+      Immobilier, construction, énergie, digital — ce que j'observe et ce que j'en tire.
     </p>
+    <div class="chip-grid" style="margin-bottom: 2rem;">
+      <button class="chip tag-filter active" data-tag="all">Tout</button>
+      {allTags.map((tag) => (
+        <button class="chip tag-filter" data-tag={tag}>{tag}</button>
+      ))}
+    </div>
   </section>
 
   {posts.length === 0 ? (
@@ -20,7 +29,7 @@ const posts = (await getCollection('thinking'))
   ) : (
     <ul class="post-list">
       {posts.map((post) => (
-        <li class="reveal">
+        <li class="reveal" data-tags={JSON.stringify(post.data.tags || [])}>
           <a href={`/reflexions/${post.id}`}>
             <span class="date">
               {post.data.date.toLocaleDateString('fr-CH', {
@@ -35,3 +44,35 @@ const posts = (await getCollection('thinking'))
     </ul>
   )}
 </BaseLayout>
+
+<script is:inline>
+  document.querySelectorAll('.tag-filter').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const tag = btn.getAttribute('data-tag');
+
+      document.querySelectorAll('.tag-filter').forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      document.querySelectorAll('.post-list li').forEach((li) => {
+        if (tag === 'all') {
+          li.style.display = '';
+        } else {
+          const tags = JSON.parse(li.getAttribute('data-tags') || '[]');
+          li.style.display = tags.includes(tag) ? '' : 'none';
+        }
+      });
+    });
+  });
+</script>
+
+<style>
+  .tag-filter {
+    cursor: pointer;
+    background: none;
+    font-family: inherit;
+  }
+  .tag-filter.active {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+</style>
