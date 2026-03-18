@@ -56,11 +56,11 @@ body {
 
 /* ── Avatar ── */
 .avatar {
-  width: 72px;
-  height: 72px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 /* ── Sidebar ── */
