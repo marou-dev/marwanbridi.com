@@ -3,57 +3,36 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
-  <!-- Hero -->
   <section class="hero">
-    <h1 class="hero-title">
-      <span class="hero-word">Construire.</span>
-      <span class="hero-word">Évaluer.</span>
-      <span class="hero-word"><span class="accent">Transformer.</span></span>
-    </h1>
+    <p class="hero-subtitle" style="margin-bottom: 2rem;">
+      Je suis ingénieur construction, basé à Genève. Je travaille dans la promotion immobilière, l'évaluation d'actifs et la digitalisation des processus de chantier.
+    </p>
     <p class="hero-subtitle">
-      Ingénieur construction basé à Genève. De la conception au chantier, de la valorisation immobilière à l'IA appliquée — je couvre toute la chaîne.
+      Ce site existe parce que je crois qu'on apprend mieux en écrivant, et que les idées qui restent dans un carnet ne servent à personne. J'y partage mes réflexions sur ce que l'IA et le digital changent concrètement dans la construction — pas en théorie, sur le terrain.
     </p>
-  </section>
-
-  <!-- Parcours -->
-  <section class="section reveal">
-    <h2>Parcours</h2>
-    <p>
-      ESTP Paris → Steiner SA → Halter AG → Wuest Partner → Project Manager dans la promotion immobilière à Genève.
-    </p>
-    <p>
-      Construction neuve, rénovation, valorisation d'actifs, appels d'offres, data immobilière, IA en production — chaque étape m'a donné une pièce du puzzle.
-    </p>
-    <div class="logo-wall">
-      <span>ESTP Paris</span>
-      <span>Steiner</span>
-      <span>Halter</span>
-      <span>Wuest Partner</span>
-    </div>
   </section>
 
   <hr class="separator" />
 
-  <!-- Ce que je fais -->
   <section class="section reveal">
-    <h2>Ce que je fais</h2>
+    <h2>Ce que vous trouverez ici</h2>
     <div class="featured-grid">
-      <div class="card">
-        <h3>Construction</h3>
-        <p class="desc">Pilotage de projets, coordination tous corps d'état, appels d'offres, suivi chantier, maîtrise des coûts.</p>
-      </div>
-      <div class="card">
-        <h3>Évaluation</h3>
-        <p class="desc">Valorisation immobilière, analyse DCF, due diligence technique, études de faisabilité.</p>
-      </div>
-      <div class="card">
-        <h3>Digital & IA</h3>
-        <p class="desc">RAG contractuel, Knowledge Graphs, extraction automatique, pipelines de données opérationnels.</p>
-      </div>
-      <div class="card">
-        <h3>Immobilier</h3>
-        <p class="desc">Valorisation d'actifs, faisabilité, LDTR, optimisation coûts, direction de travaux.</p>
-      </div>
+      <a href="/reflexions" class="card" style="text-decoration: none; color: inherit;">
+        <h3>Réflexions</h3>
+        <p class="desc">Ce que j'observe, ce qui me surprend, ce que j'en tire — sur l'IA dans la construction, la PropTech, et le métier qui change.</p>
+      </a>
+      <a href="/realisations" class="card" style="text-decoration: none; color: inherit;">
+        <h3>Réalisations</h3>
+        <p class="desc">Les projets que j'ai construits : pipelines IA, systèmes de recherche contractuelle, bases de données de prix.</p>
+      </a>
+      <a href="/methode" class="card" style="text-decoration: none; color: inherit;">
+        <h3>Méthode</h3>
+        <p class="desc">Les outils que j'utilise et pourquoi. Obsidian, Python, Neo4j, Claude Code — ce qui tourne en production.</p>
+      </a>
+      <a href="/parcours" class="card" style="text-decoration: none; color: inherit;">
+        <h3>Parcours</h3>
+        <p class="desc">D'Andover à Genève — 15 ans entre chantiers, valorisation immobilière et systèmes d'information.</p>
+      </a>
     </div>
   </section>
 </BaseLayout>

@@ -39,7 +39,7 @@ import '../styles/global.css';
     <script is:inline>
       (function () {
         const t = localStorage.getItem('theme');
-        if (t) document.documentElement.setAttribute('data-theme', t);
+        if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
       })();
     </script>
   </head>
@@ -47,10 +47,10 @@ import '../styles/global.css';
     <header class="site-header">
       <a href="/" class="logo">Marwan Bridi</a>
       <nav>
-        <a href="/parcours">Parcours</a>
         <a href="/reflexions">Réflexions</a>
         <a href="/realisations">Réalisations</a>
         <a href="/methode">Méthode</a>
+        <a href="/parcours">Parcours</a>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
           <span id="theme-icon">dark</span>
         </button>
