@@ -5,30 +5,84 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 <BaseLayout title="Réalisations — Marwan Bridi">
   <section class="section">
     <h2>Réalisations</h2>
-    <p class="muted" style="margin-bottom: 2rem;">Projets personnels et explorations techniques.</p>
+    <p class="muted" style="margin-bottom: 2rem;">
+      Projets sur lesquels je suis intervenu — construction neuve, rénovation, équipements publics, commerce, logement de luxe.
+    </p>
   </section>
 
-  <div class="card reveal">
-    <h3>RAG Contractuel</h3>
-    <p class="desc">Recherche sémantique sur les documents contractuels en construction. Extraction automatique des clauses, prix unitaires, conditions.</p>
-    <span class="badge">IA + Construction</span>
-  </div>
+  <section class="section reveal">
+    <h3>Équipements publics</h3>
 
-  <div class="card reveal">
-    <h3>Knowledge Graph Pipeline</h3>
-    <p class="desc">Pipeline d'extraction d'entités depuis un vault Obsidian vers Neo4j. Détection de relations, résolution d'alias, couches de sécurité.</p>
-    <span class="badge">NLP + Graph</span>
-  </div>
+    <div class="card">
+      <h3>Centre Sportif de Malley — Patinoire & Arena</h3>
+      <p class="desc">Prilly (VD). Construction de la patinoire et suivi de l'Arena en autonomie. Phases SIA 41 à 52.</p>
+      <span class="badge">Steiner SA</span>
+    </div>
 
-  <div class="card reveal">
-    <h3>Personal-OS</h3>
-    <p class="desc">Système de knowledge management — Obsidian + Claude Code + n8n + Neo4j. Skills markdown, daily loops automatisées, veille IA structurée.</p>
-    <span class="badge">Productivité + IA</span>
-  </div>
+    <div class="card">
+      <h3>École d'Avenches</h3>
+      <p class="desc">Avenches (VD). Rénovation, transformation et construction d'un bâtiment scolaire de 12 MCHF. Gestion de délais serrés.</p>
+      <span class="badge">Steiner SA</span>
+    </div>
+  </section>
 
-  <div class="card reveal">
-    <h3>Base de prix unitaires</h3>
-    <p class="desc">Extraction et structuration automatique de prix unitaires depuis les soumissions CFC. 8'356 positions, 68 CFC, 9 projets.</p>
-    <span class="badge">Data + Construction</span>
-  </div>
+  <section class="section reveal">
+    <h3>Logement</h3>
+
+    <div class="card">
+      <h3>Étoile-Palettes — 280 logements</h3>
+      <p class="desc">Grand-Lancy (GE). Rénovation en site occupé pour Patrimonium AG. 75 appartements rénovés en 6 mois.</p>
+      <span class="badge">Halter SA</span>
+    </div>
+
+    <div class="card">
+      <h3>Malagnou 155 — 10 appartements de luxe</h3>
+      <p class="desc">Chêne-Bougeries (GE). Management de projet en entreprise totale. Lancement chantier et mise en place phase 51 SIA.</p>
+      <span class="badge">Swissroc</span>
+    </div>
+
+    <div class="card">
+      <h3>Villas mitoyennes Avanchet & Marnex</h3>
+      <p class="desc">Genève. Réalisation de villas mitoyennes en entreprise totale.</p>
+      <span class="badge">Swissroc</span>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h3>Tertiaire & Commerce</h3>
+
+    <div class="card">
+      <h3>Hôtel lifestyle — Quartier du Flon</h3>
+      <p class="desc">Lausanne (VD). Soumissions et adjudications CFC 27 pour la construction d'un hôtel lifestyle pour Mobimo AG.</p>
+      <span class="badge">Halter SA</span>
+    </div>
+
+    <div class="card">
+      <h3>Bureaux Halter — Flon</h3>
+      <p class="desc">Lausanne (VD). Rénovation de 500 m² de bureaux en totale autonomie — adjudications, gestion financière, suivi travaux. Délai 3 mois.</p>
+      <span class="badge">Halter SA</span>
+    </div>
+
+    <div class="card">
+      <h3>Polygone Riviera — 70'000 m²</h3>
+      <p class="desc">Cagnes-sur-Mer (FR). Premier lifestyle mall de France. Construction pour Unibail-Rodamco.</p>
+      <span class="badge">Cardinal Edifice (NGE)</span>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h3>Évaluation & Expertise</h3>
+
+    <div class="card">
+      <h3>Portefeuilles institutionnels — Valorisation DCF</h3>
+      <p class="desc">Évaluation d'actifs résidentiels, commerciaux et industriels pour des institutionnels et fonds accrédités FINMA. Audits trimestriels.</p>
+      <span class="badge">Wüest Partner SA</span>
+    </div>
+
+    <div class="card">
+      <h3>Expertise technique — Vallon 10, Lausanne</h3>
+      <p class="desc">Diagnostic complet et stratégie de rénovation énergétique d'un immeuble de 1952. CECB E → B, -84% de consommation. Modélisation thermique et analyse financière.</p>
+      <span class="badge">CAS HEIA-FR / EPFL</span>
+    </div>
+  </section>
 </BaseLayout>
