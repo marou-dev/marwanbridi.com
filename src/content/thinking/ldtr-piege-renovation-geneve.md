@@ -5,9 +5,9 @@ description: "La LDTR plafonne les loyers après rénovation. Ce que ça change 
 tags: [immobilier, réglementation, genève, rénovation, juridique]
 ---
 
-À Genève, rénover un immeuble locatif n'est pas une décision purement technique ou financière. C'est d'abord une décision juridique. Et le texte qui change tout s'appelle la LDTR — la Loi sur les Démolitions, Transformations et Rénovations.
+À Genève, rénover un immeuble locatif n'est pas une décision purement technique ou financière. C'est d'abord une décision juridique. Le texte qui encadre tout s'appelle la LDTR — la Loi sur les Démolitions, Transformations et Rénovations.
 
-Beaucoup de propriétaires institutionnels l'apprennent trop tard : les travaux sont engagés, les coûts sont connus, mais le loyer post-rénovation est plafonné à un niveau qui rend l'investissement difficilement rentable. Le problème n'est pas la loi elle-même — c'est qu'on fait le calcul après la décision, pas avant.
+Les grands institutionnels la connaissent bien. Mais pour les propriétaires privés, les investisseurs hors-canton qui achètent à Genève, ou les régies qui recommandent des travaux sans modéliser la hausse admissible — la LDTR reste souvent un angle mort. On rénove, on découvre le plafond, et le rendement attendu ne se matérialise pas.
 
 ## Ce que dit la LDTR
 
