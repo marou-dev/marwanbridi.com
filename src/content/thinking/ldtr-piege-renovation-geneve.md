@@ -1,5 +1,5 @@
 ---
-title: "LDTR : le calcul que personne ne fait avant de rénover à Genève"
+title: "LDTR : le calcul à faire avant de rénover à Genève"
 date: 2025-09-01
 description: "La LDTR plafonne les loyers après rénovation. Ce que ça change concrètement pour un propriétaire qui veut rénover — et pourquoi beaucoup se trompent."
 tags: [immobilier, réglementation, genève, rénovation, juridique]
