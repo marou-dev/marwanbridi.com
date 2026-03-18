@@ -29,7 +29,7 @@ C'est exactement le type de problème qu'on rencontre dans le parc immobilier de
 
 La stratégie retenue combine trois interventions :
 
-**Isolation thermique par l'extérieur (ITE)** — 16 cm d'EPS F sur les 775 m² de façades, validée par modélisation Ubakus. Le coefficient U passe de 1.72 à 0.18 W/m²K. Coût : 280 CHF/m², soit 217'000 CHF. Pour le pont thermique des balcons, une isolation périphérique optimisée traite 85% de la surface tout en acceptant un pont thermique résiduel (ψ = 0.45 W/mK) — pragmatique, pas idéaliste.
+**Isolation thermique par l'extérieur (ITE)** — 16 cm d'isolant sur les 775 m² de façades. Le coefficient U passe de 1.72 à 0.18 W/m²K. Coût : 280 CHF/m², soit 217'000 CHF. Pour le pont thermique des balcons, une isolation périphérique optimisée traite 85% de la surface tout en acceptant un pont thermique résiduel — pragmatique, pas idéaliste.
 
 **Raccordement au CAD de Lausanne** — suppression de la chaudière mazout. Émissions réduites de 280 à 60 g CO₂/kWh. Coût d'installation : 65'000 CHF. Au-delà du gain environnemental, c'est la simplification de l'exploitation qui compte : plus de maintenance chaudière, plus de stockage combustible, rendement à 98%.
 
@@ -54,6 +54,4 @@ Investissement total : 423'800 CHF. Économies annuelles : 23'539 CHF. TRI proje
 
 **Troisième enseignement : le compromis technique est sous-estimé.** Traiter un pont thermique de dalle continue, naviguer la réglementation AEAI sur les matériaux isolants en Classe III, optimiser l'épaisseur pour respecter MoPEC sans sur-investir — c'est dans ces arbitrages que se joue la viabilité d'un projet de rénovation. Et ces arbitrages ne se trouvent pas dans un logiciel. Ils viennent de l'expérience terrain.
 
-La Suisse a besoin de rénover massivement son parc immobilier. Les normes sont là (MoPEC, CECB, SIA 380/1). Les outils aussi (BTBAT, Ubakus, cadastre solaire). Ce qui manque, ce sont des professionnels qui savent combiner l'analyse technique, la modélisation financière et le pragmatisme de chantier pour transformer ces obligations réglementaires en projets viables.
-
-C'est exactement à cette intersection que je travaille.
+La Suisse a besoin de rénover massivement son parc immobilier. Les normes sont là. Ce qui manque, ce sont des professionnels qui savent combiner l'analyse technique, la modélisation financière et le pragmatisme de chantier pour transformer ces obligations réglementaires en projets viables.

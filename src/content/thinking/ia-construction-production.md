@@ -11,7 +11,7 @@ Chaque conférence ConTech promet la révolution. Des slides sur les jumeaux num
 
 L'industrie de la construction n'a pas un problème d'innovation. Elle a un problème de **mise en production**. Les POCs meurent dans les présentations PowerPoint parce que :
 
-- Les données sont fragmentées (Procore, Excel, emails, PDFs physiques)
+- Les données sont fragmentées (logiciels métier, Excel, emails, PDFs physiques)
 - Les équipes terrain n'ont pas de formation aux outils digitaux
 - Le ROI est difficile à mesurer sur un cycle de chantier de 3 ans
 - Les décideurs confondent "acheter un outil" et "transformer un processus"
@@ -24,7 +24,7 @@ Sur les 18 derniers mois, voici ce que j'ai mis en production — pas en POC :
 
 **Extraction automatique de prix unitaires.** Plutôt que de maintenir manuellement des bases de données de prix, on extrait et structure automatiquement depuis les soumissions reçues. 8'356 positions, 68 CFC, 9 projets.
 
-**Knowledge Graph opérationnel.** Un graphe Neo4j qui relie projets, fournisseurs, décisions, risques. Pas un dashboard de plus : un outil de navigation dans la complexité organisationnelle.
+**Knowledge Graph opérationnel.** Un graphe qui relie projets, fournisseurs, décisions, risques. Pas un dashboard de plus : un outil de navigation dans la complexité organisationnelle.
 
 ## La recette
 
