@@ -60,5 +60,3 @@ Le bon réflexe avant toute rénovation à Genève :
 5. **Articuler avec les subventions** — le montant net subventionné change la hausse admissible
 
 La LDTR n'est pas un obstacle à la rénovation. C'est un cadre qui impose de faire ses calculs avant de signer les bons de commande — pas après. Les propriétaires qui l'intègrent dès la phase d'étude prennent de meilleures décisions. Les autres découvrent le plafond quand il est trop tard.
-
-*Référence doctrinale : Emmanuelle Gaide & Valérie Défago Gaudin, "La LDTR — Démolition, transformation, rénovation, changement d'affectation et aliénation", Stämpfli Editions.*
