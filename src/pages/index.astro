@@ -1,37 +1,64 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('thinking'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
 <BaseLayout>
   <section class="hero">
-    <p style="margin-bottom: 1.5rem;">
-      Je suis ingénieur civil et expert immobilier, basé à Genève. Je travaille dans la promotion immobilière — construction, évaluation d'actifs, gestion de projets.
-    </p>
-    <p style="margin-bottom: 1.5rem;">
-      Ce site existe parce que notre industrie bouge et que peu de gens écrivent dessus de l'intérieur. J'y partage ce que j'observe — sur le marché immobilier suisse, les méthodes de valorisation, l'évolution des chantiers, et les outils qui changent réellement la pratique.
-    </p>
-    <p class="muted">
-      Pas de théorie. Du terrain.
+    <p>
+      Notre industrie bouge et peu de gens écrivent dessus de l'intérieur. Ici je partage ce que j'observe — marché immobilier suisse, rénovation énergétique, gestion de chantier, et ce qui change réellement la pratique.
     </p>
   </section>
 
   <hr class="separator" />
 
   <section class="section reveal">
-    <h2>Sur ce site</h2>
-    <div class="featured-grid">
-      <a href="/reflexions" class="card" style="text-decoration: none; color: inherit;">
-        <h3>Réflexions</h3>
-        <p class="desc">Immobilier, construction, valorisation, digital — ce que j'observe et ce que j'en tire.</p>
+    <h2>Dernières réflexions</h2>
+    <ul class="post-list">
+      {posts.map((post) => (
+        <li>
+          <a href={`/reflexions/${post.id}`}>
+            <span class="date">
+              {post.data.date.toLocaleDateString('fr-CH', {
+                year: 'numeric',
+                month: '2-digit',
+              })}
+            </span>
+            <span class="title">{post.data.title}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p style="margin-top: 1rem;">
+      <a href="/reflexions">Toutes les réflexions →</a>
+    </p>
+  </section>
+
+  <hr class="separator" />
+
+  <section class="section reveal">
+    <h2>Réalisations</h2>
+    <p class="muted" style="margin-bottom: 1rem;">Projets personnels et explorations techniques.</p>
+    <div>
+      <a href="/realisations" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <h3>RAG Contractuel</h3>
+          <p class="desc">Recherche sémantique sur les documents contractuels en construction.</p>
+        </div>
       </a>
-      <a href="/realisations" class="card" style="text-decoration: none; color: inherit;">
-        <h3>Réalisations</h3>
-        <p class="desc">Les projets que j'ai construits — systèmes de recherche contractuelle, bases de prix, pipelines de données.</p>
-      </a>
-      <a href="/parcours" class="card" style="text-decoration: none; color: inherit;">
-        <h3>Parcours</h3>
-        <p class="desc">D'Andover à Genève — 15 ans entre chantiers, valorisation et systèmes d'information.</p>
+      <a href="/realisations" style="text-decoration: none; color: inherit;">
+        <div class="card">
+          <h3>Base de prix unitaires</h3>
+          <p class="desc">8'356 positions, 68 CFC, 9 projets — extraction automatique depuis les soumissions.</p>
+        </div>
       </a>
     </div>
+    <p style="margin-top: 0.5rem;">
+      <a href="/realisations">Toutes les réalisations →</a>
+    </p>
   </section>
 </BaseLayout>
