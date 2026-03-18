@@ -23,6 +23,9 @@ import '../styles/global.css';
     <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- OpenGraph -->
     <meta property="og:type" content="website" />
@@ -42,15 +45,14 @@ import '../styles/global.css';
   </head>
   <body>
     <header class="site-header">
-      <h1><a href="/">Marwan Bridi</a></h1>
-      <p class="subtitle">Construction · PropTech · IA — Genève</p>
+      <a href="/" class="logo">Marwan Bridi</a>
       <nav>
         <a href="/">About</a>
         <a href="/thinking">Thinking</a>
         <a href="/projects">Projects</a>
-        <a href="/tools">Tools</a>
+        <a href="/tools">Stack</a>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-          <span id="theme-icon">○</span>
+          <span id="theme-icon">dark</span>
         </button>
       </nav>
     </header>
@@ -63,25 +65,117 @@ import '../styles/global.css';
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/mbridi/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:marwan@bridi.ch">Email</a>
+        <a href="/rss.xml">RSS</a>
       </div>
-      <p>No tracking. No cookies. Built with Astro.</p>
+      <p>No tracking. No cookies.</p>
     </footer>
 
+    <!-- Theme toggle -->
     <script is:inline>
       const btn = document.getElementById('theme-toggle');
       const icon = document.getElementById('theme-icon');
-      function update() {
+      function updateTheme() {
         const current = document.documentElement.getAttribute('data-theme');
-        icon.textContent = current === 'light' ? '●' : '○';
+        icon.textContent = current === 'light' ? 'light' : 'dark';
       }
       btn.addEventListener('click', () => {
         const current = document.documentElement.getAttribute('data-theme');
         const next = current === 'light' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
-        update();
+        updateTheme();
       });
-      update();
+      updateTheme();
+    </script>
+
+    <!-- GSAP + Lenis smooth scroll + reveals -->
+    <script>
+      import { gsap } from 'gsap';
+      import { ScrollTrigger } from 'gsap/ScrollTrigger';
+      import Lenis from 'lenis';
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Smooth scroll
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      });
+
+      lenis.on('scroll', ScrollTrigger.update);
+
+      gsap.ticker.add((time: number) => {
+        lenis.raf(time * 1000);
+      });
+
+      gsap.ticker.lagSmoothing(0);
+
+      // Reveal animations
+      const reveals = document.querySelectorAll('.reveal');
+      reveals.forEach((el, i) => {
+        gsap.fromTo(
+          el,
+          { opacity: 0, y: 30 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            ease: 'power3.out',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 88%',
+              once: true,
+            },
+            delay: i < 4 ? i * 0.1 : 0,
+          }
+        );
+      });
+
+      // Hero title stagger
+      const heroWords = document.querySelectorAll('.hero-word');
+      if (heroWords.length) {
+        gsap.fromTo(
+          heroWords,
+          { opacity: 0, y: 40, rotateX: -15 },
+          {
+            opacity: 1,
+            y: 0,
+            rotateX: 0,
+            duration: 1,
+            ease: 'power4.out',
+            stagger: 0.08,
+          }
+        );
+      }
+
+      // Hero subtitle fade
+      const heroSub = document.querySelector('.hero-subtitle');
+      if (heroSub) {
+        gsap.fromTo(
+          heroSub,
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power3.out', delay: 0.6 }
+        );
+      }
+
+      // Card hover float effect
+      document.querySelectorAll('.card').forEach((card) => {
+        card.addEventListener('mouseenter', () => {
+          gsap.to(card, { y: -4, duration: 0.3, ease: 'power2.out' });
+        });
+        card.addEventListener('mouseleave', () => {
+          gsap.to(card, { y: 0, duration: 0.4, ease: 'power2.out' });
+        });
+      });
+
+      // Nav link active state
+      const path = window.location.pathname;
+      document.querySelectorAll('nav a').forEach((a) => {
+        const href = a.getAttribute('href');
+        if (href === path || (href !== '/' && path.startsWith(href || ''))) {
+          a.classList.add('active');
+        }
+      });
     </script>
   </body>
 </html>

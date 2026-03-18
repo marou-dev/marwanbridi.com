@@ -3,36 +3,58 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
-  <section class="section">
-    <p>
-      Ingénieur construction basé à Genève. Je travaille à l'intersection de la gestion de projets immobiliers, de la data et de l'IA appliquée au terrain.
-    </p>
-    <p>
-      Mon fil rouge : transformer des processus manuels en systèmes qui tournent — pas en slides, en production.
+  <!-- Hero -->
+  <section class="hero">
+    <h1 class="hero-title">
+      <span class="hero-word">Construction.</span>
+      <span class="hero-word"><span class="accent">IA.</span></span>
+      <span class="hero-word">Production.</span>
+    </h1>
+    <p class="hero-subtitle">
+      Ingénieur construction basé à Genève. Je transforme des processus manuels en systèmes qui tournent — pas en slides, en production.
     </p>
   </section>
 
-  <hr class="separator" />
-
-  <section class="section">
+  <!-- Parcours -->
+  <section class="section reveal">
     <h2>Parcours</h2>
     <p>
-      ESTP Paris (ingénieur construction) → Steiner SA → Halter AG → Wuest Partner (data & valorisation immobilière) → Project Manager dans la promotion immobilière à Genève.
+      ESTP Paris → Steiner SA → Halter AG → Wuest Partner → Project Manager dans la promotion immobilière à Genève.
     </p>
     <p>
       Des appels d'offres aux chantiers, de la data immobilière aux pipelines IA — chaque étape m'a rapproché du même sujet : comment rendre la construction plus intelligente.
     </p>
+    <div class="logo-wall">
+      <span>ESTP Paris</span>
+      <span>Steiner</span>
+      <span>Halter</span>
+      <span>Wuest Partner</span>
+    </div>
   </section>
 
   <hr class="separator" />
 
-  <section class="section">
+  <!-- Ce que je fais -->
+  <section class="section reveal">
     <h2>Ce que je fais</h2>
-    <ul>
-      <li><strong>Gestion de projets</strong> — Pilotage de chantiers, coordination d'intervenants, maîtrise des coûts</li>
-      <li><strong>Digital & IA</strong> — RAG sur documents contractuels, Knowledge Graphs, pipelines d'extraction automatique</li>
-      <li><strong>PropTech</strong> — GeoValuation, une plateforme SaaS de valorisation DCF géo-contextualisée</li>
-      <li><strong>Conseil</strong> — BOH Partners, cabinet AMO immobilier (Genève/Vaud)</li>
-    </ul>
+    <div class="featured-grid">
+      <div class="card">
+        <h3>Gestion de projets</h3>
+        <p class="desc">Pilotage chantiers, coordination d'intervenants, maîtrise des coûts dans la promotion immobilière.</p>
+      </div>
+      <div class="card">
+        <h3>Digital & IA</h3>
+        <p class="desc">RAG sur documents contractuels, Knowledge Graphs, pipelines d'extraction automatique.</p>
+      </div>
+      <div class="card">
+        <h3>PropTech</h3>
+        <p class="desc">GeoValuation — plateforme SaaS de valorisation DCF géo-contextualisée.</p>
+        <span class="badge">MVP 2026</span>
+      </div>
+      <div class="card">
+        <h3>Conseil AMO</h3>
+        <p class="desc">BOH Partners — LDTR, optimisation coûts, direction de travaux. Genève & Vaud.</p>
+      </div>
+    </div>
   </section>
 </BaseLayout>

@@ -3,35 +3,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Projects — Marwan Bridi">
-  <h2>Projects</h2>
+  <section class="section">
+    <h2>Projects</h2>
+    <p class="muted" style="margin-bottom: 2rem;">Pas des POCs. Des systèmes en production.</p>
+  </section>
 
-  <div class="project">
+  <div class="card reveal">
     <h3>GeoValuation</h3>
     <p class="desc">Plateforme SaaS de valorisation immobilière DCF géo-contextualisée. Couches fédérales suisses, données SITG, modèles de risque environnemental.</p>
-    <p class="meta">PropTech — MVP 2026</p>
+    <span class="badge">PropTech — MVP 2026</span>
   </div>
 
-  <div class="project">
+  <div class="card reveal">
     <h3>RAG PV Adjudication</h3>
     <p class="desc">Recherche sémantique sur les procès-verbaux d'adjudication en construction. Extraction automatique des clauses, prix unitaires, conditions contractuelles.</p>
-    <p class="meta">IA + Construction — En production</p>
+    <span class="badge">IA + Construction — En production</span>
   </div>
 
-  <div class="project">
+  <div class="card reveal">
     <h3>Knowledge Graph Pipeline</h3>
-    <p class="desc">Pipeline d'extraction d'entités depuis un vault Obsidian de 19K+ notes vers Neo4j. Détection de relations, résolution d'alias, couches de sécurité.</p>
-    <p class="meta">NLP + Graph — En production</p>
+    <p class="desc">Pipeline d'extraction d'entités depuis un vault Obsidian vers Neo4j. Détection de relations, résolution d'alias, couches de sécurité.</p>
+    <span class="badge">NLP + Graph — En production</span>
   </div>
 
-  <div class="project">
+  <div class="card reveal">
     <h3>Personal-OS</h3>
-    <p class="desc">Système de knowledge management personnel — Obsidian + Claude Code + n8n + Neo4j. Skills markdown, daily loops automatisées, veille IA structurée.</p>
-    <p class="meta">Productivité + IA — Quotidien</p>
+    <p class="desc">Système de knowledge management — Obsidian + Claude Code + n8n + Neo4j. Skills markdown, daily loops automatisées, veille IA structurée.</p>
+    <span class="badge">Productivité + IA</span>
   </div>
 
-  <div class="project">
+  <div class="card reveal">
     <h3>BOH Partners</h3>
     <p class="desc">Cabinet conseil AMO immobilier. LDTR, optimisation coûts, direction de travaux — Genève et Vaud.</p>
-    <p class="meta">Conseil immobilier</p>
+    <span class="badge">Conseil immobilier</span>
   </div>
 </BaseLayout>

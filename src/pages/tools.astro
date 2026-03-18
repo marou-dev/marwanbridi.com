@@ -2,48 +2,52 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Tools & Stack — Marwan Bridi">
-  <h2>Tools & Stack</h2>
-
+<BaseLayout title="Stack — Marwan Bridi">
   <section class="section">
-    <p>
-      Mon approche : des outils simples, composables, en production. Pas de slides sur "l'IA du futur" — du code qui tourne aujourd'hui.
+    <h2>Stack</h2>
+    <p class="hero-subtitle" style="margin-bottom: 2rem;">
+      Des outils simples, composables, en production. Pas de slides sur "l'IA du futur" — du code qui tourne aujourd'hui.
     </p>
+  </section>
+
+  <section class="section reveal">
+    <h3>Knowledge</h3>
+    <div class="chip-grid">
+      <span class="chip">Obsidian</span>
+      <span class="chip">Neo4j</span>
+      <span class="chip">Claude Code</span>
+      <span class="chip">Markdown Skills</span>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h3>Automatisation</h3>
+    <div class="chip-grid">
+      <span class="chip">Python</span>
+      <span class="chip">n8n</span>
+      <span class="chip">GitHub Actions</span>
+      <span class="chip">NLP / LLM</span>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <h3>Construction & Immobilier</h3>
+    <div class="chip-grid">
+      <span class="chip">Procore</span>
+      <span class="chip">Monday.com</span>
+      <span class="chip">Google Sheets</span>
+      <span class="chip">Apps Script</span>
+    </div>
   </section>
 
   <hr class="separator" />
 
-  <section class="section">
-    <h3>Knowledge Management</h3>
-    <ul>
-      <li><strong>Obsidian</strong> — Vault de 19K+ notes, structuré en Skills actionnables</li>
-      <li><strong>Claude Code</strong> — Agent autonome pour le dev, la recherche, l'orchestration</li>
-      <li><strong>Neo4j</strong> — Knowledge Graph extrait automatiquement du vault</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h3>Automatisation</h3>
-    <ul>
-      <li><strong>n8n</strong> — Workflows Outlook, Procore, Monday.com, notifications</li>
-      <li><strong>Python</strong> — Pipelines d'extraction, NLP, scraping, data processing</li>
-      <li><strong>GitHub Actions</strong> — CI/CD, daily loops automatisées</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h3>Construction & Immobilier</h3>
-    <ul>
-      <li><strong>Procore</strong> — Gestion chantiers, Change Events, Punch Items</li>
-      <li><strong>Monday.com</strong> — Coordination inter-entités</li>
-      <li><strong>Google Sheets + Apps Script</strong> — Dashboards, suivi coûts et achats</li>
-    </ul>
-  </section>
-
-  <section class="section">
+  <section class="section reveal">
     <h3>Philosophie</h3>
-    <p>
-      Skills Markdown > infrastructure MCP complexe. Le vault est la source de vérité. L'IA amplifie ce qui existe, elle ne remplace pas la pensée structurée.
-    </p>
+    <div class="card">
+      <p class="desc" style="margin-bottom: 0;">
+        Le vault est la source de vérité. Skills Markdown > infrastructure complexe. L'IA amplifie ce qui existe — elle ne remplace pas la pensée structurée.
+      </p>
+    </div>
   </section>
 </BaseLayout>
