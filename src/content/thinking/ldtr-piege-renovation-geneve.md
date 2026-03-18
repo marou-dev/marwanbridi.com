@@ -9,6 +9,14 @@ tags: [immobilier, réglementation, genève, rénovation, juridique]
 
 Les grands institutionnels la connaissent bien. Mais pour les propriétaires privés, les investisseurs hors-canton qui achètent à Genève, ou les régies qui recommandent des travaux sans modéliser la hausse admissible — la LDTR reste souvent un angle mort. On rénove, on découvre le plafond, et le rendement attendu ne se matérialise pas.
 
+## L'état des lieux : un parc qui vieillit
+
+Les chiffres sont parlants. Selon une étude de la FHNW (Haute École Spécialisée du Nord-Ouest de la Suisse) publiée fin 2025, **83% des immeubles genevois de plus de 40 ans n'ont jamais été modernisés** — un record suisse. À titre de comparaison, ce taux est de 48% à Bâle et 41% à Zurich.
+
+Le lien avec la LDTR est direct : la probabilité de rénovation à Genève n'est que de 12%, contre 31% à Zurich. Les propriétaires hésitent à investir parce que le retour est plafonné. Résultat : un parc vieillissant, des logements énergivores, et un écart de loyer de 33% entre anciens et nouveaux locataires — les premiers protégés par des loyers bas, les seconds confrontés aux prix du marché.
+
+L'étude chiffre aussi le coût de cette inertie : environ 600 millions de francs de projets de construction annulés ou reportés, soit 11% des dépenses de construction du canton sur la période étudiée.
+
 ## Ce que dit la LDTR
 
 Le principe est simple : à Genève, en période de pénurie de logements (taux de vacance inférieur à 1% depuis plus de 20 ans), toute rénovation susceptible d'entraîner une hausse de loyer doit être autorisée par le Département du territoire. Et la hausse admissible est calculée selon une formule réglementaire, pas selon le marché.
