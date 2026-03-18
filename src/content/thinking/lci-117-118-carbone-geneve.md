@@ -48,7 +48,7 @@ Le piège classique : se concentrer sur la construction initiale et oublier les 
 
 ## Les leviers concrets
 
-Les études pilotes genevoises (notamment sur l'écoquartier Plaine du Loup à Lausanne) montrent qu'un projet qui démarre à 8.6 kg CO₂-eq/m²/an peut descendre à 6.2 avec quatre leviers :
+Les études pilotes suisses montrent que les seuils sont atteignables. L'écoquartier Plaine du Loup à Lausanne, par exemple, a démontré qu'un projet qui démarre à 8.6 kg CO₂-eq/m²/an peut descendre à 6.2 avec quatre leviers :
 
 **Le béton.** C'est le premier poste. Utiliser du ciment CEM III (au laitier) au lieu de CEM II réduit les émissions du ciment de 40%. Optimiser le dimensionnement des fondations grâce à des études géotechniques précises évite le surdimensionnement par défaut. Chaque niveau de sous-sol supplémentaire ajoute 1 à 2 kg CO₂-eq/m²/an.
 
