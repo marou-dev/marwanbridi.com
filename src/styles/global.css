@@ -34,6 +34,65 @@
     background: var(--accent-soft);
     color: var(--accent);
   }
+
+  /* Base element styles outside of prose */
+  h2 {
+    @apply text-2xl font-semibold tracking-tight text-text mt-10 mb-4;
+  }
+
+  h3 {
+    @apply text-base font-semibold text-text mb-1;
+  }
+
+  p {
+    @apply text-text-secondary leading-relaxed mb-3;
+  }
+
+  a {
+    @apply text-text underline decoration-border underline-offset-[3px] decoration-1 transition-colors duration-150;
+  }
+
+  a:hover {
+    color: var(--accent);
+    text-decoration-color: var(--accent);
+  }
+
+  hr {
+    @apply border-border my-10;
+  }
+
+  ul, ol {
+    @apply pl-5 mb-4;
+  }
+
+  li {
+    @apply mb-1.5 text-text-secondary;
+  }
+
+  table {
+    @apply w-full text-sm mb-6;
+    border-collapse: collapse;
+  }
+
+  thead {
+    @apply border-b-2 border-border;
+  }
+
+  th {
+    @apply text-left text-xs font-semibold uppercase tracking-wider text-text-muted p-2;
+  }
+
+  td {
+    @apply p-2 border-b border-border text-text-secondary;
+  }
+
+  td strong {
+    color: var(--accent);
+  }
+
+  tbody tr:hover {
+    background: var(--surface);
+  }
 }
 
 @layer components {
@@ -51,6 +110,66 @@
     @apply inline-block text-xs font-medium uppercase tracking-wide px-2 py-0.5 rounded;
     background: var(--accent-soft);
     color: var(--accent);
+  }
+
+  /* ── Section ── */
+  .section {
+    @apply mb-12;
+  }
+
+  /* ── Muted text ── */
+  .muted {
+    @apply text-sm text-text-muted;
+  }
+
+  /* ── Desc text ── */
+  .desc {
+    @apply text-sm text-text-muted leading-relaxed mb-1.5;
+  }
+
+  /* ── Separator ── */
+  .separator {
+    @apply border-t border-border my-10;
+  }
+
+  /* ── Logo wall ── */
+  .logo-wall {
+    @apply flex flex-wrap gap-5 py-3;
+  }
+  .logo-wall span {
+    @apply text-xs text-text-muted uppercase tracking-wider;
+  }
+
+  /* ── Chip grid ── */
+  .chip-grid {
+    @apply flex flex-wrap gap-1.5;
+  }
+
+  /* ── Featured grid ── */
+  .featured-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-3;
+  }
+
+  /* ── Post list ── */
+  .post-list {
+    @apply list-none p-0 space-y-0;
+  }
+  .post-list a {
+    @apply flex gap-5 items-baseline py-3 border-b border-border no-underline transition-colors;
+  }
+  .post-list a:hover {
+    color: var(--accent);
+  }
+  .post-list .date {
+    @apply text-xs font-mono text-text-muted tabular-nums whitespace-nowrap;
+  }
+  .post-list .title {
+    @apply font-medium;
+  }
+
+  /* ── Reveal ── */
+  .reveal {
+    @apply opacity-0 translate-y-4;
   }
 
   /* ── Chip ── */
