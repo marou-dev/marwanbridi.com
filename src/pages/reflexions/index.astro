@@ -6,17 +6,16 @@ const posts = (await getCollection('thinking'))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
-// Extraire tous les tags uniques
 const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
 ---
 
 <BaseLayout title="Réflexions — Marwan Bridi">
-  <section class="section">
-    <h2>Réflexions</h2>
-    <p class="muted" style="margin-bottom: 1.5rem;">
-      Immobilier, construction, énergie, digital — ce que j'observe et ce que j'en tire.
+  <section class="mb-8">
+    <h2 class="text-2xl font-semibold tracking-tight mb-3">Réflexions</h2>
+    <p class="text-sm text-text-muted mb-5">
+      Immobilier, construction, énergie, réglementation — ce que j'observe et ce que j'en tire.
     </p>
-    <div class="chip-grid" style="margin-bottom: 2rem;">
+    <div class="flex flex-wrap gap-1.5 mb-8">
       <button class="chip tag-filter active" data-tag="all">Tout</button>
       {allTags.map((tag) => (
         <button class="chip tag-filter" data-tag={tag}>{tag}</button>
@@ -25,19 +24,16 @@ const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort
   </section>
 
   {posts.length === 0 ? (
-    <p class="muted reveal">Premiers articles en préparation.</p>
+    <p class="text-text-muted reveal">Premiers articles en préparation.</p>
   ) : (
-    <ul class="post-list">
+    <ul class="space-y-0">
       {posts.map((post) => (
         <li class="reveal" data-tags={JSON.stringify(post.data.tags || [])}>
-          <a href={`/reflexions/${post.id}`}>
-            <span class="date">
-              {post.data.date.toLocaleDateString('fr-CH', {
-                year: 'numeric',
-                month: '2-digit',
-              })}
+          <a href={`/reflexions/${post.id}`} class="group flex gap-5 items-baseline py-3.5 border-b border-border no-underline transition-colors">
+            <span class="text-xs font-mono text-text-muted tabular-nums whitespace-nowrap">
+              {post.data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: '2-digit' })}
             </span>
-            <span class="title">{post.data.title}</span>
+            <span class="font-medium group-hover:text-accent transition-colors">{post.data.title}</span>
           </a>
         </li>
       ))}
@@ -49,14 +45,11 @@ const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort
   document.querySelectorAll('.tag-filter').forEach((btn) => {
     btn.addEventListener('click', () => {
       const tag = btn.getAttribute('data-tag');
-
       document.querySelectorAll('.tag-filter').forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
-
-      document.querySelectorAll('.post-list li').forEach((li) => {
-        if (tag === 'all') {
-          li.style.display = '';
-        } else {
+      document.querySelectorAll('li[data-tags]').forEach((li) => {
+        if (tag === 'all') { li.style.display = ''; }
+        else {
           const tags = JSON.parse(li.getAttribute('data-tags') || '[]');
           li.style.display = tags.includes(tag) ? '' : 'none';
         }
@@ -64,15 +57,3 @@ const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort
     });
   });
 </script>
-
-<style>
-  .tag-filter {
-    cursor: pointer;
-    background: none;
-    font-family: inherit;
-  }
-  .tag-filter.active {
-    border-color: var(--accent);
-    color: var(--accent);
-  }
-</style>

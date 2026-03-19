@@ -15,21 +15,18 @@ const { Content } = await render(post);
 ---
 
 <BaseLayout title={`${post.data.title} — Marwan Bridi`} description={post.data.description}>
-  <article>
-    <h2>{post.data.title}</h2>
-    <p class="muted" style="margin-bottom: 2rem;">
-      {post.data.date.toLocaleDateString('fr-CH', {
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-      })}
-      {post.data.tags && (
-        <span> — {post.data.tags.join(', ')}</span>
-      )}
-    </p>
+  <article class="prose prose-neutral max-w-none prose-headings:font-semibold prose-headings:tracking-tight prose-a:text-text prose-a:decoration-border hover:prose-a:text-accent hover:prose-a:decoration-accent prose-strong:text-text prose-blockquote:border-accent prose-blockquote:text-text-muted prose-code:bg-surface prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:before:content-none prose-code:after:content-none prose-td:border-border prose-th:text-text-muted prose-th:text-xs prose-th:uppercase prose-th:tracking-wider">
+    <div class="not-prose mb-8">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight leading-tight mb-3">{post.data.title}</h2>
+      <p class="text-sm text-text-muted">
+        {post.data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: 'long', day: 'numeric' })}
+        {post.data.tags && <span> — {post.data.tags.join(', ')}</span>}
+      </p>
+    </div>
     <Content />
   </article>
 
-  <hr class="separator" />
-  <p><a href="/reflexions">&larr; Toutes les réflexions</a></p>
+  <div class="mt-12 pt-6 border-t border-border">
+    <a href="/reflexions" class="text-sm text-text-muted hover:text-accent no-underline transition-colors">← Toutes les réflexions</a>
+  </div>
 </BaseLayout>

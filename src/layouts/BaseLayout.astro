@@ -15,7 +15,7 @@ import '../styles/global.css';
 ---
 
 <!doctype html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,7 +25,7 @@ import '../styles/global.css';
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
@@ -41,34 +41,57 @@ import '../styles/global.css';
       })();
     </script>
   </head>
-  <body>
-    <header class="site-header">
-      <img src="/marwan-bridi.png" alt="Marwan Bridi" class="avatar" />
-      <h1><a href="/">Marwan Bridi</a></h1>
-      <p class="tagline">Ingénieur civil<br />Expert immobilier<br />Genève</p>
-      <nav>
-        <a href="/reflexions">Réflexions</a>
-        <a href="/realisations">Réalisations</a>
-        <a href="/parcours">Parcours</a>
-      </nav>
-      <div class="sidebar-footer">
-        <a href="https://www.linkedin.com/in/mbridi/" target="_blank" rel="noopener">LinkedIn ↗</a>
+  <body class="bg-bg text-text font-sans min-h-screen">
+    <!-- Grid layout: sidebar + content -->
+    <div class="mx-auto max-w-[1200px] px-6 md:px-10 py-10 md:py-16 grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8 md:gap-16">
+
+      <!-- Sidebar -->
+      <header class="md:sticky md:top-16 md:self-start">
+        <div class="flex md:flex-col items-center md:items-start gap-4 md:gap-0">
+          <img
+            src="/marwan-bridi.png"
+            alt="Marwan Bridi"
+            class="w-16 h-16 md:w-28 md:h-28 rounded-full object-cover md:mb-4"
+          />
+          <div>
+            <h1 class="text-lg md:text-xl font-semibold tracking-tight">
+              <a href="/" class="text-text no-underline hover:text-accent transition-colors">Marwan Bridi</a>
+            </h1>
+            <p class="text-sm text-text-muted leading-relaxed mt-0.5">
+              Ingénieur civil<br class="hidden md:block" />
+              Expert immobilier<br class="hidden md:block" />
+              Genève
+            </p>
+          </div>
+        </div>
+
+        <nav class="flex md:flex-col gap-3 md:gap-2 mt-4 md:mt-8">
+          <a href="/reflexions" class="text-sm text-text-muted hover:text-text transition-colors">Réflexions</a>
+          <a href="/realisations" class="text-sm text-text-muted hover:text-text transition-colors">Réalisations</a>
+          <a href="/parcours" class="text-sm text-text-muted hover:text-text transition-colors">Parcours</a>
+        </nav>
+
+        <div class="hidden md:flex flex-col gap-3 mt-10">
+          <a href="https://www.linkedin.com/in/mbridi/" target="_blank" rel="noopener" class="text-xs text-text-muted hover:text-accent no-underline transition-colors">LinkedIn ↗</a>
+          <button class="text-xs text-text-muted hover:text-text text-left transition-colors" id="theme-toggle">
+            <span id="theme-icon">☀</span> Thème
+          </button>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <div class="min-w-0">
+        <main class="max-w-content">
+          <slot />
+        </main>
+
+        <footer class="mt-20 pt-6 border-t border-border text-xs text-text-muted">
+          <p>Pas de tracking. Pas de cookies.</p>
+        </footer>
       </div>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
-        <span id="theme-icon">☀</span>
-      </button>
-    </header>
-
-    <div>
-      <main>
-        <slot />
-      </main>
-
-      <footer>
-        <p>Pas de tracking. Pas de cookies.</p>
-      </footer>
     </div>
 
+    <!-- Theme toggle -->
     <script is:inline>
       const btn = document.getElementById('theme-toggle');
       const icon = document.getElementById('theme-icon');
@@ -90,6 +113,7 @@ import '../styles/global.css';
       updateTheme();
     </script>
 
+    <!-- GSAP + Lenis -->
     <script>
       import { gsap } from 'gsap';
       import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -97,35 +121,23 @@ import '../styles/global.css';
 
       gsap.registerPlugin(ScrollTrigger);
 
-      const lenis = new Lenis({
-        duration: 1.2,
-        easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      });
-
+      const lenis = new Lenis({ duration: 1.2, easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)) });
       lenis.on('scroll', ScrollTrigger.update);
       gsap.ticker.add((time: number) => { lenis.raf(time * 1000); });
       gsap.ticker.lagSmoothing(0);
 
       document.querySelectorAll('.reveal').forEach((el) => {
-        gsap.fromTo(el,
-          { opacity: 0, y: 14 },
-          {
-            opacity: 1, y: 0, duration: 0.5, ease: 'power3.out',
-            scrollTrigger: { trigger: el, start: 'top 92%', once: true },
-          }
-        );
-      });
-
-      document.querySelectorAll('.card').forEach((card) => {
-        card.addEventListener('mouseenter', () => gsap.to(card, { y: -1, duration: 0.15, ease: 'power2.out' }));
-        card.addEventListener('mouseleave', () => gsap.to(card, { y: 0, duration: 0.2, ease: 'power2.out' }));
+        gsap.fromTo(el, { opacity: 0, y: 16 }, {
+          opacity: 1, y: 0, duration: 0.5, ease: 'power3.out',
+          scrollTrigger: { trigger: el, start: 'top 92%', once: true },
+        });
       });
 
       const path = window.location.pathname;
       document.querySelectorAll('nav a').forEach((a) => {
         const href = a.getAttribute('href');
         if (href === path || (href !== '/' && path.startsWith(href || ''))) {
-          a.classList.add('active');
+          a.classList.add('!text-text', 'font-medium');
         }
       });
     </script>
