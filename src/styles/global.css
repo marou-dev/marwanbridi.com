@@ -4,21 +4,22 @@
 
 @layer base {
   :root {
-    --bg: #fafaf8;
-    --surface: #f0efeb;
+    --bg: #fafaf7;
+    --surface: #f2f1ec;
     --text: #1a1a1a;
-    --text-secondary: #3d3d3d;
-    --text-muted: #808078;
+    --text-secondary: #3a3a3a;
+    --text-muted: #7a7a72;
     --accent: #9c4a2e;
     --accent-soft: rgba(156, 74, 46, 0.06);
-    --border: #e0dfdb;
+    --border: #e2e1dc;
+    --font-serif: 'Newsreader', Georgia, serif;
   }
 
   [data-theme="dark"] {
     --bg: #131312;
     --surface: #1c1c1a;
     --text: #e0e0d8;
-    --text-secondary: #b0b0a8;
+    --text-secondary: #b8b8b0;
     --text-muted: #707068;
     --accent: #d4845e;
     --accent-soft: rgba(212, 132, 94, 0.08);
@@ -28,156 +29,50 @@
   html {
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
 
   ::selection {
     background: var(--accent-soft);
     color: var(--accent);
   }
-
-  /* Base element styles outside of prose */
-  h2 {
-    @apply text-2xl font-semibold tracking-tight text-text mt-10 mb-4;
-  }
-
-  h3 {
-    @apply text-base font-semibold text-text mb-1;
-  }
-
-  p {
-    @apply text-text-secondary leading-relaxed mb-3;
-  }
-
-  a {
-    @apply text-text underline decoration-border underline-offset-[3px] decoration-1 transition-colors duration-150;
-  }
-
-  a:hover {
-    color: var(--accent);
-    text-decoration-color: var(--accent);
-  }
-
-  hr {
-    @apply border-border my-10;
-  }
-
-  ul, ol {
-    @apply pl-5 mb-4;
-  }
-
-  li {
-    @apply mb-1.5 text-text-secondary;
-  }
-
-  table {
-    @apply w-full text-sm mb-6;
-    border-collapse: collapse;
-  }
-
-  thead {
-    @apply border-b-2 border-border;
-  }
-
-  th {
-    @apply text-left text-xs font-semibold uppercase tracking-wider text-text-muted p-2;
-  }
-
-  td {
-    @apply p-2 border-b border-border text-text-secondary;
-  }
-
-  td strong {
-    color: var(--accent);
-  }
-
-  tbody tr:hover {
-    background: var(--surface);
-  }
 }
 
 @layer components {
-  /* ── Card ── */
   .card {
-    @apply rounded-lg border border-border p-5 transition-all duration-200;
+    @apply rounded-lg border border-border p-6 transition-all duration-300 ease-out;
   }
   .card:hover {
-    @apply border-accent;
+    @apply border-accent shadow-sm;
     background: var(--surface);
+    transform: translateY(-2px);
   }
 
-  /* ── Badge ── */
   .badge {
-    @apply inline-block text-xs font-medium uppercase tracking-wide px-2 py-0.5 rounded;
+    @apply inline-block text-[11px] font-medium uppercase tracking-widest px-2.5 py-1 rounded;
     background: var(--accent-soft);
     color: var(--accent);
   }
 
-  /* ── Section ── */
-  .section {
-    @apply mb-12;
-  }
-
-  /* ── Muted text ── */
-  .muted {
-    @apply text-sm text-text-muted;
-  }
-
-  /* ── Desc text ── */
-  .desc {
-    @apply text-sm text-text-muted leading-relaxed mb-1.5;
-  }
-
-  /* ── Separator ── */
-  .separator {
-    @apply border-t border-border my-10;
-  }
-
-  /* ── Logo wall ── */
-  .logo-wall {
-    @apply flex flex-wrap gap-5 py-3;
-  }
-  .logo-wall span {
-    @apply text-xs text-text-muted uppercase tracking-wider;
-  }
-
-  /* ── Chip grid ── */
-  .chip-grid {
-    @apply flex flex-wrap gap-1.5;
-  }
-
-  /* ── Featured grid ── */
-  .featured-grid {
-    @apply grid grid-cols-1 sm:grid-cols-2 gap-3;
-  }
-
-  /* ── Post list ── */
-  .post-list {
-    @apply list-none p-0 space-y-0;
-  }
-  .post-list a {
-    @apply flex gap-5 items-baseline py-3 border-b border-border no-underline transition-colors;
-  }
-  .post-list a:hover {
-    color: var(--accent);
-  }
-  .post-list .date {
-    @apply text-xs font-mono text-text-muted tabular-nums whitespace-nowrap;
-  }
-  .post-list .title {
-    @apply font-medium;
-  }
-
-  /* ── Reveal ── */
-  .reveal {
-    @apply opacity-0 translate-y-4;
-  }
-
-  /* ── Chip ── */
   .chip {
-    @apply text-sm px-3 py-1 border border-border rounded-md text-text-muted transition-colors duration-150 cursor-pointer;
+    @apply text-[13px] px-3 py-1.5 border border-border rounded-full transition-all duration-200 cursor-pointer;
+    color: var(--text-muted);
     background: none;
   }
   .chip:hover, .chip.active {
-    @apply border-accent text-accent;
+    @apply border-accent;
+    color: var(--accent);
   }
+
+  .section { @apply mb-16; }
+  .muted { @apply text-sm; color: var(--text-muted); }
+  .desc { @apply text-[15px] leading-relaxed mb-2; color: var(--text-muted); }
+
+  .reveal { @apply opacity-0 translate-y-3; }
+
+  .chip-grid { @apply flex flex-wrap gap-2; }
+  .featured-grid { @apply grid grid-cols-1 sm:grid-cols-2 gap-4; }
+
+  .logo-wall { @apply flex flex-wrap gap-6 py-3; }
+  .logo-wall span { @apply text-xs uppercase tracking-widest; color: var(--text-muted); }
 }

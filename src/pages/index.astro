@@ -8,49 +8,61 @@ const posts = (await getCollection('thinking'))
 ---
 
 <BaseLayout>
-  <section class="mb-12">
-    <p class="text-lg leading-relaxed text-text-secondary max-w-[600px]">
+  <!-- Hero — à la Matthew Strom -->
+  <section class="mb-20">
+    <p class="text-[22px] md:text-[26px] font-light leading-[1.5] text-text-secondary" style="font-family: var(--font-serif);">
       Ici je partage ce que j'observe au quotidien dans la construction et l'immobilier en Suisse — rénovation énergétique, gestion de chantier, réglementation, valorisation.
     </p>
   </section>
 
-  <hr class="border-border mb-10" />
-
-  <section class="mb-14 reveal">
-    <h2 class="text-2xl font-semibold tracking-tight mb-6">Dernières réflexions</h2>
-    <ul class="space-y-0">
+  <!-- Dernières réflexions -->
+  <section class="mb-20 reveal">
+    <h2 class="text-[13px] font-semibold uppercase tracking-widest text-text-muted mb-8">Dernières réflexions</h2>
+    <div class="space-y-6">
       {posts.slice(0, 5).map((post) => (
-        <li>
-          <a href={`/reflexions/${post.id}`} class="group flex gap-5 items-baseline py-3 border-b border-border no-underline transition-colors hover:text-accent">
-            <span class="text-xs font-mono text-text-muted tabular-nums whitespace-nowrap">
-              {post.data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: '2-digit' })}
-            </span>
-            <span class="font-medium group-hover:text-accent transition-colors">{post.data.title}</span>
-          </a>
-        </li>
+        <a href={`/reflexions/${post.id}`} class="group block no-underline">
+          <p class="text-[12px] font-mono text-text-muted mb-1">
+            {post.data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: 'long' })}
+          </p>
+          <h3 class="text-lg font-medium text-text group-hover:text-accent transition-colors leading-snug" style="font-family: var(--font-serif);">
+            {post.data.title}
+          </h3>
+          <p class="text-[14px] text-text-muted mt-1 line-clamp-2">{post.data.description}</p>
+        </a>
       ))}
-    </ul>
-    <p class="mt-4">
-      <a href="/reflexions" class="text-sm text-text-muted hover:text-accent transition-colors">Toutes les réflexions →</a>
+    </div>
+    <p class="mt-8">
+      <a href="/reflexions" class="text-[13px] text-text-muted no-underline hover:text-accent transition-colors">Toutes les réflexions →</a>
     </p>
   </section>
 
-  <hr class="border-border mb-10" />
-
+  <!-- Réalisations sélectionnées -->
   <section class="reveal">
-    <h2 class="text-2xl font-semibold tracking-tight mb-6">Réalisations</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-      <a href="/realisations" class="card no-underline group">
-        <h3 class="font-semibold text-text group-hover:text-accent transition-colors">Expertise technique <span class="text-text-muted font-normal">· 2025</span></h3>
-        <p class="text-sm text-text-muted mt-1">CECB E → B, -84% de consommation.</p>
+    <h2 class="text-[13px] font-semibold uppercase tracking-widest text-text-muted mb-8">Réalisations sélectionnées</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <a href="/realisations" class="card group no-underline">
+        <p class="text-[12px] font-mono text-text-muted mb-2">2025</p>
+        <h3 class="font-medium text-text group-hover:text-accent transition-colors mb-1">Expertise technique</h3>
+        <p class="text-[14px] text-text-muted">CECB E → B · -84% de consommation énergétique</p>
       </a>
-      <a href="/realisations" class="card no-underline group">
-        <h3 class="font-semibold text-text group-hover:text-accent transition-colors">The Ivy | Malagnou <span class="text-text-muted font-normal">· 2023</span></h3>
-        <p class="text-sm text-text-muted mt-1">10 appartements très haut standing, Chêne-Bougeries.</p>
+      <a href="/realisations" class="card group no-underline">
+        <p class="text-[12px] font-mono text-text-muted mb-2">2023</p>
+        <h3 class="font-medium text-text group-hover:text-accent transition-colors mb-1">The Ivy | Malagnou</h3>
+        <p class="text-[14px] text-text-muted">10 appartements très haut standing · THPE</p>
+      </a>
+      <a href="/realisations" class="card group no-underline">
+        <p class="text-[12px] font-mono text-text-muted mb-2">2019</p>
+        <h3 class="font-medium text-text group-hover:text-accent transition-colors mb-1">Étoile-Palettes</h3>
+        <p class="text-[14px] text-text-muted">280 logements · Rénovation en site occupé</p>
+      </a>
+      <a href="/realisations" class="card group no-underline">
+        <p class="text-[12px] font-mono text-text-muted mb-2">2017</p>
+        <h3 class="font-medium text-text group-hover:text-accent transition-colors mb-1">Vaudoise Aréna</h3>
+        <p class="text-[14px] text-text-muted">9'600 places · Centre Sportif de Malley</p>
       </a>
     </div>
-    <p class="mt-4">
-      <a href="/realisations" class="text-sm text-text-muted hover:text-accent transition-colors">Toutes les réalisations →</a>
+    <p class="mt-8">
+      <a href="/realisations" class="text-[13px] text-text-muted no-underline hover:text-accent transition-colors">Toutes les réalisations →</a>
     </p>
   </section>
 </BaseLayout>
