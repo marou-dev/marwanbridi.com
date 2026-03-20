@@ -15,7 +15,7 @@ import '../styles/global.css';
 ---
 
 <!doctype html>
-<html lang="fr" class="scroll-smooth">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,62 +41,52 @@ import '../styles/global.css';
       })();
     </script>
   </head>
-  <body class="bg-bg text-text font-sans min-h-screen antialiased">
+  <body class="bg-bg text-text min-h-screen" style="font-family: var(--sans);">
 
-    <!-- Single-column centered layout à la Matthew Strom -->
-    <div class="mx-auto max-w-[680px] px-6 py-12 md:py-20">
+    <div class="mx-auto max-w-[640px] px-5 md:px-0 py-10 md:py-16">
 
-      <!-- Header -->
-      <header class="flex items-center justify-between mb-16">
-        <div class="flex items-center gap-4">
-          <img src="/marwan-bridi.png" alt="Marwan Bridi" class="w-11 h-11 rounded-full object-cover" />
-          <a href="/" class="text-[15px] font-semibold tracking-tight no-underline text-text hover:text-accent transition-colors">Marwan Bridi</a>
-        </div>
-        <nav class="flex items-center gap-5">
+      <!-- Nav — Matthew Strom style: name left, links right -->
+      <nav class="flex items-center justify-between mb-16 md:mb-20">
+        <a href="/" class="flex items-center gap-3 no-underline group">
+          <img src="/marwan-bridi.png" alt="" class="w-9 h-9 rounded-full object-cover" />
+          <span class="text-sm font-semibold tracking-tight text-text group-hover:text-accent transition-colors">Marwan Bridi</span>
+        </a>
+        <div class="flex items-center gap-4 md:gap-5">
           <a href="/reflexions" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">Réflexions</a>
           <a href="/realisations" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">Réalisations</a>
           <a href="/parcours" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">Parcours</a>
-          <button class="text-[13px] text-text-muted hover:text-text transition-colors ml-2" id="theme-toggle" aria-label="Thème">
+          <button class="text-[13px] text-text-muted hover:text-text transition-colors" id="theme-toggle" aria-label="Thème">
             <span id="theme-icon">☀</span>
           </button>
-        </nav>
-      </header>
+        </div>
+      </nav>
 
-      <!-- Content -->
       <main>
         <slot />
       </main>
 
-      <!-- Footer -->
-      <footer class="mt-24 pt-8 border-t border-border flex items-center justify-between">
+      <!-- Footer — minimal -->
+      <footer class="mt-20 md:mt-28 pt-6 border-t flex justify-between items-center" style="border-color: var(--border);">
         <a href="https://www.linkedin.com/in/mbridi/" target="_blank" rel="noopener" class="text-[13px] text-text-muted no-underline hover:text-accent transition-colors">LinkedIn ↗</a>
-        <p class="text-[12px] text-text-muted">Pas de tracking. Pas de cookies.</p>
+        <span class="text-[11px] text-text-muted">Pas de tracking · Pas de cookies</span>
       </footer>
     </div>
 
-    <!-- Theme toggle -->
     <script is:inline>
       const btn = document.getElementById('theme-toggle');
       const icon = document.getElementById('theme-icon');
       function updateTheme() {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        icon.textContent = isDark ? '☾' : '☀';
+        icon.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '☾' : '☀';
       }
       btn.addEventListener('click', () => {
         const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        if (isDark) {
-          document.documentElement.removeAttribute('data-theme');
-          localStorage.setItem('theme', 'light');
-        } else {
-          document.documentElement.setAttribute('data-theme', 'dark');
-          localStorage.setItem('theme', 'dark');
-        }
+        if (isDark) { document.documentElement.removeAttribute('data-theme'); localStorage.setItem('theme', 'light'); }
+        else { document.documentElement.setAttribute('data-theme', 'dark'); localStorage.setItem('theme', 'dark'); }
         updateTheme();
       });
       updateTheme();
     </script>
 
-    <!-- GSAP + Lenis -->
     <script>
       import { gsap } from 'gsap';
       import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -116,10 +106,10 @@ import '../styles/global.css';
       });
 
       const path = window.location.pathname;
-      document.querySelectorAll('nav a').forEach((a) => {
+      document.querySelectorAll('nav a:not(:first-child)').forEach((a) => {
         const href = a.getAttribute('href');
         if (href === path || (href !== '/' && path.startsWith(href || ''))) {
-          a.classList.add('!text-text', 'font-medium');
+          a.classList.add('!text-text');
         }
       });
     </script>

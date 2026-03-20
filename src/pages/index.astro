@@ -8,61 +8,63 @@ const posts = (await getCollection('thinking'))
 ---
 
 <BaseLayout>
-  <!-- Hero — à la Matthew Strom -->
-  <section class="mb-20">
-    <p class="text-[22px] md:text-[26px] font-light leading-[1.5] text-text-secondary" style="font-family: var(--font-serif);">
-      Ici je partage ce que j'observe au quotidien dans la construction et l'immobilier en Suisse — rénovation énergétique, gestion de chantier, réglementation, valorisation.
+  <!-- Intro — serif, light weight, one statement -->
+  <section class="mb-20 md:mb-24">
+    <p class="text-xl md:text-2xl leading-relaxed" style="font-family: var(--serif); color: var(--text-secondary);">
+      Ingénieur civil et expert immobilier à Genève. Ici je partage ce que j'observe dans la construction et l'immobilier en Suisse — rénovation énergétique, gestion de chantier, réglementation, valorisation.
     </p>
   </section>
 
-  <!-- Dernières réflexions -->
-  <section class="mb-20 reveal">
-    <h2 class="text-[13px] font-semibold uppercase tracking-widest text-text-muted mb-8">Dernières réflexions</h2>
-    <div class="space-y-6">
+  <!-- Latest writing -->
+  <section class="mb-20 md:mb-24 reveal">
+    <p class="section-header">Dernières réflexions</p>
+    <div class="space-y-7">
       {posts.slice(0, 5).map((post) => (
         <a href={`/reflexions/${post.id}`} class="group block no-underline">
-          <p class="text-[12px] font-mono text-text-muted mb-1">
+          <span class="text-xs tracking-wide" style="font-family: var(--mono); color: var(--text-muted);">
             {post.data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: 'long' })}
-          </p>
-          <h3 class="text-lg font-medium text-text group-hover:text-accent transition-colors leading-snug" style="font-family: var(--font-serif);">
+          </span>
+          <h3 class="text-lg font-medium leading-snug mt-1 group-hover:text-accent transition-colors" style="font-family: var(--serif); color: var(--text); letter-spacing: -0.01em;">
             {post.data.title}
           </h3>
-          <p class="text-[14px] text-text-muted mt-1 line-clamp-2">{post.data.description}</p>
+          <p class="text-sm mt-1.5 line-clamp-2" style="color: var(--text-muted);">
+            {post.data.description}
+          </p>
         </a>
       ))}
     </div>
-    <p class="mt-8">
-      <a href="/reflexions" class="text-[13px] text-text-muted no-underline hover:text-accent transition-colors">Toutes les réflexions →</a>
-    </p>
+    <a href="/reflexions" class="inline-block mt-8 text-[13px] no-underline transition-colors" style="color: var(--text-muted);" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">
+      Toutes les réflexions →
+    </a>
   </section>
 
-  <!-- Réalisations sélectionnées -->
+  <!-- Selected projects -->
   <section class="reveal">
-    <h2 class="text-[13px] font-semibold uppercase tracking-widest text-text-muted mb-8">Réalisations sélectionnées</h2>
+    <p class="section-header">Réalisations sélectionnées</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <a href="/realisations" class="card group no-underline">
-        <p class="text-[12px] font-mono text-text-muted mb-2">2025</p>
-        <h3 class="font-medium text-text group-hover:text-accent transition-colors mb-1">Expertise technique</h3>
-        <p class="text-[14px] text-text-muted">CECB E → B · -84% de consommation énergétique</p>
+        <span class="text-xs" style="font-family: var(--mono); color: var(--text-muted);">2025</span>
+        <h3 class="font-semibold mt-2 group-hover:text-accent transition-colors" style="color: var(--text);">Expertise technique</h3>
+        <p class="text-sm mt-1" style="color: var(--text-muted);">CECB E → B · -84% consommation</p>
       </a>
       <a href="/realisations" class="card group no-underline">
-        <p class="text-[12px] font-mono text-text-muted mb-2">2023</p>
-        <h3 class="font-medium text-text group-hover:text-accent transition-colors mb-1">The Ivy | Malagnou</h3>
-        <p class="text-[14px] text-text-muted">10 appartements très haut standing · THPE</p>
+        <span class="text-xs" style="font-family: var(--mono); color: var(--text-muted);">2023</span>
+        <h3 class="font-semibold mt-2 group-hover:text-accent transition-colors" style="color: var(--text);">The Ivy | Malagnou</h3>
+        <p class="text-sm mt-1" style="color: var(--text-muted);">10 appts très haut standing · THPE</p>
       </a>
       <a href="/realisations" class="card group no-underline">
-        <p class="text-[12px] font-mono text-text-muted mb-2">2019</p>
-        <h3 class="font-medium text-text group-hover:text-accent transition-colors mb-1">Étoile-Palettes</h3>
-        <p class="text-[14px] text-text-muted">280 logements · Rénovation en site occupé</p>
+        <span class="text-xs" style="font-family: var(--mono); color: var(--text-muted);">2019</span>
+        <h3 class="font-semibold mt-2 group-hover:text-accent transition-colors" style="color: var(--text);">Étoile-Palettes</h3>
+        <p class="text-sm mt-1" style="color: var(--text-muted);">280 logements · Rénovation en site occupé</p>
       </a>
       <a href="/realisations" class="card group no-underline">
-        <p class="text-[12px] font-mono text-text-muted mb-2">2017</p>
-        <h3 class="font-medium text-text group-hover:text-accent transition-colors mb-1">Vaudoise Aréna</h3>
-        <p class="text-[14px] text-text-muted">9'600 places · Centre Sportif de Malley</p>
+        <span class="text-xs" style="font-family: var(--mono); color: var(--text-muted);">2017</span>
+        <h3 class="font-semibold mt-2 group-hover:text-accent transition-colors" style="color: var(--text);">Vaudoise Aréna</h3>
+        <p class="text-sm mt-1" style="color: var(--text-muted);">9'600 places · Centre Sportif de Malley</p>
       </a>
     </div>
-    <p class="mt-8">
-      <a href="/realisations" class="text-[13px] text-text-muted no-underline hover:text-accent transition-colors">Toutes les réalisations →</a>
-    </p>
+    <a href="/realisations" class="inline-block mt-8 text-[13px] no-underline transition-colors" style="color: var(--text-muted);" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">
+      Toutes les réalisations →
+    </a>
   </section>
 </BaseLayout>

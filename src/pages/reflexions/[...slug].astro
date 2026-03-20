@@ -16,38 +16,22 @@ const { Content } = await render(post);
 
 <BaseLayout title={`${post.data.title} — Marwan Bridi`} description={post.data.description}>
   <article>
-    <!-- Article header — Maggie Appleton style: serif title, generous spacing -->
-    <header class="mb-12">
-      <p class="text-[12px] font-mono text-text-muted mb-4">
+    <header class="mb-10">
+      <p class="text-xs tracking-wide mb-4" style="font-family: var(--mono); color: var(--text-muted);">
         {post.data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: 'long', day: 'numeric' })}
-        {post.data.tags && <span class="ml-2">· {post.data.tags.join(' · ')}</span>}
+        {post.data.tags && <span> · {post.data.tags.join(' · ')}</span>}
       </p>
-      <h1 class="text-3xl md:text-4xl font-medium leading-tight tracking-tight" style="font-family: var(--font-serif);">
+      <h1 class="text-2xl md:text-[2rem] font-medium leading-tight tracking-tight" style="font-family: var(--serif); color: var(--text);">
         {post.data.title}
       </h1>
     </header>
 
-    <!-- Article body — prose with good rhythm -->
-    <div class="
-      prose prose-lg max-w-none
-      prose-p:text-text-secondary prose-p:leading-[1.8] prose-p:text-[16px]
-      prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-text
-      prose-h2:text-xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:pt-8 prose-h2:border-t prose-h2:border-border
-      prose-h3:text-base prose-h3:mt-8 prose-h3:mb-3
-      prose-a:text-text prose-a:decoration-border prose-a:underline-offset-[3px] hover:prose-a:text-accent hover:prose-a:decoration-accent
-      prose-strong:text-text prose-strong:font-semibold
-      prose-blockquote:border-l-2 prose-blockquote:border-accent prose-blockquote:text-text-muted prose-blockquote:italic prose-blockquote:pl-5
-      prose-li:text-text-secondary prose-li:text-[16px]
-      prose-code:text-text prose-code:bg-surface prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
-      prose-table:text-sm
-      prose-th:text-[11px] prose-th:uppercase prose-th:tracking-widest prose-th:text-text-muted prose-th:font-semibold prose-th:border-b-2 prose-th:border-border
-      prose-td:border-b prose-td:border-border prose-td:text-text-secondary
-    ">
+    <div class="article-body">
       <Content />
     </div>
   </article>
 
-  <div class="mt-16 pt-8 border-t border-border">
-    <a href="/reflexions" class="text-[13px] text-text-muted no-underline hover:text-accent transition-colors">← Toutes les réflexions</a>
+  <div class="mt-14 pt-6 border-t" style="border-color: var(--border);">
+    <a href="/reflexions" class="text-[13px] no-underline transition-colors" style="color: var(--text-muted);" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">← Toutes les réflexions</a>
   </div>
 </BaseLayout>

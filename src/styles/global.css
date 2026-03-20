@@ -2,17 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ══════════════════════════════════════════════
+   Design: Matthew Strom (home) + Craig Mod (articles)
+   Fonts: Inter (sans) + Newsreader (serif)
+   ══════════════════════════════════════════════ */
+
 @layer base {
   :root {
     --bg: #fafaf7;
-    --surface: #f2f1ec;
+    --surface: #f0efeb;
     --text: #1a1a1a;
     --text-secondary: #3a3a3a;
     --text-muted: #7a7a72;
     --accent: #9c4a2e;
     --accent-soft: rgba(156, 74, 46, 0.06);
     --border: #e2e1dc;
-    --font-serif: 'Newsreader', Georgia, serif;
+    --serif: 'Newsreader', 'Palatino Linotype', Georgia, serif;
+    --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: 'JetBrains Mono', Menlo, monospace;
   }
 
   [data-theme="dark"] {
@@ -27,52 +34,130 @@
   }
 
   html {
+    font-family: var(--sans);
+    font-size: clamp(16px, 1.8vw, 18px);
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--bg);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   }
 
   ::selection {
     background: var(--accent-soft);
     color: var(--accent);
   }
+
+  /* ── Prose reset for non-article pages ── */
+  h2 { @apply mt-10 mb-4; font-family: var(--sans); font-size: clamp(1.2rem, 2vw, 1.4rem); font-weight: 600; letter-spacing: -0.01em; color: var(--text); }
+  h3 { @apply mt-6 mb-2; font-family: var(--sans); font-size: 1rem; font-weight: 600; color: var(--text); }
+  p { @apply mb-4; color: var(--text-secondary); line-height: 1.65; }
+  a { color: var(--text); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; text-decoration-color: var(--border); transition: color 0.15s, text-decoration-color 0.15s; }
+  a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+  hr { border: none; border-top: 1px solid var(--border); @apply my-10; }
+  ul, ol { @apply pl-5 mb-4; }
+  li { @apply mb-1; color: var(--text-secondary); }
+
+  /* ── Tables (à la Strom) ── */
+  table { @apply w-full text-sm my-6; border-collapse: collapse; }
+  thead { border-bottom: 2px solid var(--border); }
+  th { @apply text-left text-xs font-semibold uppercase tracking-widest p-2.5; color: var(--text-muted); }
+  td { @apply p-2.5 border-b; border-color: var(--border); color: var(--text-secondary); }
+  td strong { color: var(--accent); }
+  tbody tr:hover { background: var(--surface); }
 }
 
 @layer components {
-  .card {
-    @apply rounded-lg border border-border p-6 transition-all duration-300 ease-out;
-  }
-  .card:hover {
-    @apply border-accent shadow-sm;
-    background: var(--surface);
-    transform: translateY(-2px);
+  /* ── Section header (Matthew Strom style) ── */
+  .section-header {
+    font-family: var(--sans);
+    @apply text-xs font-semibold uppercase tracking-[0.15em] mb-8;
+    color: var(--text-muted);
   }
 
+  /* ── Card ── */
+  .card {
+    @apply border rounded-lg p-5 transition-all duration-300;
+    border-color: var(--border);
+  }
+  .card:hover {
+    border-color: var(--accent);
+    background: var(--surface);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+
+  /* ── Badge ── */
   .badge {
     @apply inline-block text-[11px] font-medium uppercase tracking-widest px-2.5 py-1 rounded;
     background: var(--accent-soft);
     color: var(--accent);
   }
 
+  /* ── Chip ── */
   .chip {
-    @apply text-[13px] px-3 py-1.5 border border-border rounded-full transition-all duration-200 cursor-pointer;
+    @apply text-[13px] px-3 py-1.5 border rounded-full transition-all duration-200 cursor-pointer;
+    border-color: var(--border);
     color: var(--text-muted);
     background: none;
   }
   .chip:hover, .chip.active {
-    @apply border-accent;
+    border-color: var(--accent);
     color: var(--accent);
   }
 
+  /* ── Utility ── */
   .section { @apply mb-16; }
   .muted { @apply text-sm; color: var(--text-muted); }
   .desc { @apply text-[15px] leading-relaxed mb-2; color: var(--text-muted); }
-
-  .reveal { @apply opacity-0 translate-y-3; }
-
+  .reveal { @apply opacity-0; transform: translateY(12px); }
   .chip-grid { @apply flex flex-wrap gap-2; }
-  .featured-grid { @apply grid grid-cols-1 sm:grid-cols-2 gap-4; }
-
   .logo-wall { @apply flex flex-wrap gap-6 py-3; }
   .logo-wall span { @apply text-xs uppercase tracking-widest; color: var(--text-muted); }
+
+  /* ── Article body (Craig Mod style) ── */
+  .article-body {
+    font-family: var(--serif);
+    font-size: clamp(1rem, 1.8vw, 1.1rem);
+    line-height: 1.75;
+    color: var(--text-secondary);
+  }
+  .article-body h2 {
+    font-family: var(--sans);
+    font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    @apply mt-14 mb-4 pt-8 border-t;
+    border-color: var(--border);
+  }
+  .article-body h2:first-child { @apply border-t-0 pt-0; }
+  .article-body h3 {
+    font-family: var(--sans);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text);
+    @apply mt-8 mb-3;
+  }
+  .article-body p { @apply mb-5; }
+  .article-body strong { color: var(--text); font-weight: 600; }
+  .article-body a { color: var(--text); text-decoration-color: var(--accent); }
+  .article-body a:hover { color: var(--accent); }
+  .article-body blockquote {
+    @apply border-l-2 pl-5 my-6 italic;
+    border-color: var(--accent);
+    color: var(--text-muted);
+  }
+  .article-body ul, .article-body ol { @apply my-4 pl-6; }
+  .article-body li { @apply mb-2; }
+  .article-body code {
+    font-family: var(--mono);
+    @apply text-sm px-1.5 py-0.5 rounded;
+    background: var(--surface);
+    color: var(--text);
+  }
+  .article-body table { @apply w-full text-sm my-8; }
+  .article-body th { @apply text-xs uppercase tracking-widest font-semibold p-3 text-left; color: var(--text-muted); border-bottom: 2px solid var(--border); }
+  .article-body td { @apply p-3; border-bottom: 1px solid var(--border); }
+  .article-body td strong { color: var(--accent); }
 }
