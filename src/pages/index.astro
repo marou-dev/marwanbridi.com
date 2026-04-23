@@ -5,9 +5,33 @@ import { getCollection } from 'astro:content';
 const posts = (await getCollection('thinking'))
   .filter((post) => !post.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Marwan Bridi",
+    "url": "https://marwanbridi.com/",
+    "jobTitle": "Project Manager Innovation",
+    "description": "Ingénieur civil et expert immobilier à Genève. Construction, rénovation énergétique, innovation, réglementation, valorisation immobilière.",
+    "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" },
+    "sameAs": ["https://www.linkedin.com/in/mbridi/"],
+    "knowsAbout": [
+      "Construction immobilière",
+      "Rénovation énergétique",
+      "Gestion de chantier",
+      "Réglementation immobilière suisse",
+      "Valorisation immobilière",
+      "Expertise technique CECB",
+      "LDTR Genève",
+      "Bâle III financement immobilier"
+    ]
+  }
+};
 ---
 
-<BaseLayout>
+<BaseLayout jsonLd={jsonLd}>
   <!-- Intro — serif, light weight, one statement -->
   <section class="mb-20 md:mb-24">
     <p class="text-xl md:text-2xl leading-relaxed" style="font-family: var(--serif); color: var(--text);">
@@ -16,7 +40,7 @@ const posts = (await getCollection('thinking'))
   </section>
 
   <!-- Latest writing -->
-  <section class="mb-20 md:mb-24 reveal">
+  <section class="mb-20 md:mb-24">
     <p class="section-header">Dernières réflexions</p>
     <div class="space-y-7">
       {posts.slice(0, 5).map((post) => (

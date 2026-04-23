@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="100%" style="max-width:600px;font-family:Inter,system-ui,sans-serif">
+  <!-- Title -->
+  <text x="0" y="18" fill="currentColor" font-size="14" font-weight="600">Structure de capital type -- promotion 15M CHF</text>
+
+  <!-- Stacked bar -->
+  <g transform="translate(0,34)">
+    <!-- Dette senior 60% -->
+    <rect x="0" y="0" width="360" height="40" rx="4" fill="#d4d4d4"/>
+    <text x="180" y="24" text-anchor="middle" fill="#1a1a1a" font-size="12" font-weight="500">Dette senior 60% (9M)</text>
+
+    <!-- Mezzanine 17.5% -->
+    <rect x="360" y="0" width="105" height="40" rx="4" fill="#e8a87c"/>
+    <text x="412" y="18" text-anchor="middle" fill="#1a1a1a" font-size="10" font-weight="500">Mezzanine</text>
+    <text x="412" y="32" text-anchor="middle" fill="#1a1a1a" font-size="10">17.5% (2.6M)</text>
+
+    <!-- Fonds propres 22.5% -->
+    <rect x="465" y="0" width="135" height="40" rx="4" fill="#9c4a2e"/>
+    <text x="532" y="18" text-anchor="middle" fill="#fff" font-size="10" font-weight="500">Fonds propres</text>
+    <text x="532" y="32" text-anchor="middle" fill="#fff" font-size="10">22.5% (3.4M)</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(0,94)">
+    <rect x="0" y="0" width="12" height="12" rx="2" fill="#d4d4d4"/>
+    <text x="18" y="10" fill="currentColor" font-size="10">Dette senior (banque)</text>
+
+    <rect x="180" y="0" width="12" height="12" rx="2" fill="#e8a87c"/>
+    <text x="198" y="10" fill="currentColor" font-size="10">Mezzanine retail</text>
+
+    <rect x="340" y="0" width="12" height="12" rx="2" fill="#9c4a2e"/>
+    <text x="358" y="10" fill="currentColor" font-size="10">Fonds propres</text>
+  </g>
+</svg>

@@ -160,4 +160,11 @@
   .article-body th { @apply text-xs uppercase tracking-widest font-semibold p-3 text-left; color: var(--text-muted); border-bottom: 2px solid var(--border); }
   .article-body td { @apply p-3; border-bottom: 1px solid var(--border); }
   .article-body td strong { color: var(--accent); }
+
+  /* FAQ accordion */
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item[open] .faq-chevron { transform: rotate(90deg); }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::marker { display: none; content: ''; }
 }

@@ -3,6 +3,17 @@ title: "LDTR : le calcul à faire avant de rénover à Genève"
 date: 2025-09-01
 description: "La LDTR plafonne les loyers après rénovation. Ce que ça change concrètement pour un propriétaire qui veut rénover — et pourquoi beaucoup se trompent."
 tags: [immobilier, réglementation, genève, rénovation, juridique]
+faq:
+  - q: "Comment savoir si ma rénovation est soumise à la LDTR à Genève ?"
+    a: "Toute rénovation susceptible d'entraîner une hausse de loyer dans un immeuble locatif à Genève est soumise à la LDTR, tant que le taux de vacance reste inférieur à 1%. Sont exemptés : les appartements de plus de 8 pièces, le standing exceptionnel, et les constructions neuves sur terrain vierge."
+  - q: "Que se passe-t-il si je rénove sans autorisation LDTR à Genève ?"
+    a: "Sans autorisation du Département du territoire, la hausse de loyer peut être contestée par le locataire. Les loyers sont soumis à un contrôle pendant 3 à 10 ans après travaux. L'État calcule la hausse admissible selon une formule réglementaire — le propriétaire ne fixe pas le nouveau loyer."
+  - q: "Quel rendement attendre d'une rénovation sous LDTR à Genève ?"
+    a: "Le rendement est plafonné par le taux de référence OFL (actuellement 1.75%) + amortissement + entretien forfaitaire. Pour un investissement de 500'000 CHF en travaux énergétiques sur 20 logements, la hausse admissible est de 50 à 80 CHF/mois par logement sur 25 ans. Le rendement est réel mais modeste, et bloqué pendant la période de contrôle de 3 à 10 ans."
+  - q: "Les subventions réduisent-elles la hausse de loyer admissible sous la LDTR ?"
+    a: "Oui. Si le canton subventionne 30% des travaux énergétiques, la hausse de loyer est calculée sur les 70% restants. L'investissement net du propriétaire étant moindre, la hausse admissible diminue proportionnellement."
+  - q: "Pourquoi 83% des immeubles genevois de plus de 40 ans n'ont jamais été rénovés ?"
+    a: "La LDTR plafonne les loyers post-travaux, ce qui réduit le rendement de l'investissement. Résultat : seulement 12% de probabilité de rénovation à Genève contre 31% à Zurich, et environ 600 millions de francs de projets annulés ou reportés par an selon l'étude FHNW 2025."
 ---
 
 À Genève, rénover un immeuble locatif n'est pas une décision purement technique ou financière. C'est d'abord une décision juridique. Le texte qui encadre tout s'appelle la LDTR — la Loi sur les Démolitions, Transformations et Rénovations.
@@ -13,7 +24,7 @@ Les grands institutionnels la connaissent bien. Mais pour les propriétaires pri
 
 Les chiffres sont parlants. Selon une étude de la FHNW (Haute École Spécialisée du Nord-Ouest de la Suisse) publiée fin 2025, **83% des immeubles genevois de plus de 40 ans n'ont jamais été modernisés** — un record suisse. À titre de comparaison, ce taux est de 48% à Bâle et 41% à Zurich.
 
-Le lien avec la LDTR est direct : la probabilité de rénovation à Genève n'est que de 12%, contre 31% à Zurich. Les propriétaires hésitent à investir parce que le retour est plafonné. Résultat : un parc vieillissant, des logements énergivores, et un écart de loyer de 33% entre anciens et nouveaux locataires — les premiers protégés par des loyers bas, les seconds confrontés aux prix du marché.
+Le lien avec la LDTR est direct : la probabilité de rénovation à Genève n'est que de 12%, contre 31% à Zurich. Pour comprendre ce que ça donne concrètement sur un immeuble, voir [le cas d'un bâtiment de 1952 à Lausanne](/reflexions/renovation-1952-suisse/). Les propriétaires hésitent à investir parce que le retour est plafonné. Résultat : un parc vieillissant, des logements énergivores, et un écart de loyer de 33% entre anciens et nouveaux locataires — les premiers protégés par des loyers bas, les seconds confrontés aux prix du marché.
 
 L'étude chiffre aussi le coût de cette inertie : environ 600 millions de francs de projets de construction annulés ou reportés, soit 11% des dépenses de construction du canton sur la période étudiée.
 
@@ -43,7 +54,7 @@ Pour un modèle DCF, c'est un paramètre critique : pendant toute la période de
 
 ## Le paradoxe de la rénovation énergétique
 
-C'est là que la situation devient contre-intuitive. La Suisse pousse massivement à la rénovation énergétique (MoPEC, plans climat cantonaux, CECB). Mais à Genève, la LDTR limite la capacité du propriétaire à rentabiliser cet investissement via les loyers.
+C'est là que la situation devient contre-intuitive. La Suisse pousse massivement à la rénovation énergétique (MoPEC, plans climat cantonaux, CECB) — et les [nouvelles limites carbone LCI 117-118](/reflexions/lci-117-118-carbone-geneve/) ajoutent une couche d'obligation supplémentaire. Mais à Genève, la LDTR limite la capacité du propriétaire à rentabiliser cet investissement via les loyers.
 
 Un propriétaire qui investit 500'000 CHF dans l'isolation thermique d'un immeuble de 20 logements pourra répercuter 100% de la part à plus-value — c'est le bon côté. Mais la hausse par logement sera peut-être de 50 à 80 CHF/mois, sur un amortissement de 25 ans. Le rendement de l'investissement est réel mais modeste, et bloqué pendant la période de contrôle.
 
@@ -68,3 +79,14 @@ Le bon réflexe avant toute rénovation à Genève :
 5. **Articuler avec les subventions** — le montant net subventionné change la hausse admissible
 
 La LDTR n'est pas un obstacle à la rénovation. C'est un cadre qui impose de faire ses calculs avant de signer les bons de commande — pas après. Les propriétaires qui l'intègrent dès la phase d'étude prennent de meilleures décisions. Les autres découvrent le plafond quand il est trop tard.
+
+## Cas pratique
+
+**Profil** : Propriétaire d'un immeuble de 12 logements à Plainpalais, construit en 1965. Loyer moyen actuel : 1'200 CHF/mois. État énergétique médiocre, CECB D.
+
+**Situation** : Le propriétaire envisage une rénovation de l'enveloppe thermique (ITE) et le remplacement de la chaudière mazout par un raccordement au CAD. Coût total estimé : 650'000 CHF, dont 450'000 CHF de travaux énergétiques (part à plus-value 100%) et 200'000 CHF de rénovation classique (part à plus-value 65%). Le canton accorde une subvention de 120'000 CHF sur les travaux énergétiques.
+
+**Impact LDTR** : La hausse admissible se calcule sur la base nette subventionnée. Travaux énergétiques : 450'000 − 120'000 = **330'000 CHF** répercutables à 100%. Travaux classiques : 200'000 × 65% = **130'000 CHF** répercutables. Total base de calcul : 460'000 CHF. Avec un taux OFL de 1.75%, un amortissement sur 25 ans et un entretien forfaitaire, la hausse annuelle admissible est d'environ 32'200 CHF, soit **224 CHF/mois par logement**. Le loyer passe de 1'200 à 1'424 CHF — une hausse de 18.7%, contrôlée pendant 10 ans. **Sans la subvention**, la hausse aurait été de 280 CHF/mois. Le propriétaire "perd" 56 CHF/mois par logement sur la durée de contrôle — un coût d'opportunité de **80'640 CHF** sur 10 ans pour l'ensemble de l'immeuble, partiellement compensé par les 120'000 CHF de subvention reçue.
+
+---
+*Sources : [LDTR — Loi sur les démolitions, transformations et rénovations](https://silgeneve.ch/legis/), [Étude FHNW — Taux de rénovation en Suisse (2025)](https://www.fhnw.ch/)*

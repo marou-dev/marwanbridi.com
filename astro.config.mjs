@@ -5,7 +5,15 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   site: 'https://marwanbridi.com',
-  integrations: [sitemap(), tailwind()],
+  integrations: [
+    sitemap({
+      serialize(item) {
+        item.lastmod = new Date();
+        return item;
+      },
+    }),
+    tailwind(),
+  ],
   markdown: {
     shikiConfig: { theme: 'github-dark' },
   },

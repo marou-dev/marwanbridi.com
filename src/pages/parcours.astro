@@ -1,8 +1,32 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Marwan Bridi",
+    "jobTitle": "Project Manager Innovation",
+    "url": "https://marwanbridi.com/parcours",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Swissroc Group Services SA",
+      "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" }
+    },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "EPFL", "description": "MAS Expert en immobilier" },
+      { "@type": "CollegeOrUniversity", "name": "HEIA-FR", "description": "CAS Expertise technique" },
+      { "@type": "CollegeOrUniversity", "name": "Université de Fribourg", "description": "CAS Droit de l'expertise" },
+      { "@type": "CollegeOrUniversity", "name": "ESTP Paris", "description": "Ingénieur génie civil" },
+      { "@type": "HighSchool", "name": "Phillips Academy Andover" }
+    ],
+    "knowsLanguage": ["fr", "en", "ar"]
+  }
+};
 ---
 
-<BaseLayout title="Parcours — Marwan Bridi">
+<BaseLayout title="Parcours — Marwan Bridi" jsonLd={jsonLd}>
   <section class="section">
     <h2>Parcours</h2>
     <p class="hero-subtitle">D'Andover à Genève — 15 ans à traverser toute la chaîne immobilière.</p>
@@ -58,38 +82,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <h3>Expérience</h3>
 
     <div class="card">
-      <h3>Swissroc Construction SA — Genève</h3>
-      <p class="desc">Responsable Achats · Depuis juin 2023</p>
-      <p class="desc">Swissroc est un groupe de 9 entités dans la construction et l'immobilier à Genève. J'ai d'abord piloté des projets en entreprise totale (appartements de luxe Chêne-Bougeries, villas mitoyennes), puis créé et structuré le pôle achats du groupe — stratégie, processus, management opérationnel.</p>
+      <h3>Swissroc Group Services SA — Genève</h3>
+      <p class="desc">Project Manager Innovation · Depuis 2023</p>
+      <p class="desc">Swissroc est un groupe de 9 entités dans la construction et l'immobilier à Genève. Après avoir piloté des projets en entreprise totale puis créé et structuré le pôle achats du groupe, je pilote aujourd'hui l'innovation au service de l'ensemble du groupe, rattaché au COO — digitalisation des processus, data, IA appliquée à la construction et à l'immobilier.</p>
     </div>
 
     <div class="card">
       <h3>Wüest Partner SA — Genève</h3>
-      <p class="desc">Consultant en immobilier · Avril 2020 — Mars 2021</p>
+      <p class="desc">Consultant en immobilier · 2020 — 2021</p>
       <p class="desc">Wüest Partner est la référence suisse en data et valorisation immobilière. Évaluation d'actifs résidentiels, commerciaux et industriels pour des institutionnels et des fonds FINMA. C'est là que j'ai appris à parler le langage des investisseurs — DCF, méthode du promoteur, comparaison — et à produire des analyses qui engagent des décisions à plusieurs dizaines de millions.</p>
     </div>
 
     <div class="card">
       <h3>Halter SA — Genève & Lausanne</h3>
-      <p class="desc">Chef de projet · Novembre 2018 — Avril 2020</p>
+      <p class="desc">Chef de projet · 2018 — 2020</p>
       <p class="desc">Halter est un développeur-constructeur majeur en Suisse. Rénovation de 280 logements en site occupé pour Patrimonium AG (Grand-Lancy). Rénovation de 500 m² de bureaux au Flon en totale autonomie — adjudications, finances, travaux, 3 mois de délai. Soumissions et adjudications CFC 27 pour un hôtel lifestyle Mobimo dans le quartier du Flon.</p>
     </div>
 
     <div class="card">
       <h3>Steiner SA (aujourd'hui Alpenda) — Prilly</h3>
-      <p class="desc">Conducteur de travaux · Septembre 2017 — Octobre 2018</p>
+      <p class="desc">Conducteur de travaux · 2017 — 2018</p>
       <p class="desc">Steiner est l'une des plus grandes entreprises générales de Suisse. Construction de la patinoire du Centre Sportif de Malley — phases SIA 41 à 52 sur l'Arena, en autonomie. En parallèle : rénovation et construction d'une école de 12 MCHF avec gestion de délais serrés.</p>
     </div>
 
     <div class="card">
       <h3>Kaufman & Broad — Marseille</h3>
-      <p class="desc">Assistant responsable technique · Été 2016</p>
+      <p class="desc">Assistant responsable technique · 2016</p>
       <p class="desc">Premier promoteur immobilier coté en France. Livraison et pré-visites d'un programme immobilier en autonomie — le premier contact avec la chaîne complète, du chantier au client final.</p>
     </div>
 
     <div class="card">
       <h3>Cardinal Edifice (NGE) — Cagnes-sur-Mer</h3>
-      <p class="desc">Conducteur de travaux stagiaire · Étés 2014 & 2015</p>
+      <p class="desc">Conducteur de travaux stagiaire · 2014 — 2015</p>
       <p class="desc">Construction de Polygone Riviera — 70'000 m², premier lifestyle mall de France, pour Unibail-Rodamco. Un chantier d'une échelle rare pour un stagiaire.</p>
     </div>
   </section>

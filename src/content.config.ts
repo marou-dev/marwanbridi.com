@@ -9,6 +9,8 @@ const thinking = defineCollection({
     description: z.string(),
     tags: z.array(z.string()).optional(),
     draft: z.boolean().default(false),
+    lang: z.string().default("fr"),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),
 });
 

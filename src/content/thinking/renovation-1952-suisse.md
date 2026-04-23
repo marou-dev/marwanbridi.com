@@ -3,9 +3,18 @@ title: "Ce qu'un immeuble de 1952 nous apprend sur la rénovation en Suisse"
 date: 2025-10-15
 description: "CECB E → B, 84% de réduction énergétique, 424'000 CHF d'investissement : retour d'expérience sur une expertise technique réelle à Lausanne."
 tags: [immobilier, rénovation, énergie, expertise, suisse]
+faq:
+  - q: "Combien coûte une rénovation énergétique complète d'un immeuble des années 50 en Suisse ?"
+    a: "Pour un immeuble de 12 logements à Lausanne (1952), l'investissement total est de 423'800 CHF pour passer de CECB E à B : 217'000 CHF d'ITE façades (280 CHF/m²), 65'000 CHF de raccordement CAD, et le solde en photovoltaïque et travaux annexes. TRI projet complet : 5.5%, économies annuelles : 23'539 CHF."
+  - q: "Comment améliorer son CECB de E à B en Suisse ?"
+    a: "Trois interventions combinées : ITE avec 16 cm d'isolant sur les façades (coefficient U de 1.72 à 0.18 W/m²K), remplacement de la chaudière mazout par un raccordement au chauffage à distance (émissions de 280 à 60 g CO₂/kWh), et PV dimensionné pour l'autoconsommation. Résultat : consommation de 203.4 à 31.3 kWh/m²/an (−84.6%), émissions de 53 à 1.7 tonnes CO₂/an (−96.7%)."
+  - q: "En combien de temps une rénovation énergétique est-elle rentable en Suisse ?"
+    a: "Sur un cas réel à Lausanne, le TRI projet complet est de 5.5% avec un temps de retour d'environ 18 ans. Le PV seul, dimensionné pour 80% d'autoconsommation après rénovation thermique, atteint un TRI de 7.5% et un retour en 12.8 ans. Dimensionné en maximisation avant rénovation, le TRI tombe à 3.2% et le retour passe à 23.8 ans."
+  - q: "Faut-il installer le solaire avant ou après la rénovation thermique ?"
+    a: "Après. Si on installe les panneaux avant la rénovation thermique, l'installation sera surdimensionnée pour les besoins réels. Dans ce cas d'étude, le PV dimensionné pour l'autoconsommation (80%) après rénovation donne un TRI de 7.5% contre 3.2% en maximisation — presque le double de performance économique."
 ---
 
-En Suisse, on estime que 1.5 million de bâtiments ont besoin d'un assainissement énergétique. La plupart datent des années 40 à 70 — construits avant que la moindre norme thermique n'existe. Et la plupart des propriétaires institutionnels ne savent pas par où commencer.
+En Suisse, on estime que 1.5 million de bâtiments ont besoin d'un assainissement énergétique. La plupart datent des années 40 à 70 — construits avant que la moindre norme thermique n'existe. Et la plupart des propriétaires institutionnels ne savent pas par où commencer — d'autant que le [cadre LDTR à Genève](/reflexions/ldtr-piege-renovation-geneve/) ajoute une couche de complexité réglementaire sur les loyers post-travaux.
 
 J'ai récemment réalisé une expertise technique complète sur un immeuble de 12 logements construit en 1952 à Lausanne, propriété d'une fondation de placement. Diagnostic de l'état existant, modélisation thermique, scénarios de rénovation, analyse financière. Voici ce que j'en retiens.
 
@@ -54,4 +63,15 @@ Investissement total : 423'800 CHF. Économies annuelles : 23'539 CHF. TRI proje
 
 **Troisième enseignement : le compromis technique est sous-estimé.** Traiter un pont thermique de dalle continue, naviguer la réglementation AEAI sur les matériaux isolants en Classe III, optimiser l'épaisseur pour respecter MoPEC sans sur-investir — c'est dans ces arbitrages que se joue la viabilité d'un projet de rénovation. Et ces arbitrages ne se trouvent pas dans un logiciel. Ils viennent de l'expérience terrain.
 
-La Suisse a besoin de rénover massivement son parc immobilier. Les normes sont là. Ce qui manque, ce sont des professionnels qui savent combiner l'analyse technique, la modélisation financière et le pragmatisme de chantier pour transformer ces obligations réglementaires en projets viables.
+La Suisse a besoin de rénover massivement son parc immobilier. Les normes sont là — et les [nouvelles exigences carbone cycle de vie](/reflexions/lci-117-118-carbone-geneve/) ne feront qu'accélérer la pression. Ce qui manque, ce sont des professionnels qui savent combiner l'analyse technique, la modélisation financière et le pragmatisme de chantier pour transformer ces obligations réglementaires en projets viables.
+
+## Cas pratique
+
+**Profil** : Fondation de placement propriétaire d'un immeuble de 12 logements construit en 1952 à Lausanne. Maçonnerie béton 20-25 cm sans isolation, chauffage mazout, CECB E.
+
+**Situation** : Consommation de **203.4 kWh/m²/an**, émissions de **53 tonnes CO₂/an**. Façades avec un coefficient U de 1.72 W/m²K (norme MoPEC rénovation : 0.20). Les menuiseries ont été remplacées entre 2015 et 2019 (gain de 11.8 kWh/m²/an), mais le reste de l'enveloppe n'a jamais été traité. La thermographie confirme que **68% des déperditions** viennent des façades, avec un pont thermique majeur sur 33 mètres linéaires de dalle continue (balcons/garages).
+
+**Impact** : Investissement de **423'800 CHF** réparti en trois interventions. ITE 16 cm sur 775 m² de façades : 217'000 CHF (U passe de 1.72 à 0.18). Raccordement CAD : 65'000 CHF (suppression mazout, émissions de 280 à 60 g CO₂/kWh). PV 55 panneaux 400 Wc dimensionné autoconsommation 80% : TRI 7.5%, retour 12.8 ans. Consommation finale : **31.3 kWh/m²/an** (−84.6%). Emissions : **1.7 t CO₂/an** (−96.7%). Classe CECB : **E vers B**. Economies annuelles : **23'539 CHF**. TRI global : **5.5%**.
+
+---
+*Sources : [Programme Bâtiments — Confédération et cantons](https://www.leprogrammebatiments.ch/fr/), [CECB — Certificat énergétique cantonal des bâtiments](https://www.cecb.ch/)*

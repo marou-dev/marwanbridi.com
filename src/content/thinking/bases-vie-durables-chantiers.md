@@ -3,9 +3,18 @@ title: "Bases-vie de chantier : le prochain levier durable dans la construction"
 date: 2025-07-10
 description: "Isolation, photovoltaïque, confort des ouvriers — comment les bases-vie de chantier deviennent un sujet de durabilité à part entière."
 tags: [construction, énergie, durabilité, chantier]
+faq:
+  - q: "Quel est le coefficient thermique des bases-vie de chantier actuelles ?"
+    a: "Les bases-vie standard ont un coefficient U de 0.57 W/m²K, équivalent à un bâtiment des années 60. Des versions améliorées atteignent U = 0.20 (laine de roche 110 mm) et haute performance U = 0.17 voire 0.14 avec triple vitrage et portes isolées."
+  - q: "Le photovoltaïque sur base-vie de chantier est-il rentable ?"
+    a: "Oui. L'autoconsommation directe (sans stockage) est immédiatement rentable pour l'éclairage et la bureautique. Des conteneurs autonomes combinant panneaux déployables, batteries et générateur diesel de secours ont été testés avec succès, permettant d'être opérationnel sans raccordement réseau."
+  - q: "Comment améliorer le confort des ouvriers sur chantier ?"
+    a: "Trois solutions concrètes : vestiaires chauffants pour sécher les vêtements, panneaux rayonnants infrarouges au plafond (chauffent les personnes, pas l'air), et capteurs d'ouverture sur portes/fenêtres qui coupent automatiquement le chauffage."
+  - q: "Quelles solutions durables ne fonctionnent pas sur les bases-vie de chantier ?"
+    a: "Les urinoirs sans eau (résultat sanitaire insuffisant), la récupération d'eau pluviale pour WC (investissement non amorti sur 2-3 ans), et la ventilation double flux (inutile avec des portes constamment ouvertes)."
 ---
 
-On parle beaucoup de rénovation énergétique des bâtiments, de bilans carbone, de labels Minergie. Mais il y a un angle mort dans la durabilité de la construction : les bases-vie de chantier. Ces containers dans lesquels les équipes passent leurs journées — vestiaires, réfectoires, bureaux — sont souvent les installations les plus énergivores et les moins confortables d'un projet.
+On parle beaucoup de rénovation énergétique des bâtiments, de [bilans carbone cycle de vie](/reflexions/lci-117-118-carbone-geneve/), de labels Minergie. Mais il y a un angle mort dans la durabilité de la construction : les bases-vie de chantier. Ces containers dans lesquels les équipes passent leurs journées — vestiaires, réfectoires, bureaux — sont souvent les installations les plus énergivores et les moins confortables d'un projet.
 
 C'est en train de changer.
 

@@ -1,8 +1,35 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Réalisations — Marwan Bridi",
+  "description": "Construction neuve, rénovation, évaluation, expertise — du terrain à l'analyse.",
+  "url": "https://marwanbridi.com/realisations",
+  "author": {
+    "@type": "Person",
+    "name": "Marwan Bridi",
+    "jobTitle": "Project Manager Innovation"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Expertise technique — Immeuble années 50, Lausanne" },
+      { "@type": "ListItem", "position": 2, "name": "Expertise juridique — LDTR et rénovation à Genève" },
+      { "@type": "ListItem", "position": 3, "name": "Expertise économique — Immeubles mixtes, Versoix" },
+      { "@type": "ListItem", "position": 4, "name": "Portefeuilles institutionnels — Valorisation DCF" },
+      { "@type": "ListItem", "position": 5, "name": "The Ivy | Malagnou — 10 appartements très haut standing" },
+      { "@type": "ListItem", "position": 6, "name": "Étoile-Palettes — 280 logements" },
+      { "@type": "ListItem", "position": 7, "name": "Moxy Lausanne City — Hôtel lifestyle, Quartier du Flon" },
+      { "@type": "ListItem", "position": 8, "name": "Vaudoise Aréna — Centre Sportif de Malley" },
+      { "@type": "ListItem", "position": 9, "name": "Polygone Riviera — 70'000 m²" }
+    ]
+  }
+};
 ---
 
-<BaseLayout title="Réalisations — Marwan Bridi">
+<BaseLayout title="Réalisations — Marwan Bridi" jsonLd={jsonLd}>
   <section class="section">
     <h2>Réalisations</h2>
     <p class="muted" style="margin-bottom: 2rem;">

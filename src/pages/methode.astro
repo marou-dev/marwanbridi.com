@@ -1,8 +1,21 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Méthode — Marwan Bridi",
+  "description": "Des outils simples, composables, en production. Obsidian, Claude Code, Python, n8n — du code qui tourne aujourd'hui.",
+  "url": "https://marwanbridi.com/methode",
+  "author": {
+    "@type": "Person",
+    "name": "Marwan Bridi",
+    "jobTitle": "Project Manager Innovation"
+  }
+};
 ---
 
-<BaseLayout title="Méthode — Marwan Bridi">
+<BaseLayout title="Méthode — Marwan Bridi" jsonLd={jsonLd}>
   <section class="section">
     <h2>Méthode</h2>
     <p class="hero-subtitle" style="margin-bottom: 2rem;">

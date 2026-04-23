@@ -12,13 +12,67 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+const publishedTime = post.data.date.toISOString().split('T')[0];
+const articleUrl = new URL(`/reflexions/${post.id}/`, Astro.site).href;
+
+const faqLd = post.data.faq ? {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": post.data.faq.map((item: { q: string; a: string }) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a }
+  }))
+} : null;
+
+const breadcrumbLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://marwanbridi.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Réflexions", "item": "https://marwanbridi.com/reflexions/" },
+    { "@type": "ListItem", "position": 3, "name": post.data.title, "item": articleUrl }
+  ]
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": post.data.title,
+  "description": post.data.description,
+  "datePublished": publishedTime,
+  "author": {
+    "@type": "Person",
+    "name": "Marwan Bridi",
+    "url": "https://marwanbridi.com/",
+    "jobTitle": "Project Manager Innovation",
+    "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" }
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Marwan Bridi",
+    "url": "https://marwanbridi.com/"
+  },
+  "mainEntityOfPage": articleUrl,
+  "url": articleUrl,
+  "inLanguage": post.data.lang || "fr",
+  ...(post.data.tags && { "keywords": post.data.tags.join(", ") }),
+  "about": post.data.tags?.map((tag: string) => ({ "@type": "Thing", "name": tag })) || []
+};
 ---
 
-<BaseLayout title={`${post.data.title} — Marwan Bridi`} description={post.data.description}>
+<BaseLayout
+  title={`${post.data.title} — Marwan Bridi`}
+  description={post.data.description}
+  lang={post.data.lang || "fr"}
+  article={{ publishedTime, tags: post.data.tags }}
+  jsonLd={faqLd ? [jsonLd, faqLd, breadcrumbLd] : [jsonLd, breadcrumbLd]}
+>
   <article>
     <header class="mb-10">
       <p class="text-xs tracking-wide mb-4" style="font-family: var(--mono); color: var(--text-muted);">
-        {post.data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: 'long', day: 'numeric' })}
+        {post.data.date.toLocaleDateString(post.data.lang === 'en' ? 'en-GB' : 'fr-CH', { year: 'numeric', month: 'long', day: 'numeric' })}
         {post.data.tags && <span> · {post.data.tags.join(' · ')}</span>}
       </p>
       <h1 class="text-2xl md:text-[2rem] font-medium leading-tight tracking-tight" style="font-family: var(--serif); color: var(--text);">
@@ -29,6 +83,23 @@ const { Content } = await render(post);
     <div class="article-body">
       <Content />
     </div>
+
+    {post.data.faq && (
+      <section class="mt-14 pt-8 border-t" style="border-color: var(--border);">
+        <h2 class="text-lg font-semibold mb-6" style="font-family: var(--serif); color: var(--text);">{post.data.lang === 'en' ? 'Frequently asked questions' : 'Questions fréquentes'}</h2>
+        <div class="space-y-3">
+          {post.data.faq.map((item: { q: string; a: string }) => (
+            <details class="faq-item group">
+              <summary class="font-medium text-sm cursor-pointer list-none flex items-start gap-2 py-2" style="color: var(--text);">
+                <span class="faq-chevron text-xs mt-0.5 transition-transform" style="color: var(--text-muted);">▸</span>
+                <span>{item.q}</span>
+              </summary>
+              <p class="text-sm pl-5 pb-3" style="color: var(--text-muted);">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
   </article>
 
   <div class="mt-14 pt-6 border-t" style="border-color: var(--border);">

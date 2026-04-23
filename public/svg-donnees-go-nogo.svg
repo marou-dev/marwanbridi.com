@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 100" width="100%" style="max-width:680px;font-family:Inter,system-ui,sans-serif">
+  <!-- Block 1: Foncier -->
+  <g transform="translate(0,10)">
+    <rect x="0" y="0" width="90" height="56" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="45" y="24" text-anchor="middle" fill="#9c4a2e" font-size="18" font-weight="600">&#x2460;</text>
+    <text x="45" y="44" text-anchor="middle" fill="currentColor" font-size="11" font-weight="500">Foncier</text>
+  </g>
+
+  <!-- Arrow 1-2 -->
+  <line x1="94" y1="38" x2="110" y2="38" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+  <polygon points="108,34 116,38 108,42" fill="currentColor" opacity="0.4"/>
+
+  <!-- Block 2: Bati existant -->
+  <g transform="translate(118,10)">
+    <rect x="0" y="0" width="90" height="56" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="45" y="24" text-anchor="middle" fill="#9c4a2e" font-size="18" font-weight="600">&#x2461;</text>
+    <text x="45" y="44" text-anchor="middle" fill="currentColor" font-size="10" font-weight="500">Bati existant</text>
+  </g>
+
+  <!-- Arrow 2-3 -->
+  <line x1="212" y1="38" x2="228" y2="38" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+  <polygon points="226,34 234,38 226,42" fill="currentColor" opacity="0.4"/>
+
+  <!-- Block 3: Couts -->
+  <g transform="translate(236,10)">
+    <rect x="0" y="0" width="90" height="56" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="45" y="24" text-anchor="middle" fill="#9c4a2e" font-size="18" font-weight="600">&#x2462;</text>
+    <text x="45" y="44" text-anchor="middle" fill="currentColor" font-size="11" font-weight="500">Couts</text>
+  </g>
+
+  <!-- Arrow 3-4 -->
+  <line x1="330" y1="38" x2="346" y2="38" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+  <polygon points="344,34 352,38 344,42" fill="currentColor" opacity="0.4"/>
+
+  <!-- Block 4: Marche -->
+  <g transform="translate(354,10)">
+    <rect x="0" y="0" width="90" height="56" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="45" y="24" text-anchor="middle" fill="#9c4a2e" font-size="18" font-weight="600">&#x2463;</text>
+    <text x="45" y="44" text-anchor="middle" fill="currentColor" font-size="11" font-weight="500">Marche</text>
+  </g>
+
+  <!-- Arrow 4-5 -->
+  <line x1="448" y1="38" x2="464" y2="38" stroke="currentColor" stroke-width="1.2" opacity="0.4"/>
+  <polygon points="462,34 470,38 462,42" fill="currentColor" opacity="0.4"/>
+
+  <!-- Block 5: Financement -->
+  <g transform="translate(472,10)">
+    <rect x="0" y="0" width="90" height="56" rx="8" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="45" y="24" text-anchor="middle" fill="#9c4a2e" font-size="18" font-weight="600">&#x2464;</text>
+    <text x="45" y="42" text-anchor="middle" fill="currentColor" font-size="10" font-weight="500">Financement</text>
+  </g>
+
+  <!-- Arrow 5-GO -->
+  <line x1="566" y1="38" x2="590" y2="38" stroke="#9c4a2e" stroke-width="1.5"/>
+  <polygon points="588,33 598,38 588,43" fill="#9c4a2e"/>
+
+  <!-- GO/NO-GO block -->
+  <g transform="translate(600,10)">
+    <rect x="0" y="0" width="76" height="56" rx="8" fill="#9c4a2e"/>
+    <text x="38" y="24" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">GO /</text>
+    <text x="38" y="42" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">NO-GO</text>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="340" y="92" text-anchor="middle" fill="currentColor" font-size="10" opacity="0.5">5 blocs de donnees avant decision</text>
+</svg>

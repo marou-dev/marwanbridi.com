@@ -7,9 +7,33 @@ const posts = (await getCollection('thinking'))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 const allTags = [...new Set(posts.flatMap((post) => post.data.tags || []))].sort();
+
+const description = "Articles et réflexions sur la construction, l'immobilier, l'IA et l'innovation — par Marwan Bridi.";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Réflexions — Marwan Bridi",
+  "description": description,
+  "url": "https://marwanbridi.com/reflexions",
+  "author": {
+    "@type": "Person",
+    "name": "Marwan Bridi",
+    "jobTitle": "Project Manager Innovation"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": posts.map((post, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": post.data.title,
+      "url": `https://marwanbridi.com/reflexions/${post.id}`
+    }))
+  }
+};
 ---
 
-<BaseLayout title="Réflexions — Marwan Bridi">
+<BaseLayout title="Réflexions — Marwan Bridi" description={description} jsonLd={jsonLd}>
   <section class="mb-10">
     <h2 class="text-[13px] font-semibold uppercase tracking-widest text-text-muted mb-6">Réflexions</h2>
     <div class="flex flex-wrap gap-2 mb-10">

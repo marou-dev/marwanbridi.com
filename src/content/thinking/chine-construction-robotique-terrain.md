@@ -3,6 +3,13 @@ title: "Robotique et construction : une semaine entre Shanghai et Shenzhen"
 date: 2026-02-10
 description: "Une semaine entre Shanghai et Shenzhen, à toucher du doigt ce que la robotique et l'IA changent réellement dans la construction. Field report."
 tags: [chine, robotique, ia, construction, terrain]
+faq:
+  - q: "Où en est la Chine en robotique de construction ?"
+    a: "La Chine a créé le Model Matrix Community à Zhangjiang (Shanghai), un centre gouvernemental de 5'000 m² où plus de 100 robots humanoïdes s'entraînent en parallèle. L'objectif national est de 100 milliards CNY d'industrie robotique. Des prototypes d'exosquelettes pour chantiers sont déjà en cours chez Milebot (Shenzhen)."
+  - q: "Les exosquelettes de chantier existent-ils déjà ?"
+    a: "Milebot (Shenzhen) fabrique des exosquelettes médicaux déployés dans 210 hôpitaux et travaille sur des prototypes pour la construction, ciblant la réduction des troubles musculo-squelettiques — premier poste d'arrêt maladie dans la construction suisse."
+  - q: "Pourquoi la Chine avance plus vite que l'Europe en robotique construction ?"
+    a: "L'écosystème physique chinois concentre startups robotiques, centres d'entraînement gouvernementaux, fonds industriels et supply chain hardware dans le même quartier (Zhangjiang, Huaqiangbei). Les startups prototypent en jours grâce à la proximité des composants. L'Europe fait de la R&D en silos."
 ---
 
 En janvier 2026, j'ai passé une semaine entre Shanghai et Shenzhen. Pas pour une conférence. Pas derrière un écran. Pour aller voir sur le terrain ce que la Chine fait vraiment en robotique, en IA, et en hardware — et comprendre ce que ça signifie pour notre métier.
@@ -43,4 +50,4 @@ Je ne suis pas revenu avec un deal signé ou un partenariat bouclé. Je suis rev
 
 La question n'est plus "est-ce que la robotique va changer la construction ?". C'est "est-ce qu'on sera prêts quand elle arrivera chez nous ?".
 
-Pour ma part, j'ai commencé à intégrer ces observations dans ma façon de penser les processus, les achats et la digitalisation au quotidien. Pas en copiant la Chine — en comprenant ce qu'elle nous dit sur la direction que prend notre industrie.
+Pour ma part, j'ai commencé à intégrer ces observations dans ma façon de penser les processus, les achats et la digitalisation au quotidien. Pas en copiant la Chine — en comprenant ce qu'elle nous dit sur la direction que prend notre industrie. Et en [passant de la vision aux systèmes en production](/reflexions/ia-construction-production/) — parce que c'est là que se joue la différence.
