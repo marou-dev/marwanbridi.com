@@ -34,6 +34,7 @@ const jsonLd = {
 <BaseLayout jsonLd={jsonLd}>
   <!-- Intro — serif, light weight, one statement -->
   <section class="mb-20 md:mb-24">
+    <h1 class="sr-only">Marwan Bridi — Ingénieur civil et expert immobilier à Genève</h1>
     <p class="text-xl md:text-2xl leading-relaxed" style="font-family: var(--serif); color: var(--text);">
       Ingénieur civil et expert immobilier à Genève. Ici je partage ce que j'observe dans la construction et l'immobilier en Suisse — rénovation énergétique, gestion de chantier, réglementation, valorisation.
     </p>
@@ -41,7 +42,7 @@ const jsonLd = {
 
   <!-- Latest writing -->
   <section class="mb-20 md:mb-24">
-    <p class="section-header">Dernières réflexions</p>
+    <h2 class="section-header">Dernières réflexions</h2>
     <div class="space-y-7">
       {posts.slice(0, 5).map((post) => (
         <a href={`/reflexions/${post.id}`} class="group block no-underline">
@@ -64,7 +65,7 @@ const jsonLd = {
 
   <!-- Selected projects -->
   <section class="reveal">
-    <p class="section-header">Réalisations sélectionnées</p>
+    <h2 class="section-header">Réalisations sélectionnées</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
       <a href="/realisations" class="card group no-underline">
         <span class="text-xs" style="font-family: var(--mono); color: var(--text-muted);">2025</span>
