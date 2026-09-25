@@ -32,12 +32,27 @@ const jsonLd = {
 ---
 
 <BaseLayout jsonLd={jsonLd}>
-  <!-- Intro — serif, light weight, one statement -->
+  <!-- Hero -->
   <section class="mb-20 md:mb-24">
-    <h1 class="sr-only">Marwan Bridi — Ingénieur civil et expert immobilier à Genève</h1>
-    <p class="text-xl md:text-2xl leading-relaxed" style="font-family: var(--serif); color: var(--text);">
-      Ingénieur civil et expert immobilier à Genève. Ici je partage ce que j'observe dans la construction et l'immobilier en Suisse — rénovation énergétique, gestion de chantier, réglementation, valorisation.
+    <div class="flex flex-col-reverse sm:flex-row sm:items-start sm:gap-12">
+      <div class="min-w-0 flex-1">
+        <h1 class="hero-nom">Marwan Bridi</h1>
+        <p class="hero-sous">Ingénieur civil et expert immobilier à Genève</p>
+      </div>
+      <img src="/marwan-bridi.png" alt="Marwan Bridi" width="306" height="306" class="hero-portrait" />
+    </div>
+
+    <p class="mt-7 text-lg leading-relaxed" style="font-family: var(--serif); color: var(--text-secondary); max-width: 46ch;">
+      Ici je partage ce que j'observe dans la construction et l'immobilier en Suisse — rénovation énergétique, gestion de chantier, réglementation, valorisation.
     </p>
+
+    <dl class="hero-chiffres">
+      <div><dt>280</dt><dd>logements livrés<br /><span>Étoile-Palettes</span></dd></div>
+      <div><dt>−84 %</dt><dd>de consommation<br /><span>CECB E → B, Lausanne</span></dd></div>
+      <div><dt>15 ans</dt><dd>sur la chaîne immobilière<br /><span>d'Andover à Genève</span></dd></div>
+    </dl>
+
+    <a href="/realisations" class="hero-cta">Voir les réalisations</a>
   </section>
 
   <!-- Latest writing -->
