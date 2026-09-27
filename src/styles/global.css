@@ -119,6 +119,14 @@
   }
   .hero-cta:hover { background: var(--accent); color: var(--bg); }
 
+  /* ── Lien de fiche vers l'essai correspondant ── */
+  .card-lien {
+    @apply inline-block mt-3 text-[13px] no-underline;
+    font-family: var(--sans); color: var(--text-muted);
+    transition: color .15s;
+  }
+  .card-lien:hover { color: var(--accent); }
+
   /* ── Card ── */
   .card {
     @apply border rounded-lg p-5 transition-all duration-300;
