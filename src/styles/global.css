@@ -17,6 +17,7 @@
     --accent: #9c4a2e;
     --accent-soft: rgba(156, 74, 46, 0.06);
     --border: #e2e1dc;
+    --grille: rgba(26, 26, 26, 0.045);
     --serif: 'Newsreader', 'Palatino Linotype', Georgia, serif;
     --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --mono: 'JetBrains Mono', Menlo, monospace;
@@ -31,6 +32,15 @@
     --accent: #d4845e;
     --accent-soft: rgba(212, 132, 94, 0.08);
     --border: #2a2a26;
+    --grille: rgba(224, 224, 216, 0.05);
+  }
+
+  /* Papier millimetre. Sur BODY et non html : <body class="bg-bg"> pose un
+     fond opaque qui recouvrirait l'image. Cout nul, aucune image chargee. */
+  body {
+    background-image:
+      repeating-linear-gradient(to right,  var(--grille) 0 1px, transparent 1px 28px),
+      repeating-linear-gradient(to bottom, var(--grille) 0 1px, transparent 1px 28px);
   }
 
   html {
