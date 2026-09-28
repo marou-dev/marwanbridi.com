@@ -5,6 +5,11 @@
       "source": "/reflexions/ia-construction-production",
       "destination": "/reflexions",
       "permanent": true
+    },
+    {
+      "source": "/reflexions/ia-construction-production/",
+      "destination": "/reflexions",
+      "permanent": true
     }
   ]
 }
