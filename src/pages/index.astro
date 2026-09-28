@@ -55,8 +55,18 @@ const jsonLd = {
   <!-- Latest writing -->
   <section class="mb-20 md:mb-24">
     <h2 class="section-header">Dernières réflexions</h2>
+    {posts[0] && (
+      <a href={`/reflexions/${posts[0].id}`} class="essai-une group no-underline">
+        <span class="essai-une-date">
+          {posts[0].data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: 'long' })}
+        </span>
+        <h3 class="essai-une-titre">{posts[0].data.title}</h3>
+        <p class="essai-une-desc">{posts[0].data.description}</p>
+      </a>
+    )}
+
     <div class="space-y-7">
-      {posts.slice(0, 5).map((post) => (
+      {posts.slice(1, 5).map((post) => (
         <a href={`/reflexions/${post.id}`} class="group block no-underline">
           <span class="text-xs tracking-wide" style="font-family: var(--mono); color: var(--text-muted);">
             {post.data.date.toLocaleDateString('fr-CH', { year: 'numeric', month: 'long' })}
