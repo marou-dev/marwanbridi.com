@@ -170,7 +170,7 @@
   .section { @apply mb-16; }
   .muted { @apply text-sm; color: var(--text-muted); }
   .desc { @apply text-[15px] leading-relaxed mb-2; color: var(--text-muted); }
-  .reveal { @apply opacity-0; transform: translateY(12px); }
+  .js .reveal { @apply opacity-0; transform: translateY(12px); }
   .chip-grid { @apply flex flex-wrap gap-2; }
   .logo-wall { @apply flex flex-wrap gap-6 py-3; }
   .logo-wall span { @apply text-xs uppercase tracking-widest; color: var(--text-muted); }

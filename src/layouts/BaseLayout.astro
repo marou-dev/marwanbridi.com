@@ -71,6 +71,9 @@ import '../styles/global.css';
 
     <script is:inline>
       (function () {
+        // Pose la classe AVANT toute peinture : les reveals ne masquent
+        // le contenu que si le JS tourne. Sans JS, rien n'est cache.
+        document.documentElement.classList.add('js');
         const t = localStorage.getItem('theme');
         if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
       })();
