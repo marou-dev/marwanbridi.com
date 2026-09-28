@@ -34,12 +34,18 @@ const jsonLd = {
 <BaseLayout jsonLd={jsonLd}>
   <!-- Hero -->
   <section class="mb-20 md:mb-24">
-    <div class="flex flex-col-reverse sm:flex-row sm:items-start sm:gap-12">
+    <div class="flex flex-col-reverse sm:flex-row sm:items-start sm:gap-8">
       <div class="min-w-0 flex-1">
         <h1 class="hero-nom">Marwan Bridi</h1>
         <p class="hero-sous">Ingénieur civil et expert immobilier à Genève</p>
       </div>
-      <img src="/marwan-bridi.png" alt="Marwan Bridi" width="306" height="306" class="hero-portrait" />
+      <figure class="cadre-b">
+        <img src="/marwan-bridi.png" alt="Marwan Bridi" width="306" height="306" />
+        <dl>
+          <div><dt>Objet</dt><dd>Portrait</dd></div>
+          <div><dt>Lieu</dt><dd>Genève</dd></div>
+        </dl>
+      </figure>
     </div>
 
     <p class="mt-7 text-lg leading-relaxed" style="font-family: var(--serif); color: var(--text-secondary); max-width: 46ch;">
