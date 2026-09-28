@@ -94,7 +94,8 @@
     flex: none; width: 120px; border: 1px solid var(--border);
   }
   .cadre-b img {
-    display: block; width: 100%; height: 96px; object-fit: cover;
+    /* carre : la source l'est aussi, donc zero rognage */
+    display: block; width: 100%; aspect-ratio: 1; object-fit: cover;
   }
   .cadre-b dl { margin: 0; font-family: var(--mono); font-size: 8px; letter-spacing: .05em; }
   .cadre-b div { display: flex; border-bottom: 1px solid var(--border); }
@@ -134,6 +135,15 @@
   }
   .cartouche dd { margin: 0; padding: 5px 9px; color: var(--text-secondary); }
   @media (max-width: 420px) { .cartouche dt { width: 78px; } }
+
+  /* ── Monogramme de la barre (le nom complet vit dans le heros) ── */
+  .monogramme {
+    font-family: var(--mono); font-size: 13px; font-weight: 500;
+    letter-spacing: .14em; color: var(--text);
+    border-bottom: 1px solid var(--text); padding-bottom: 1px;
+    transition: color .15s, border-color .15s;
+  }
+  .group:hover .monogramme { color: var(--accent); border-color: var(--accent); }
 
   /* ── Card ── */
   .card {
