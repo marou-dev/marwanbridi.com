@@ -14,7 +14,6 @@ Articles sur la construction, l'immobilier et la réglementation en Suisse :
 - [Ce que Bâle III change vraiment pour financer un projet de promotion en Suisse](https://marwanbridi.com/reflexions/financement-immobilier-bale-iii-tokenisation/)
 - [LCI 117-118 : ce que les nouvelles limites carbone changent pour construire à Genève](https://marwanbridi.com/reflexions/lci-117-118-carbone-geneve/)
 - [Robotique et construction : une semaine entre Shanghai et Shenzhen](https://marwanbridi.com/reflexions/chine-construction-robotique-terrain/)
-- [L'IA dans la construction : arrêtons les slides, montrons du code](https://marwanbridi.com/reflexions/ia-construction-production/)
 - [Ce qu'un immeuble de 1952 nous apprend sur la rénovation en Suisse](https://marwanbridi.com/reflexions/renovation-1952-suisse/)
 - [LDTR : le calcul à faire avant de rénover à Genève](https://marwanbridi.com/reflexions/ldtr-piege-renovation-geneve/)
 - [Bases-vie de chantier : le prochain levier durable dans la construction](https://marwanbridi.com/reflexions/bases-vie-durables-chantiers/)

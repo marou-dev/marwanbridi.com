@@ -50,4 +50,4 @@ Je ne suis pas revenu avec un deal signé ou un partenariat bouclé. Je suis rev
 
 La question n'est plus "est-ce que la robotique va changer la construction ?". C'est "est-ce qu'on sera prêts quand elle arrivera chez nous ?".
 
-Pour ma part, j'ai commencé à intégrer ces observations dans ma façon de penser les processus, les achats et la digitalisation au quotidien. Pas en copiant la Chine — en comprenant ce qu'elle nous dit sur la direction que prend notre industrie. Et en [passant de la vision aux systèmes en production](/reflexions/ia-construction-production/) — parce que c'est là que se joue la différence.
+Pour ma part, j'ai commencé à intégrer ces observations dans ma façon de penser les processus, les achats et la digitalisation au quotidien. Pas en copiant la Chine — en comprenant ce qu'elle nous dit sur la direction que prend notre industrie. Et en passant de la vision aux systèmes en production — parce que c'est là que se joue la différence.

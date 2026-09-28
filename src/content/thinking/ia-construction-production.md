@@ -3,6 +3,7 @@ title: "L'IA dans la construction : arrêtons les slides, montrons du code"
 date: 2025-12-08
 description: "Pourquoi la majorité des initiatives IA dans la construction échouent — et ce que ça prend pour passer en production."
 tags: [ia, construction, opex]
+draft: true
 faq:
   - q: "Pourquoi les projets IA échouent-ils dans la construction ?"
     a: "Le problème n'est pas l'innovation mais la mise en production. Les POCs meurent à cause de données fragmentées (PDFs, Excel, emails), du manque de formation terrain, de la difficulté à mesurer le ROI sur un cycle de 3 ans, et de la confusion entre acheter un outil et transformer un processus."
