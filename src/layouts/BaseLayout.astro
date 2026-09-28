@@ -22,6 +22,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const isArticle = !!article;
 const ogType = isArticle ? 'article' : 'website';
 const ogLocale = lang === 'en' ? 'en_US' : 'fr_CH';
+const nav = lang === 'en'
+  ? { reflexions: 'Writing', realisations: 'Work', parcours: 'Background', accueil: 'Marwan Bridi — home', theme: 'Theme' }
+  : { reflexions: 'Réflexions', realisations: 'Réalisations', parcours: 'Parcours', accueil: 'Marwan Bridi — accueil', theme: 'Thème' };
 
 import '../styles/global.css';
 ---
@@ -85,14 +88,14 @@ import '../styles/global.css';
 
       <!-- Nav — Matthew Strom style: name left, links right -->
       <nav class="flex items-center justify-between mb-16 md:mb-20">
-        <a href="/" class="no-underline group" aria-label="Marwan Bridi — accueil">
+        <a href="/" class="no-underline group" aria-label={nav.accueil}>
           <span class="monogramme">MB</span>
         </a>
         <div class="flex items-center gap-4 md:gap-5">
-          <a href="/reflexions" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">Réflexions</a>
-          <a href="/realisations" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">Réalisations</a>
-          <a href="/parcours" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">Parcours</a>
-          <button class="text-[13px] text-text-muted hover:text-text transition-colors" id="theme-toggle" aria-label="Thème">
+          <a href="/reflexions" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">{nav.reflexions}</a>
+          <a href="/realisations" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">{nav.realisations}</a>
+          <a href="/parcours" class="text-[13px] text-text-muted no-underline hover:text-text transition-colors">{nav.parcours}</a>
+          <button class="text-[13px] text-text-muted hover:text-text transition-colors" id="theme-toggle" aria-label={nav.theme}>
             <span id="theme-icon">☀</span>
           </button>
         </div>
