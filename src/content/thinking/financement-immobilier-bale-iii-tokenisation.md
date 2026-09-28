@@ -2,6 +2,8 @@
 title: "Ce que Bâle III change vraiment pour financer un projet de promotion en Suisse"
 date: 2026-04-22
 description: "Depuis janvier 2025, les banques prêtent moins et plus cher. Ce que ça change concrètement pour un promoteur — et les alternatives qui se structurent."
+image: "/svg-bale-iii-avant-apres.svg"
+imageAlt: "Structure de financement avant et après Bâle III"
 tags: [immobilier, financement, réglementation, suisse]
 faq:
   - q: "Quel est l'impact de Bâle III sur le financement de la promotion immobilière en Suisse ?"

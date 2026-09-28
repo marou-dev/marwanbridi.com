@@ -2,6 +2,8 @@
 title: "Ce qu'un promoteur devrait exiger de ses données avant de lancer un projet"
 date: 2026-04-22
 description: "La plupart des projets immobiliers démarrent avec 40% de l'information nécessaire. Ce que ça coûte — et les 5 jeux de données à verrouiller avant le go/no-go."
+image: "/svg-donnees-go-nogo.svg"
+imageAlt: "Les cinq jeux de données à verrouiller avant le go/no-go"
 tags: [immobilier, promotion, données, construction, genève, suisse]
 faq:
   - q: "Quelles données vérifier avant d'acheter un terrain pour un projet immobilier à Genève ?"
