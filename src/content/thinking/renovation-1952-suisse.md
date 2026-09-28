@@ -3,6 +3,12 @@ title: "Ce qu'un immeuble de 1952 nous apprend sur la rénovation en Suisse"
 date: 2025-10-15
 description: "CECB E → B, 84% de réduction énergétique, 424'000 CHF d'investissement : retour d'expérience sur une expertise technique réelle à Lausanne."
 tags: [immobilier, rénovation, énergie, expertise, suisse]
+cartouche:
+  - { l: "Objet", v: "Immeuble de 12 logements" }
+  - { l: "Année", v: "1952" }
+  - { l: "Lieu", v: "Lausanne" }
+  - { l: "CECB", v: "E → B" }
+  - { l: "Investissement", v: "423'800 CHF" }
 faq:
   - q: "Combien coûte une rénovation énergétique complète d'un immeuble des années 50 en Suisse ?"
     a: "Pour un immeuble de 12 logements à Lausanne (1952), l'investissement total est de 423'800 CHF pour passer de CECB E à B : 217'000 CHF d'ITE façades (280 CHF/m²), 65'000 CHF de raccordement CAD, et le solde en photovoltaïque et travaux annexes. TRI projet complet : 5.5%, économies annuelles : 23'539 CHF."

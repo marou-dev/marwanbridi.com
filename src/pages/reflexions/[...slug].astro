@@ -80,6 +80,14 @@ const jsonLd = {
       </h1>
     </header>
 
+    {post.data.cartouche && (
+      <dl class="cartouche">
+        {post.data.cartouche.map((c) => (
+          <div><dt>{c.l}</dt><dd>{c.v}</dd></div>
+        ))}
+      </dl>
+    )}
+
     <div class="article-body">
       <Content />
     </div>

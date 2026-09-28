@@ -95,7 +95,6 @@
   }
   .cadre-b img {
     display: block; width: 100%; height: 96px; object-fit: cover;
-    border-bottom: 1px solid var(--border);
   }
   .cadre-b dl { margin: 0; font-family: var(--mono); font-size: 8px; letter-spacing: .05em; }
   .cadre-b div { display: flex; border-bottom: 1px solid var(--border); }
@@ -121,6 +120,20 @@
     transition: color .15s;
   }
   .card-lien:hover { color: var(--accent); }
+
+  /* ── Cartouche d'article (optionnel, pour un document identifiable) ── */
+  .cartouche {
+    @apply mb-8; border: 1px solid var(--border);
+    font-family: var(--mono); font-size: 10px; letter-spacing: .05em;
+  }
+  .cartouche div { display: flex; border-bottom: 1px solid var(--border); }
+  .cartouche div:last-child { border-bottom: 0; }
+  .cartouche dt {
+    width: 104px; padding: 5px 9px; color: var(--text-muted); text-transform: uppercase;
+    border-right: 1px solid var(--border); flex: none;
+  }
+  .cartouche dd { margin: 0; padding: 5px 9px; color: var(--text-secondary); }
+  @media (max-width: 420px) { .cartouche dt { width: 78px; } }
 
   /* ── Card ── */
   .card {
