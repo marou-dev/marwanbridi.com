@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { person } from '../data/person';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('thinking'))
@@ -9,25 +10,7 @@ const posts = (await getCollection('thinking'))
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Marwan Bridi",
-    "url": "https://marwanbridi.com/",
-    "jobTitle": "Project Manager Innovation",
-    "description": "Ingénieur civil et expert immobilier à Genève. Construction, rénovation énergétique, innovation, réglementation, valorisation immobilière.",
-    "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" },
-    "sameAs": ["https://www.linkedin.com/in/mbridi/"],
-    "knowsAbout": [
-      "Construction immobilière",
-      "Rénovation énergétique",
-      "Gestion de chantier",
-      "Réglementation immobilière suisse",
-      "Valorisation immobilière",
-      "Expertise technique CECB",
-      "LDTR Genève",
-      "Bâle III financement immobilier"
-    ]
-  }
+  mainEntity: person,
 };
 ---
 

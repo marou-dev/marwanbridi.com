@@ -1,28 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { person } from '../data/person';
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfilePage",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Marwan Bridi",
-    "jobTitle": "Project Manager Innovation",
-    "url": "https://marwanbridi.com/parcours",
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Swissroc Group Services SA",
-      "address": { "@type": "PostalAddress", "addressLocality": "Genève", "addressCountry": "CH" }
-    },
-    "alumniOf": [
-      { "@type": "CollegeOrUniversity", "name": "EPFL", "description": "MAS Expert en immobilier" },
-      { "@type": "CollegeOrUniversity", "name": "HEIA-FR", "description": "CAS Expertise technique" },
-      { "@type": "CollegeOrUniversity", "name": "Université de Fribourg", "description": "CAS Droit de l'expertise" },
-      { "@type": "CollegeOrUniversity", "name": "ESTP Paris", "description": "Ingénieur génie civil" },
-      { "@type": "HighSchool", "name": "Phillips Academy Andover" }
-    ],
-    "knowsLanguage": ["fr", "en", "ar"]
-  }
+  mainEntity: person,
 };
 ---
 
