@@ -14,14 +14,21 @@ export const person = {
   jobTitle: "Project Manager Innovation",
   description:
     "Ingénieur civil et expert immobilier à Genève. Construction, rénovation énergétique, innovation, réglementation, valorisation immobilière.",
-  address: { "@type": "PostalAddress", addressLocality: "Genève", addressCountry: "CH" },
+  address: { "@type": "PostalAddress", addressLocality: "Genève", addressRegion: "GE", addressCountry: "CH" },
+  // Ou j'interviens, pas seulement ou je suis poste. Verifie sur /realisations :
+  // Vaud y est cite plus souvent que Geneve (Lausanne 6, Flon 3, Malley 2, Prilly 1).
+  areaServed: [
+    { "@type": "AdministrativeArea", name: "Canton de Genève" },
+    { "@type": "AdministrativeArea", name: "Canton de Vaud" },
+    { "@type": "AdministrativeArea", name: "Suisse romande" },
+  ],
   sameAs: ["https://www.linkedin.com/in/mbridi/"],
   knowsLanguage: ["fr", "en", "ar"],
   worksFor: {
     "@type": "Organization",
     name: "Swissroc Group Services SA",
     url: "https://swissroc.ch/",
-    address: { "@type": "PostalAddress", addressLocality: "Genève", addressCountry: "CH" },
+    address: { "@type": "PostalAddress", addressLocality: "Genève", addressRegion: "GE", addressCountry: "CH" },
   },
   // name + url raccroche a une entite que les moteurs connaissent deja ;
   // description porte le diplome obtenu. Les deux, pas l'un ou l'autre.
