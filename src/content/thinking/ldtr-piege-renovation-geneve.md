@@ -1,6 +1,7 @@
 ---
 title: "LDTR : le calcul à faire avant de rénover à Genève"
 date: 2025-09-01
+updated: 2026-10-05
 description: "La LDTR plafonne les loyers après rénovation. Ce que ça change concrètement pour un propriétaire qui veut rénover — et pourquoi beaucoup se trompent."
 tags: [immobilier, réglementation, genève, rénovation, juridique]
 faq:
@@ -54,7 +55,7 @@ Pour un modèle DCF, c'est un paramètre critique : pendant toute la période de
 
 ## Le paradoxe de la rénovation énergétique
 
-C'est là que la situation devient contre-intuitive. La Suisse pousse massivement à la rénovation énergétique (MoPEC, plans climat cantonaux, CECB) — et les [nouvelles limites carbone LCI 117-118](/reflexions/lci-117-118-carbone-geneve/) ajoutent une couche d'obligation supplémentaire. Mais à Genève, la LDTR limite la capacité du propriétaire à rentabiliser cet investissement via les loyers.
+C'est là que la situation devient contre-intuitive. La Suisse pousse massivement à la rénovation énergétique (MoPEC, plans climat cantonaux, CECB) — et les [nouvelles limites carbone LCI 117-118](/reflexions/lci-117-118-carbone-geneve/) ajoutent une couche d'obligation supplémentaire — tout comme le [durcissement du seuil d'IDC en 2027 puis 2031](/reflexions/idc-geneve-durcissement-2027/), qui fera basculer 8,7 fois plus de bâtiments genevois sous obligation de travaux. Mais à Genève, la LDTR limite la capacité du propriétaire à rentabiliser cet investissement via les loyers.
 
 Un propriétaire qui investit 500'000 CHF dans l'isolation thermique d'un immeuble de 20 logements pourra répercuter 100% de la part à plus-value — c'est le bon côté. Mais la hausse par logement sera peut-être de 50 à 80 CHF/mois, sur un amortissement de 25 ans. Le rendement de l'investissement est réel mais modeste, et bloqué pendant la période de contrôle.
 

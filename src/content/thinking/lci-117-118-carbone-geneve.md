@@ -1,6 +1,7 @@
 ---
 title: "LCI 117-118 : ce que les nouvelles limites carbone changent pour construire à Genève"
 date: 2026-03-10
+updated: 2026-10-05
 description: "Les articles 117 et 118 LCI imposent des budgets carbone sur tout le cycle de vie. Ce que ça signifie concrètement pour les promoteurs et les entreprises générales."
 tags: [immobilier, construction, réglementation, énergie, genève]
 faq:
@@ -18,7 +19,7 @@ faq:
 
 À Genève, le bâtiment représente 40% des émissions CO₂ du canton. Pour atteindre la neutralité carbone en 2050, le Canton a adopté en décembre 2021 les articles 117 et 118 de la LCI — et leur règlement d'application est sorti en novembre 2025.
 
-Ce n'est pas un label volontaire. C'est une obligation légale.
+Ce n'est pas un label volontaire. C'est une obligation légale. Et ce n'est pas la seule : sur le parc existant, le [calendrier d'IDC du REn](/reflexions/idc-geneve-durcissement-2027/) resserre ses seuils en 2027 puis en 2031, selon une logique de paliers identique.
 
 ## Ce que dit la loi
 

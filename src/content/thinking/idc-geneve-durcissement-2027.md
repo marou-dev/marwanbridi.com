@@ -42,7 +42,7 @@ L'article 14 du règlement sur l'énergie distingue deux choses que l'on confond
 
 Deux détails changent tout. D'abord, l'alinéa 2 porte sur **l'IDC moyen des trois dernières années**, pas sur la dernière mesure — un bâtiment peut franchir le seuil d'audit une année sans basculer en dépassement significatif. Ensuite, l'alinéa 3 impose l'audit *et* les mesures d'amélioration **dans les douze mois** suivant la notification, aux frais du propriétaire.
 
-Le dispositif n'est donc pas un état : c'est une échéance qui se rapproche.
+Le dispositif n'est donc pas un état : c'est une échéance qui se rapproche. Et il n'arrive pas seul — les [limites carbone de la LCI 117-118](/reflexions/lci-117-118-carbone-geneve/) empilent une seconde couche d'obligation sur un calendrier parallèle, côté construction neuve.
 
 ## Ce que ça donne sur le parc réel
 
@@ -82,6 +82,8 @@ La couche publie la surface de référence énergétique. En séparant le parc �
 **Un petit bâtiment est 2,5 fois plus exposé au palier 2031 qu'un grand.** Et les communes en tête du classement le sont parce qu'elles comptent 1,6 fois plus de petits bâtiments que la moyenne cantonale — 36,5% contre 23,1% — pas parce que leurs habitants se chauffent différemment.
 
 Testé contre le RegBL sur un échantillon de 706 bâtiments : sous 400 m² de SRE, la médiane est d'**un** logement et 68,6% sont mono-logement ; au-dessus, la médiane passe à neuf et le mono-logement tombe à 17,5%. Le proxy tient — avec la nuance qu'un tiers des petits bâtiments comptent plusieurs logements. La formulation juste n'est donc pas « les villas », mais **le petit bâti, majoritairement mono-logement**.
+
+Ce que coûte la sortie du seuil se mesure sur des cas réels : l'immeuble de 1952 dont j'ai [détaillé la rénovation](/reflexions/renovation-1952-suisse/) partait de 203 kWh/m².an — au-dessus du palier genevois de 2027 — pour redescendre à 31, contre 424'000 CHF de travaux sur douze logements. Il est à Lausanne, donc hors REn ; l'ordre de grandeur, lui, se transpose.
 
 **Le durcissement du REn frappera d'abord des propriétaires individuels.** Dans un canton où le débat énergétique est presque entièrement locatif, c'est le résultat le moins attendu — et il complète le dossier LDTR par l'autre bout : cet essai-là explique pourquoi le locatif ne se rénove pas ; celui-ci montre que le locatif est déjà la moitié la plus performante du parc.
 

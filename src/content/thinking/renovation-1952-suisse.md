@@ -1,6 +1,7 @@
 ---
 title: "Ce qu'un immeuble de 1952 nous apprend sur la rénovation en Suisse"
 date: 2025-10-15
+updated: 2026-10-05
 description: "CECB E → B, 84% de réduction énergétique, 424'000 CHF d'investissement : retour d'expérience sur une expertise technique réelle à Lausanne."
 tags: [immobilier, rénovation, énergie, expertise, suisse]
 cartouche:
@@ -29,6 +30,8 @@ J'ai récemment réalisé une expertise technique complète sur un immeuble de 1
 L'immeuble est classique pour son époque. Maçonnerie en béton de 20-25 cm, sans aucune isolation. Façades avec un coefficient U de 1.72 W/m²K — très loin des 0.20 W/m²K exigés par MoPEC pour les rénovations lourdes. Plancher sur sous-sol sans isolation (U = 2.12). Chauffage au mazout.
 
 Résultat : une consommation de 203.4 kWh/m²/an et 53 tonnes de CO₂ par an. Classé CECB E — "très mauvais".
+
+À titre de repère réglementaire : à Genève, le [seuil de dépassement significatif de l'IDC](/reflexions/idc-geneve-durcissement-2027/) descend à 180 kWh/m².an en 2027. Un bâtiment à 203 kWh y serait en obligation de travaux.
 
 Mais ce qui est intéressant, c'est que des menuiseries avaient déjà été remplacées entre 2015 et 2019. Sans cette intervention, la consommation aurait atteint 215 kWh/m²/an. Preuve que même des travaux partiels ont un impact mesurable — ici, un gain de 11.8 kWh/m²/an.
 
