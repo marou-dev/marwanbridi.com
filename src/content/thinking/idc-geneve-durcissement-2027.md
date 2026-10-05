@@ -18,6 +18,8 @@ faq:
     a: "Le seuil de dépassement significatif passe de 222 à 180 kWh/m².an au 1er janvier 2027. À distribution inchangée, le nombre de bâtiments concernés passe de 275 à 908 — il triple. Le palier de 2031 (153 kWh) porte ce nombre à 2'402, soit 8,7 fois la population actuelle. L'art. 14 al. 3 impose l'audit et les mesures d'amélioration dans les douze mois suivant la notification, aux frais du propriétaire."
   - q: "Le durcissement énergétique genevois touche-t-il surtout les immeubles locatifs ?"
     a: "Non, l'inverse. Les bâtiments de moins de 400 m² de surface de référence énergétique — majoritairement mono-logement — franchissent le palier de 2031 dans 24,2% des cas, contre 9,8% pour les bâtiments plus grands. Un petit bâtiment est 2,5 fois plus exposé qu'un immeuble. Le parc locatif est déjà la moitié la plus performante du parc genevois."
+  - q: "Les villas genevoises sont-elles soumises à l'obligation de déclarer leur IDC ?"
+    a: "La loi sur l'énergie (LEn art. 15C al. 1) rend le calcul annuel de l'IDC obligatoire pour tous les bâtiments chauffés, villas comprises — alors que le régime ne visait historiquement que les immeubles d'au moins cinq preneurs de chaleur. Mais l'office cantonal de l'énergie indique, au 3 novembre 2025, que le calcul reste pour le moment facultatif pour les villas et petits bâtiments d'habitation, le temps que les dispositifs soient mis en place. L'accord du 5 février 2024 entre le Département du territoire et quinze organisations leur accorde en outre trois ans de délai supplémentaire pour les obligations de rénovation ; sa traduction dans le règlement n'était pas encore faite au 5 octobre 2026."
   - q: "Que signifie un IDC inconnu pour un bâtiment à Genève ?"
     a: "Sur les 49'734 bâtiments de la couche publique de l'OCEN, 28'687 ne portent aucune mesure exploitable — ni dernier IDC, ni moyenne triennale — soit 57,7%. La donnée publique ne permet pas de distinguer un bâtiment non assujetti d'un bâtiment non déclaré. Pour la majorité du parc, l'indice sur lequel repose le dispositif réglementaire n'a donc pas de valeur publiée."
 ---
@@ -42,7 +44,23 @@ L'article 14 du règlement sur l'énergie distingue deux choses que l'on confond
 
 Deux détails changent tout. D'abord, l'alinéa 2 porte sur **l'IDC moyen des trois dernières années**, pas sur la dernière mesure — un bâtiment peut franchir le seuil d'audit une année sans basculer en dépassement significatif. Ensuite, l'alinéa 3 impose l'audit *et* les mesures d'amélioration **dans les douze mois** suivant la notification, aux frais du propriétaire.
 
+Deux autres délais, moins cités : l'alinéa 9 laisse **36 mois** pour les travaux eux-mêmes une fois le dépassement significatif constaté, et l'alinéa 8 **dispense d'audit** les bâtiments entre 450 et 550 MJ si de simples mesures d'optimisation suffisent à repasser sous le seuil.
+
 Le dispositif n'est donc pas un état : c'est une échéance qui se rapproche. Et il n'arrive pas seul — les [limites carbone de la LCI 117-118](/reflexions/lci-117-118-carbone-geneve/) empilent une seconde couche d'obligation sur un calendrier parallèle, côté construction neuve.
+
+## Mais tout le monde n'est pas encore dans le dispositif
+
+C'est la nuance qui change la portée de tout ce qui suit, et elle n'est pas dans le règlement : elle est dans son application.
+
+La loi est pourtant large. **LEn art. 15C al. 1 : « Le calcul annuel de l'indice de dépense de chaleur est obligatoire pour tous les bâtiments chauffés. »** Les villas y sont — elles en étaient historiquement exclues, le régime ne visant que les immeubles d'au moins cinq preneurs de chaleur.
+
+Sauf qu'en pratique, l'État ne l'a pas encore activé pour elles. Sa propre page, mise à jour le 3 novembre 2025, est explicite : *« Pour le moment, le calcul de l'indice de dépense de chaleur est **facultatif** pour les villas et les petits bâtiments d'habitation. L'office cantonal de l'énergie travaille actuellement à la mise en place des dispositifs appropriés. »*
+
+Et ce n'est pas un retard administratif : c'est négocié. Le 5 février 2024, le Département du territoire et **quinze organisations** — dont la Chambre genevoise immobilière, l'USPI, l'ASLOCA, le WWF et Pic-Vert, l'association des propriétaires de villas — ont signé un accord qui confirme l'IDC comme outil et maintient son calendrier, à une exception près : *« Seuls les villas et les petits bâtiments de moins de cinq logements disposent d'un délai supplémentaire de 3 ans pour répondre aux obligations de rénovation. »*
+
+Cet accord mettait fin à un bras de fer peu banal. Le projet de loi 12593, déposé en 2018 pour resserrer les seuils, avait été retourné en septembre 2023 par un amendement de dernière minute qui remplaçait l'IDC — une consommation **mesurée** — par le CECB, une étiquette **calculée**. Le Conseil d'État avait alors refusé de promulguer la loi, une procédure rarissime. Quatre mois de négociation plus tard, l'IDC était rétabli et les villas obtenaient leurs trois ans.
+
+**Le détail qui compte pour la suite : cet accord exige une modification du règlement sur l'énergie, et au 5 octobre 2026 elle n'est pas faite.** J'ai lu les dispositions transitoires en vigueur : elles ne portent aucune exception par taille de bâtiment. Le calendrier du tableau ci-dessus est donc, à la lettre du règlement, uniforme — et dans les faits, inapplicable à une population qui n'est pas encore appelée à déclarer.
 
 ## Ce que ça donne sur le parc réel
 
@@ -85,7 +103,9 @@ Testé contre le RegBL sur un échantillon de 706 bâtiments : sous 400 m² de S
 
 Ce que coûte la sortie du seuil se mesure sur des cas réels : l'immeuble de 1952 dont j'ai [détaillé la rénovation](/reflexions/renovation-1952-suisse/) partait de 203 kWh/m².an — au-dessus du palier genevois de 2027 — pour redescendre à 31, contre 424'000 CHF de travaux sur douze logements. Il est à Lausanne, donc hors REn ; l'ordre de grandeur, lui, se transpose.
 
-**Le durcissement du REn frappera d'abord des propriétaires individuels.** Dans un canton où le débat énergétique est presque entièrement locatif, c'est le résultat le moins attendu — et il complète le dossier LDTR par l'autre bout : cet essai-là explique pourquoi le locatif ne se rénove pas ; celui-ci montre que le locatif est déjà la moitié la plus performante du parc.
+⚠️ **Et c'est ici qu'il faut lire le résultat avec la section précédente.** Si la déclaration est facultative pour les villas, alors les petits bâtiments présents dans la couche mesurée **ne sont pas un échantillon représentatif du petit bâti genevois** : ce sont des petits immeubles atteignant quand même cinq preneurs de chaleur, ou des propriétaires qui ont déclaré volontairement. Le chiffre de 24,2 % décrit ceux-là, pas les villas du canton. Il indique une direction, pas un taux.
+
+**Le durcissement du REn frappera d'abord des propriétaires individuels — le jour où il s'appliquera à eux.** Dans un canton où le débat énergétique est presque entièrement locatif, c'est le résultat le moins attendu — et il complète le dossier LDTR par l'autre bout : cet essai-là explique pourquoi le locatif ne se rénove pas ; celui-ci montre que le locatif est déjà la moitié la plus performante du parc.
 
 ## Le point aveugle : plus de la moitié du parc
 
