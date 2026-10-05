@@ -1,4 +1,43 @@
+# Tout est ouvert, y compris aux moteurs generatifs : le site existe pour etre
+# lu et cite. Les agents sont nommes explicitement plutot que couverts par le
+# seul joker — plusieurs crawlers cherchent leur propre nom avant de retomber
+# sur "*", et une regle nommee leve l'ambiguite au lieu de la laisser deduire.
+
 User-agent: *
 Allow: /
 
+# Moteurs de reponse et agents d'indexation generative
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://marwanbridi.com/sitemap-index.xml
+
+# Resume du site destine aux modeles de langage, genere au build :
+# https://marwanbridi.com/llms.txt
