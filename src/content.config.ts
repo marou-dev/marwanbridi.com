@@ -6,6 +6,7 @@ const thinking = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
+    updated: z.coerce.date().optional(),   // révision de FOND uniquement — pas les retouches de forme
     description: z.string(),
     tags: z.array(z.string()).optional(),
     draft: z.boolean().default(false),

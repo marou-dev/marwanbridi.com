@@ -5,6 +5,7 @@ interface Props {
   lang?: string;
   article?: {
     publishedTime: string;
+    modifiedTime?: string;
     tags?: string[];
   };
   jsonLd?: Record<string, any> | Record<string, any>[];
@@ -53,6 +54,7 @@ import '../styles/global.css';
     <meta property="og:locale" content={ogLocale} />
     <meta property="og:site_name" content="Marwan Bridi" />
     {isArticle && <meta property="article:published_time" content={article.publishedTime} />}
+    {isArticle && article.modifiedTime && <meta property="article:modified_time" content={article.modifiedTime} />}
     {isArticle && <meta property="article:author" content="Marwan Bridi" />}
     {isArticle && article.tags?.map((tag) => <meta property="article:tag" content={tag} />)}
 
