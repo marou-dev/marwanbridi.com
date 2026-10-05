@@ -18,6 +18,10 @@ const publishedTime = post.data.date.toISOString().split('T')[0];
 const modifiedTime = (post.data.updated ?? post.data.date).toISOString().split('T')[0];
 const wasUpdated = modifiedTime !== publishedTime;
 const articleUrl = new URL(`/reflexions/${post.id}/`, Astro.site).href;
+// Toujours la carte generee, derivee du slug : aucune maintenance par essai.
+// `post.data.image` n'est PAS utilise ici — il porte les schemas d'article (SVG),
+// et ni Meta ni LinkedIn ne rendent un SVG en og:image. Deux concerns distincts.
+const ogImage = `/og/${post.id}.png`;
 
 const faqLd = post.data.faq ? {
   "@context": "https://schema.org",
@@ -58,6 +62,7 @@ const jsonLd = {
     "name": "Marwan Bridi",
     "url": "https://marwanbridi.com/"
   },
+  "image": new URL(ogImage, Astro.site).href,
   "mainEntityOfPage": articleUrl,
   "url": articleUrl,
   "inLanguage": post.data.lang || "fr",
@@ -71,6 +76,7 @@ const jsonLd = {
   description={post.data.description}
   lang={post.data.lang || "fr"}
   article={{ publishedTime, modifiedTime, tags: post.data.tags }}
+  ogImage={ogImage}
   jsonLd={faqLd ? [jsonLd, faqLd, breadcrumbLd] : [jsonLd, breadcrumbLd]}
 >
   <article>
