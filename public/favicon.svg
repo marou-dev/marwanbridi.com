@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" fill="#000" rx="4"/>
-  <text x="6" y="24" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#e5e5e5">M</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Marwan Bridi">
+  <rect width="32" height="32" rx="6" fill="#9c4a2e"/>
+  <text x="16" y="23.5" text-anchor="middle"
+        font-family="Georgia,'Times New Roman',serif" font-size="21" font-weight="600"
+        fill="#fafaf7">M</text>
 </svg>
