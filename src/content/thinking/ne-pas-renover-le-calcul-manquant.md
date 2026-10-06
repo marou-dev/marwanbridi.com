@@ -1,7 +1,7 @@
 ---
 title: "Ne pas rénover : le calcul que personne ne fait"
 date: 2026-10-06
-description: "Les travaux énergétiques se font à perte à Genève — le calcul est juste. Mais il compare rénover à ne rien faire, alors que ne rien faire n'est plus une option disponible. Ce que coûte d'attendre, poste par poste."
+description: "On sait calculer ce que coûte de rénover un immeuble genevois. On ne calcule jamais ce que coûte de ne pas le faire — alors que l'inaction cesse d'être une option disponible. Les quatre postes de l'attente, poste par poste."
 tags: [immobilier, énergie, genève, ldtr, rénovation]
 cartouche:
   - { l: "Question", v: "Que coûte l'attente ?" }
@@ -21,19 +21,21 @@ faq:
     a: "La LDTR encadre la hausse de loyer après travaux et bloque les loyers pendant trois à dix ans selon l'intervention : elle limite le rendement de la rénovation. Le règlement sur l'énergie, lui, impose la rénovation elle-même au-delà de certains seuils d'indice de dépense de chaleur. Le premier texte rend les travaux peu rentables, le second les rend obligatoires — et ils ne se compensent pas."
 ---
 
-Henri Barbier-Mueller a publié un calcul qui mérite d'être pris au sérieux, parce qu'il est juste.
+On sait calculer ce que coûte de rénover un immeuble genevois. On ne calcule jamais ce que coûte de ne pas le faire.
 
-Sur un immeuble genevois, de l'ordre de **2,3 à 2,7 millions de francs** de travaux énergétiques pour obtenir un label à haute performance, qui ouvre droit à vingt ans d'exonération de l'impôt immobilier complémentaire. En contrepartie, les loyers sont **bloqués cinq ans** sous le régime LDTR, quels que soient les changements de locataires. Et le marché, lui, ne valorise pas ces travaux à leur coût : la plus-value estimée est de **1 à 1,5 million**. Perte nette pour le propriétaire : de l'ordre de **1,2 à 1,7 million**.
+C'est pourtant la seule comparaison qui ait un sens, et elle devient chaque année plus défavorable à l'attente — parce que l'inaction cesse d'être une option disponible.
 
-Sa conclusion suit : *« Pourquoi, dans ce contexte, un investisseur ayant un raisonnement purement économique irait-il faire d'aussi lourds travaux ? »*
+## Le calcul qu'on sait faire
 
-Il précise lui-même que la LDTR aggrave sans expliquer — dans les cantons sans contrôle des loyers, ces investissements ne sont pas rentables non plus. C'est une honnêteté qu'on rencontre rarement dans ce débat.
+Il est connu, et il est juste. Henri Barbier-Mueller en a publié une version documentée : sur un immeuble genevois, de l'ordre de **2,3 à 2,7 millions de francs** de travaux énergétiques pour obtenir un label à haute performance, qui ouvre droit à vingt ans d'exonération de l'impôt immobilier complémentaire. En contrepartie, les loyers sont **bloqués cinq ans** sous le régime LDTR, quels que soient les changements de locataires. Et le marché ne valorise pas ces travaux à leur coût : la plus-value estimée est de **1 à 1,5 million**. Perte nette : de l'ordre de **1,2 à 1,7 million**.
 
-Je lui ai répondu par une question : **qu'est-ce que ça coûtera de ne pas rénover ?**
+Sa conclusion suit, et elle est difficile à contredire : *« Pourquoi, dans ce contexte, un investisseur ayant un raisonnement purement économique irait-il faire d'aussi lourds travaux ? »*
+
+Il précise d'ailleurs que la LDTR aggrave sans expliquer — dans les cantons sans contrôle des loyers, ces investissements ne sont pas rentables non plus. C'est une honnêteté qu'on rencontre rarement dans ce débat, et elle vaut qu'on prolonge le raisonnement plutôt qu'on le conteste.
 
 ## La branche qui n'existe plus
 
-Ce calcul compare deux options : rénover maintenant, ou ne rien faire. La seconde est en train de disparaître.
+Car ce calcul compare deux options : rénover maintenant, ou ne rien faire. La seconde est en train de disparaître.
 
 L'article 14 du règlement sur l'énergie ne fixe pas un seuil mais un calendrier. Au-delà d'un dépassement significatif de l'indice de dépense de chaleur, le département ordonne un audit et des mesures d'amélioration **dans les douze mois** de la notification, puis des travaux énergétiques **dans les trente-six mois** — aux frais de la personne propriétaire. Et le seuil descend : 222 kWh/m².an jusqu'à fin 2026, 180 dès 2027, 153 dès 2031.
 
