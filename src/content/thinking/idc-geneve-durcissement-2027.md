@@ -121,8 +121,20 @@ Les fourchettes disponibles — de l'ordre de −5% à −15% pour une étiquett
 
 Le nombre de bâtiments qui basculent à chaque palier est mesuré et sourcé. Le pont vers la valeur, le propriétaire qui connaît son immeuble le fera mieux que moi.
 
-## Méthode
+## Méthode — de quoi refaire le calcul
 
-Pagination complète de la couche `OCEN_ETAT_IDC_PUBLIC` du SITG, tri par EGID, champs `dernier_idc` et `moyenne_3ans`. Seuils vérifiés le 30.09.2026 à la source — REn, rsGE L 2 30.01, art. 14, sur silgeneve.ch.
+Les chiffres ci-dessus ne valent que si quelqu'un peut les contredire. Voici ce qu'il faut pour les reproduire.
+
+**La source.** Couche `OCEN_ETAT_IDC_PUBLIC` du SITG, interrogée en lecture seule par son service de requête. Pagination complète — filtre `1=1`, tri par EGID, pages de 2 000 — pour prendre le parc tel que l'office le publie plutôt qu'un échantillon. Champs retenus : `EGID`, `dernier_idc`, `moyenne_3ans`, `sre_m2`, `annee_dernier_idc`, commune.
+
+**Les règles appliquées.** Le seuil d'audit (450 MJ/m².an) et le dépassement significatif (800, puis 650 dès 2027, puis 550 dès 2031) se calculent tous deux sur `moyenne_3ans`, conformément à l'art. 14 al. 1 et 2 — et non sur `dernier_idc`. C'est la distinction qui change le résultat : 275 bâtiments concernés au lieu de 374 si l'on se trompe de colonne. Un enregistrement est compté « sans mesure exploitable » lorsque `dernier_idc` **et** `moyenne_3ans` sont absents ou nuls.
+
+**Le découpage par taille** sépare le parc à 400 m² de `sre_m2`. La validation du proxy passe par le registre fédéral des bâtiments : la longueur de la liste `warea` d'un EGID donne son nombre de logements.
+
+**Ce qui n'a pas été fait, et qu'il faut savoir avant de rejouer.** Les valeurs aberrantes ne sont pas filtrées : 13 enregistrements sur 21 051 sortent des bornes de plausibilité, soit 0,06 %. Médiane et quartiles n'en souffrent pas — une moyenne serait fausse, elle n'est donc publiée nulle part dans ce texte. L'échantillon RegBL compte 706 bâtiments issus d'un cache local, donc non aléatoire : il valide une tendance, pas un taux.
+
+**Un obstacle d'accès, à connaître.** Le SITG refuse les adresses IP de centre de données. Une requête depuis un serveur reçoit un refus, pas une erreur explicite — ce qui fait croire à une panne du service. L'extraction passe par une sortie résidentielle ; depuis une connexion ordinaire, la couche répond directement.
+
+Seuils vérifiés le 30.09.2026 à la source — REn, rsGE L 2 30.01, art. 14, sur silgeneve.ch — et champ d'application au 05.10.2026 sur LEn art. 15C.
 
 Deux réserves que je préfère écrire : les valeurs extrêmes de la couche (minimum à 1, maximum à 7'695 MJ/m².an) sont invraisemblables et n'ont pas été filtrées — médiane et quartiles n'en souffrent pas, une moyenne serait fausse, elle n'est donc pas publiée. Et la couche ne conserve qu'une ligne par bâtiment, le dernier IDC connu : elle ne permet aucun suivi dans le temps. Un bâtiment dont la mesure date de 2012 n'est pas un bâtiment mesuré en 2012 — c'est un bâtiment qu'on ne mesure plus. Les deux se ressemblent dans un tableau et ne disent pas la même chose.

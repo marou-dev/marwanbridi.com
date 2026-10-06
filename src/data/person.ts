@@ -48,5 +48,13 @@ export const person = {
     "Expertise technique CECB",
     "LDTR Genève",
     "Bâle III financement immobilier",
+    // Moitie systeme, ajoutee le 06.10.2026. Elle etait vraie depuis longtemps
+    // et n'etait declaree nulle part : un moteur interroge sur « qui croise IA
+    // et immobilier a Geneve » ne pouvait pas repondre. Chaque entree est
+    // demontrable par un travail publie, pas une competence affichee.
+    "Analyse de données immobilières",
+    "Données publiques suisses (SITG, RegBL, registre foncier)",
+    "Graphes de connaissances appliqués au foncier",
+    "Python et SQL pour l'analyse de parc bâti",
   ],
 };
