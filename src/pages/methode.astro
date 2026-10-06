@@ -1,65 +1,158 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { person } from '../data/person';
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Méthode — Marwan Bridi",
-  "description": "Des outils simples, composables, en production. Obsidian, Claude Code, Python, n8n — du code qui tourne aujourd'hui.",
-  "url": "https://marwanbridi.com/methode",
-  "author": {
-    "@type": "Person",
-    "name": "Marwan Bridi",
-    "jobTitle": "Project Manager Innovation"
-  }
-};
+const faq = [
+  {
+    q: "Comment rendre une décision immobilière calculable ?",
+    a: "En séparant d'abord ce qui relève du calcul de ce qui relève du jugement. Une surface, un seuil réglementaire, une distribution se calculent : c'est du code, et le résultat doit être reproductible. Un arbitrage de financement, une lecture de marché, l'intérêt doctrinal d'une jurisprudence relèvent du jugement. Confier l'arithmétique à un modèle de langage ou le jugement à un script produit des réponses qui semblent justes exactement quand elles sont fausses.",
+  },
+  {
+    q: "Qu'est-ce qui distingue une donnée publique exploitable d'une donnée brute ?",
+    a: "La granularité et la provenance. Avant d'interpréter une distribution, il faut savoir ce qu'une ligne représente. La couche IDC de l'OCEN ne conserve qu'un enregistrement par bâtiment — le dernier indice connu, pas une série. Un bâtiment « de 2012 » n'est donc pas un bâtiment mesuré en 2012 : c'est un bâtiment qu'on ne mesure plus. Sans cette vérification, la baisse apparente du parc se lit comme une amélioration alors qu'elle est au moins autant un effet de sélection.",
+  },
+  {
+    q: "Pourquoi refuser de chiffrer certaines conclusions ?",
+    a: "Parce qu'un montant en francs issu d'une fourchette estimée multipliée par une valeur qu'on ne possède pas est entièrement fabriqué — et il circulera ensuite sans sa méthode. L'étude sur l'indice de dépense de chaleur du parc genevois s'arrête volontairement au nombre de bâtiments qui basculent à chaque palier réglementaire, qui est mesuré, plutôt que de le convertir en décote de valeur, qui ne l'est pas.",
+  },
+  {
+    q: "Quels outils sont utilisés pour ce travail ?",
+    a: "Python et SQL pour tout ce qui se calcule, un graphe de connaissances pour les relations entre acteurs, parcelles et transactions, des modèles de langage pour les seules tâches de jugement, et Markdown versionné comme source de vérité. Les outils comptent moins que la frontière entre les deux : un wrapper déterministe et testable est préférable à une infrastructure qui dépend d'un service vivant.",
+  },
+];
+
+const jsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Méthode — Marwan Bridi",
+    "description": "Comment une décision immobilière devient calculable : séparer le calcul du jugement, vérifier la granularité de la donnée, et savoir ce qu'on refuse de chiffrer.",
+    "url": "https://marwanbridi.com/methode/",
+    "inLanguage": "fr",
+    "author": person,
+    "about": [
+      { "@type": "Thing", name: "Analyse de données immobilières" },
+      { "@type": "Thing", name: "Données publiques suisses" },
+      { "@type": "Thing", name: "Méthodologie d'expertise immobilière" },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  },
+];
 ---
 
-<BaseLayout title="Méthode — Marwan Bridi" jsonLd={jsonLd}>
+<BaseLayout
+  title="Méthode — Marwan Bridi"
+  description="Comment une décision immobilière devient calculable : séparer le calcul du jugement, vérifier la granularité de la donnée, et savoir ce qu'on refuse de chiffrer."
+  jsonLd={jsonLd}
+>
   <section class="section">
     <h1>Méthode</h1>
     <p class="hero-subtitle" style="margin-bottom: 2rem;">
-      Des outils simples, composables, en production. Pas de slides sur "l'IA du futur" — du code qui tourne aujourd'hui.
+      L'immobilier suisse ne manque pas de données. Il manque de décisions calculables.
     </p>
   </section>
 
   <section class="section reveal">
-    <h2>Knowledge</h2>
-    <div class="chip-grid">
-      <span class="chip">Obsidian</span>
-      <span class="chip">Claude Code</span>
-      <span class="chip">Markdown Skills</span>
-    </div>
+    <h2>Ce qui se calcule, et ce qui se juge</h2>
+    <p class="desc">
+      La première question n'est jamais technique. Elle est de savoir de quelle
+      nature est la réponse cherchée. Une surface, un seuil réglementaire, une
+      distribution, un compte : cela se calcule, et le résultat doit être
+      reproductible par quelqu'un d'autre. Un arbitrage de financement, une
+      lecture de marché, l'intérêt doctrinal d'un arrêt : cela se juge.
+    </p>
+    <p class="desc">
+      La frontière n'est pas un détail d'implémentation. Demander l'arithmétique
+      à un modèle de langage, ou le jugement à un script, produit des réponses
+      qui sonnent justes exactement quand elles sont fausses. <strong>Si c'est
+      calculable, c'est du code ; si c'est du jugement, c'est un modèle.</strong>
+    </p>
   </section>
 
   <section class="section reveal">
-    <h2>Automatisation</h2>
-    <div class="chip-grid">
-      <span class="chip">Python</span>
-      <span class="chip">n8n</span>
-      <span class="chip">GitHub Actions</span>
-      <span class="chip">NLP / LLM</span>
-    </div>
+    <h2>Avant d'interpréter, savoir ce qu'une ligne représente</h2>
+    <p class="desc">
+      La plupart des erreurs d'analyse immobilière ne viennent pas du calcul mais
+      de la granularité de la source. Un exemple vécu, et publié :
+      la couche cantonale de l'indice de dépense de chaleur ne conserve
+      <em>qu'un enregistrement par bâtiment</em> — le dernier indice connu, jamais
+      une série historique.
+    </p>
+    <p class="desc">
+      Conséquence : un bâtiment « de 2012 » n'est pas un bâtiment mesuré en 2012,
+      c'est un bâtiment qu'on ne mesure plus depuis quatorze ans. La médiane
+      élevée des vieux millésimes ne dit donc pas que le parc était mauvais — elle
+      dit que <strong>les bâtiments qu'on cesse de mesurer sont les plus
+      énergivores</strong>. La décroissance apparente est au moins autant un effet
+      de sélection qu'une amélioration, et rien dans ces données ne permet de
+      départager. Sans cette vérification, on publie l'inverse de ce que la donnée
+      montre.
+    </p>
   </section>
 
   <section class="section reveal">
-    <h2>Construction & Immobilier</h2>
-    <div class="chip-grid">
-      <span class="chip">Procore</span>
-      <span class="chip">Monday.com</span>
-      <span class="chip">Google Sheets</span>
-      <span class="chip">Apps Script</span>
+    <h2>Produire la donnée plutôt que la citer</h2>
+    <p class="desc">
+      Les chiffres qui circulent sur le parc immobilier genevois viennent presque
+      tous des mêmes études. Les reprendre est légitime ; les produire change la
+      nature de ce qu'on peut affirmer — et oblige à exposer sa méthode.
+    </p>
+    <p class="desc">
+      <a href="/reflexions/idc-geneve-durcissement-2027/">L'analyse du durcissement
+      réglementaire de 2027</a> en est l'application : extraction complète de la
+      couche publique de l'office cantonal de l'énergie, croisement avec le
+      calendrier du règlement, et un résultat que personne n'avait publié — le
+      nombre de propriétaires qui basculeront sous obligation de travaux à chaque
+      palier. Les réserves sont dans le texte, pas en note de bas de page : plus
+      de la moitié du parc n'a aucune mesure exploitable, et l'échantillon des
+      petits bâtiments n'est pas représentatif puisque la déclaration leur est
+      facultative.
+    </p>
+  </section>
+
+  <section class="section reveal">
+    <h2>Ce qu'on refuse de chiffrer</h2>
+    <div class="card">
+      <p class="desc" style="margin-bottom: 0;">
+        Une décote est un pourcentage <em>de quelque chose</em>. Multiplier une
+        fourchette estimée par une valeur qu'on ne possède pas produit un montant
+        en francs entièrement fabriqué — et il circulera ensuite sans sa méthode.
+        Le nombre de bâtiments concernés est mesuré et se publie ; sa conversion
+        en valeur exposée ne l'est pas et ne se publie pas. Un chiffre faux est
+        plus dangereux qu'un chiffre absent : il porte l'autorité du chiffre.
+      </p>
     </div>
   </section>
 
   <hr class="separator" />
 
   <section class="section reveal">
-    <h2>Philosophie</h2>
-    <div class="card">
-      <p class="desc" style="margin-bottom: 0;">
-        Le vault est la source de vérité. Skills Markdown > infrastructure complexe. L'IA amplifie ce qui existe — elle ne remplace pas la pensée structurée.
-      </p>
+    <h2>L'outillage</h2>
+    <p class="desc">
+      Il vient en dernier, et c'est voulu : il change, la méthode non.
+      Python et SQL pour ce qui se calcule, un graphe de connaissances pour les
+      relations entre acteurs, parcelles et transactions, des modèles de langage
+      pour les seules tâches de jugement, Markdown versionné comme source de
+      vérité. Un wrapper déterministe et testable est préférable à une
+      infrastructure qui dépend d'un service vivant.
+    </p>
+    <div class="chip-grid">
+      <span class="chip">Python</span>
+      <span class="chip">SQL</span>
+      <span class="chip">Neo4j</span>
+      <span class="chip">RAG / LLM</span>
+      <span class="chip">n8n</span>
+      <span class="chip">Obsidian</span>
+      <span class="chip">Procore</span>
+      <span class="chip">SITG / données publiques</span>
     </div>
   </section>
 </BaseLayout>
