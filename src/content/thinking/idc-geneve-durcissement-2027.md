@@ -17,7 +17,7 @@ faq:
   - q: "Que change le palier de 2027 pour un propriétaire genevois ?"
     a: "Le seuil de dépassement significatif passe de 222 à 180 kWh/m².an au 1er janvier 2027. À distribution inchangée, le nombre de bâtiments concernés passe de 275 à 908 — il triple. Le palier de 2031 (153 kWh) porte ce nombre à 2'402, soit 8,7 fois la population actuelle. L'art. 14 al. 3 impose l'audit et les mesures d'amélioration dans les douze mois suivant la notification, aux frais du propriétaire."
   - q: "Le durcissement énergétique genevois touche-t-il surtout les immeubles locatifs ?"
-    a: "Non, l'inverse. Les bâtiments de moins de 400 m² de surface de référence énergétique — majoritairement mono-logement — franchissent le palier de 2031 dans 24,2% des cas, contre 9,8% pour les bâtiments plus grands. Un petit bâtiment est 2,5 fois plus exposé qu'un immeuble. Le parc locatif est déjà la moitié la plus performante du parc genevois."
+    a: "Non, l'inverse. Les bâtiments de moins de 400 m² de surface de référence énergétique — majoritairement mono-logement — franchissent le palier de 2031 dans 28,4% des cas, contre 9,6% pour les bâtiments plus grands. Un petit bâtiment est près de trois fois plus exposé qu'un immeuble. Le parc locatif est déjà la moitié la plus performante du parc genevois."
   - q: "Les villas genevoises sont-elles soumises à l'obligation de déclarer leur IDC ?"
     a: "La loi sur l'énergie (LEn art. 15C al. 1) rend le calcul annuel de l'IDC obligatoire pour tous les bâtiments chauffés, villas comprises — alors que le régime ne visait historiquement que les immeubles d'au moins cinq preneurs de chaleur. Mais l'office cantonal de l'énergie indique, au 3 novembre 2025, que le calcul reste pour le moment facultatif pour les villas et petits bâtiments d'habitation, le temps que les dispositifs soient mis en place. L'accord du 5 février 2024 entre le Département du territoire et quinze organisations leur accorde en outre trois ans de délai supplémentaire pour les obligations de rénovation ; sa traduction dans le règlement n'était pas encore faite au 5 octobre 2026."
   - q: "Que signifie un IDC inconnu pour un bâtiment à Genève ?"
@@ -94,16 +94,18 @@ La couche publie la surface de référence énergétique. En séparant le parc �
 
 | | IDC médian | au-dessus de 550 MJ |
 |---|---|---|
-| SRE < 400 m² | 424 MJ | **24,2%** |
-| SRE ≥ 400 m² | 388 MJ | **9,8%** |
+| SRE < 400 m² | 449 MJ | **28,4%** |
+| SRE ≥ 400 m² | 388 MJ | **9,6%** |
 
-**Un petit bâtiment est 2,5 fois plus exposé au palier 2031 qu'un grand.** Et les communes en tête du classement le sont parce qu'elles comptent 1,6 fois plus de petits bâtiments que la moyenne cantonale — 36,5% contre 23,1% — pas parce que leurs habitants se chauffent différemment.
+*Sur les 18'668 bâtiments dont la moyenne triennale et la surface sont toutes deux connues.*
+
+**Un petit bâtiment est près de trois fois plus exposé au palier 2031 qu'un grand** — 2,97 fois exactement. Et les communes en tête du classement le sont parce qu'elles comptent 1,6 fois plus de petits bâtiments que la moyenne cantonale — 36,5% contre 23,1% — pas parce que leurs habitants se chauffent différemment.
 
 Testé contre le RegBL sur un échantillon de 706 bâtiments : sous 400 m² de SRE, la médiane est d'**un** logement et 68,6% sont mono-logement ; au-dessus, la médiane passe à neuf et le mono-logement tombe à 17,5%. Le proxy tient — avec la nuance qu'un tiers des petits bâtiments comptent plusieurs logements. La formulation juste n'est donc pas « les villas », mais **le petit bâti, majoritairement mono-logement**.
 
 Ce que coûte la sortie du seuil se mesure sur des cas réels : l'immeuble de 1952 dont j'ai [détaillé la rénovation](/reflexions/renovation-1952-suisse/) partait de 203 kWh/m².an — au-dessus du palier genevois de 2027 — pour redescendre à 31, contre 424'000 CHF de travaux sur douze logements. Il est à Lausanne, donc hors REn ; l'ordre de grandeur, lui, se transpose.
 
-⚠️ **Et c'est ici qu'il faut lire le résultat avec la section précédente.** Si la déclaration est facultative pour les villas, alors les petits bâtiments présents dans la couche mesurée **ne sont pas un échantillon représentatif du petit bâti genevois** : ce sont des petits immeubles atteignant quand même cinq preneurs de chaleur, ou des propriétaires qui ont déclaré volontairement. Le chiffre de 24,2 % décrit ceux-là, pas les villas du canton. Il indique une direction, pas un taux.
+⚠️ **Et c'est ici qu'il faut lire le résultat avec la section précédente.** Si la déclaration est facultative pour les villas, alors les petits bâtiments présents dans la couche mesurée **ne sont pas un échantillon représentatif du petit bâti genevois** : ce sont des petits immeubles atteignant quand même cinq preneurs de chaleur, ou des propriétaires qui ont déclaré volontairement. Le chiffre de 28,4 % décrit ceux-là, pas les villas du canton. Il indique une direction, pas un taux.
 
 **Le durcissement du REn frappera d'abord des propriétaires individuels — le jour où il s'appliquera à eux.** Dans un canton où le débat énergétique est presque entièrement locatif, c'est le résultat le moins attendu — et il complète le dossier LDTR par l'autre bout : cet essai-là explique pourquoi le locatif ne se rénove pas ; celui-ci montre que le locatif est déjà la moitié la plus performante du parc.
 
@@ -136,5 +138,7 @@ Les chiffres ci-dessus ne valent que si quelqu'un peut les contredire. Voici ce 
 **Un obstacle d'accès, à connaître.** Le SITG refuse les adresses IP de centre de données. Une requête depuis un serveur reçoit un refus, pas une erreur explicite — ce qui fait croire à une panne du service. L'extraction passe par une sortie résidentielle ; depuis une connexion ordinaire, la couche répond directement.
 
 Seuils vérifiés le 30.09.2026 à la source — REn, rsGE L 2 30.01, art. 14, sur silgeneve.ch — et champ d'application au 05.10.2026 sur LEn art. 15C.
+
+**Une correction, et comment elle est arrivée.** La première version de cet essai segmentait par taille sur la *dernière mesure* alors que le palier de 2031 porte sur la *moyenne triennale* — deux colonnes différentes dans le même texte. L'écart : 22,7 % contre 28,4 % pour le petit bâti. Je ne l'avais pas vu en relisant ; c'est le script de contrôle, écrit pour permettre à d'autres de me contredire, qui l'a signalé à sa première exécution. La conclusion s'en trouve renforcée, ce qui explique sans doute qu'elle soit passée inaperçue : un résultat qui va dans le sens attendu ne déclenche pas la vérification qu'un résultat contraire aurait déclenchée.
 
 Deux réserves que je préfère écrire : les valeurs extrêmes de la couche (minimum à 1, maximum à 7'695 MJ/m².an) sont invraisemblables et n'ont pas été filtrées — médiane et quartiles n'en souffrent pas, une moyenne serait fausse, elle n'est donc pas publiée. Et la couche ne conserve qu'une ligne par bâtiment, le dernier IDC connu : elle ne permet aucun suivi dans le temps. Un bâtiment dont la mesure date de 2012 n'est pas un bâtiment mesuré en 2012 — c'est un bâtiment qu'on ne mesure plus. Les deux se ressemblent dans un tableau et ne disent pas la même chose.
