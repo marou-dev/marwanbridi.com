@@ -12,7 +12,7 @@ faq:
   - q: "La rénovation énergétique est-elle rentable à Genève ?"
     a: "Prise isolément, rarement. Un calcul publié par Henri Barbier-Mueller sur un immeuble genevois oppose environ 2,3 à 2,7 millions de travaux à une plus-value de marché estimée à 1 à 1,5 million, avec des loyers bloqués cinq ans sous le régime LDTR. La perte nette est réelle. Mais ce calcul compare rénover à ne rien faire, alors que le règlement sur l'énergie transforme progressivement l'inaction en report : la vraie comparaison est entre rénover au moment choisi et rénover sur injonction."
   - q: "Que risque un propriétaire genevois qui ne rénove pas ?"
-    a: "L'article 14 du règlement sur l'énergie prévoit, en cas de dépassement significatif du seuil d'indice de dépense de chaleur, un audit et des mesures d'amélioration dans les douze mois suivant la notification, puis des travaux énergétiques dans les trente-six mois, aux frais de la personne propriétaire. Le seuil descend à 180 kWh/m².an en 2027 puis à 153 en 2031 : à distribution inchangée, le nombre de bâtiments concernés passe de 275 à 908 puis à 2'402."
+    a: "L'article 14 du règlement sur l'énergie prévoit, en cas de dépassement significatif du seuil d'indice de dépense de chaleur, un audit et des mesures d'amélioration dans les douze mois suivant la notification, puis des travaux énergétiques dans les trente-six mois, aux frais de la personne propriétaire. Le seuil descend à 180 kWh/m².an en 2027 puis à 153 en 2031 : à distribution inchangée, le nombre de bâtiments concernés passe de 276 à 905 puis à 2'377."
   - q: "Pourquoi attendre 2031 pour rénover coûterait-il plus cher ?"
     a: "Parce que les travaux seraient commandés dans la même fenêtre que ceux de milliers d'autres propriétaires. L'État de Genève le dit explicitement : le calendrier échelonné a été maintenu, dans l'accord du 5 février 2024, « afin d'éviter un engorgement pour les professionnels ». La congestion est le mode de défaillance que le législateur cherche à éviter — celui qui attend s'y expose volontairement."
   - q: "Combien coûte la rénovation énergétique du parc immobilier suisse ?"
@@ -39,7 +39,7 @@ Car ce calcul compare deux options : rénover maintenant, ou ne rien faire. La s
 
 L'article 14 du règlement sur l'énergie ne fixe pas un seuil mais un calendrier. Au-delà d'un dépassement significatif de l'indice de dépense de chaleur, le département ordonne un audit et des mesures d'amélioration **dans les douze mois** de la notification, puis des travaux énergétiques **dans les trente-six mois** — aux frais de la personne propriétaire. Et le seuil descend : 222 kWh/m².an jusqu'à fin 2026, 180 dès 2027, 153 dès 2031.
 
-J'ai mesuré ce que ça donne sur le parc genevois réel. [Le nombre de bâtiments en dépassement significatif](/reflexions/idc-geneve-durcissement-2027/) passe de **275 aujourd'hui à 908 en 2027, puis 2'402 en 2031**.
+J'ai mesuré ce que ça donne sur le parc genevois réel. [Le nombre de bâtiments en dépassement significatif](/reflexions/idc-geneve-durcissement-2027/) passe de **276 aujourd'hui à 905 en 2027, puis 2'377 en 2031**.
 
 Le choix n'est donc pas entre rénover et ne pas rénover. Il est entre :
 
@@ -52,7 +52,7 @@ Ce n'est plus une décision d'investissement. C'est une **décision de calendrie
 
 **L'engorgement, et l'État le nomme lui-même.** C'est l'argument le plus fort, et il ne vient pas de moi. Dans l'accord du 5 février 2024 entre le Département du territoire et quinze organisations — dont la Chambre genevoise immobilière, l'USPI, l'ASLOCA et l'association des propriétaires de villas — l'État justifie le maintien du calendrier échelonné : *« afin d'éviter un **engorgement** pour les professionnels et de permettre la réalisation des travaux par des entreprises locales. »*
 
-Le législateur désigne donc la congestion comme le mode de défaillance attendu. Celui qui attend 2031 commandera ses travaux dans la même fenêtre que deux mille autres propriétaires genevois, sur une place où les métiers du bâtiment sont déjà le facteur limitant. **Le prix au mètre carré de 2031 n'est pas celui de 2026** — et le calcul de la perte est fait au tarif d'aujourd'hui pour des travaux qui se feront peut-être au tarif d'un marché saturé.
+Le législateur désigne donc la congestion comme le mode de défaillance attendu. Celui qui attend 2031 commandera ses travaux dans la même fenêtre que près de deux mille quatre cents autres propriétaires genevois, sur une place où les métiers du bâtiment sont déjà le facteur limitant. **Le prix au mètre carré de 2031 n'est pas celui de 2026** — et le calcul de la perte est fait au tarif d'aujourd'hui pour des travaux qui se feront peut-être au tarif d'un marché saturé.
 
 **La fiscalité se referme deux fois.** L'exonération de l'impôt immobilier complémentaire ne s'obtient qu'en rénovant, et une seule fois par propriétaire. À cela s'ajoute la suppression annoncée de la valeur locative, vers 2028 : la déduction fiscale des travaux disparaîtra pour ceux qui rénoveront après. Attendre coûte l'exonération **et** la déduction.
 

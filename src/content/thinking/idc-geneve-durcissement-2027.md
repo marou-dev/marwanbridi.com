@@ -14,15 +14,15 @@ faq:
   - q: "Quel est le seuil d'IDC à Genève en 2026 ?"
     a: "Le règlement sur l'énergie (REn, rsGE L 2 30.01) fixe à l'art. 14 al. 1 un seuil de 125 kWh/m².an — soit 450 MJ/m².an — au-delà duquel un audit énergétique peut être exigé. L'art. 14 al. 2 définit séparément le dépassement significatif, qui déclenche l'obligation de travaux : 222 kWh/m².an (800 MJ) jusqu'au 31 décembre 2026, 180 kWh (650 MJ) dès le 1er janvier 2027, puis 153 kWh (550 MJ) dès le 1er janvier 2031."
   - q: "Combien de bâtiments genevois dépassent le seuil d'IDC ?"
-    a: "Sur les 21'047 bâtiments dont l'IDC est mesuré dans la couche publique de l'OCEN, 6'265 dépassent le seuil d'audit de 450 MJ/m².an, soit 29,8%. Le dépassement significatif, qui se calcule sur la moyenne des trois dernières années, ne concerne en revanche que 275 bâtiments sur les 18'674 dont cette moyenne est connue — 1,5%."
+    a: "Les deux seuils de l'art. 14 portent sur l'IDC moyen des trois dernières années, connu pour 18'668 bâtiments. Sur cette base, 6'015 dépassent le seuil d'audit de 450 MJ/m².an — 32,2 % — et 276 seulement atteignent le dépassement significatif de 800 MJ, soit 1,5 %. C'est entre ces deux chiffres que se joue l'essentiel du parc concerné."
   - q: "Que change le palier de 2027 pour un propriétaire genevois ?"
-    a: "Le seuil de dépassement significatif passe de 222 à 180 kWh/m².an au 1er janvier 2027. À distribution inchangée, le nombre de bâtiments concernés passe de 275 à 908 — il triple. Le palier de 2031 (153 kWh) porte ce nombre à 2'402, soit 8,7 fois la population actuelle. L'art. 14 al. 3 impose l'audit et les mesures d'amélioration dans les douze mois suivant la notification, aux frais du propriétaire."
+    a: "Le seuil de dépassement significatif passe de 222 à 180 kWh/m².an au 1er janvier 2027. À distribution inchangée, le nombre de bâtiments concernés passe de 276 à 905 — il triple. Le palier de 2031 (153 kWh) porte ce nombre à 2'377, soit 8,6 fois la population actuelle. L'art. 14 al. 3 impose l'audit et les mesures d'amélioration dans les douze mois suivant la notification, aux frais du propriétaire."
   - q: "Le durcissement énergétique genevois touche-t-il surtout les immeubles locatifs ?"
     a: "Non, l'inverse. Les bâtiments de moins de 400 m² de surface de référence énergétique — majoritairement mono-logement — franchissent le palier de 2031 dans 28,4% des cas, contre 9,6% pour les bâtiments plus grands. Un petit bâtiment est près de trois fois plus exposé qu'un immeuble. Le parc locatif est déjà la moitié la plus performante du parc genevois."
   - q: "Les villas genevoises sont-elles soumises à l'obligation de déclarer leur IDC ?"
     a: "La loi sur l'énergie (LEn art. 15C al. 1) rend le calcul annuel de l'IDC obligatoire pour tous les bâtiments chauffés, villas comprises — alors que le régime ne visait historiquement que les immeubles d'au moins cinq preneurs de chaleur. Mais l'office cantonal de l'énergie indique, au 3 novembre 2025, que le calcul reste pour le moment facultatif pour les villas et petits bâtiments d'habitation, le temps que les dispositifs soient mis en place. L'accord du 5 février 2024 entre le Département du territoire et quinze organisations leur accorde en outre trois ans de délai supplémentaire pour les obligations de rénovation ; sa traduction dans le règlement n'était pas encore faite au 5 octobre 2026."
   - q: "Que signifie un IDC inconnu pour un bâtiment à Genève ?"
-    a: "Sur les 49'734 bâtiments de la couche publique de l'OCEN, 28'687 ne portent aucune mesure exploitable — ni dernier IDC, ni moyenne triennale — soit 57,7%. La donnée publique ne permet pas de distinguer un bâtiment non assujetti d'un bâtiment non déclaré. Pour la majorité du parc, l'indice sur lequel repose le dispositif réglementaire n'a donc pas de valeur publiée."
+    a: "Sur les 49'734 bâtiments de la couche publique de l'OCEN, 28'677 ne portent aucune mesure exploitable — ni dernier IDC, ni moyenne triennale — soit 57,7%. La donnée publique ne permet pas de distinguer un bâtiment non assujetti d'un bâtiment non déclaré. Pour la majorité du parc, l'indice sur lequel repose le dispositif réglementaire n'a donc pas de valeur publiée."
 ---
 
 À Genève, le débat énergétique sur le bâti porte presque entièrement sur le parc locatif : la LDTR, les régies, les [83% d'immeubles de plus de quarante ans jamais modernisés](/reflexions/ldtr-piege-renovation-geneve/). Le sujet est réel, et le blocage que j'ai décrit ailleurs n'a pas bougé.
@@ -65,31 +65,31 @@ Cet accord mettait fin à un bras de fer peu banal. Le projet de loi 12593, dép
 
 ## Ce que ça donne sur le parc réel
 
-Sur les 21'047 bâtiments dont l'IDC est mesuré, la médiane s'établit à 387 MJ/m².an — 108 kWh. Elle est **sous** le seuil d'audit. Le troisième quartile, à 470 MJ, le franchit tout juste.
+Sur les 21'052 bâtiments dont l'IDC est mesuré, la médiane s'établit à 386 MJ/m².an — 107 kWh. Elle est **sous** le seuil d'audit. Le troisième quartile, à 470 MJ, le franchit tout juste.
 
-En appliquant le calendrier à la moyenne triennale, connue pour 18'674 bâtiments :
+En appliquant le calendrier à la moyenne triennale, connue pour 18'668 bâtiments :
 
 | Échéance | Bâtiments en dépassement significatif | Part |
 |---|---|---|
-| aujourd'hui | **275** | 1,5% |
-| dès 2027 | **908** | 4,9% |
-| dès 2031 | **2'402** | 12,9% |
+| aujourd'hui | **276** | 1,5 % |
+| dès 2027 | **905** | 4,8 % |
+| dès 2031 | **2'377** | 12,7 % |
 
-**L'obligation lourde ne concerne presque personne aujourd'hui. Elle triple dans trois mois, et touche 8,7 fois plus de bâtiments en 2031.**
+**L'obligation lourde ne concerne presque personne aujourd'hui. Elle triple dans trois mois, et touche 8,6 fois plus de bâtiments en 2031.**
 
 C'est, à ma connaissance, le chiffre que personne n'a publié. L'état du parc, chacun peut le refaire. Le nombre de propriétaires qui basculent à chaque palier demande de croiser la distribution avec le calendrier — et c'est celui-là qui a une conséquence datée.
 
 ## 1,5% aujourd'hui, et c'est précisément le problème
 
-Le chiffre le plus instructif n'est pas le 29,8% de bâtiments au-dessus du seuil d'audit. C'est la bande intermédiaire : **5'891 bâtiments, 28,0% du parc mesuré, vivent entre 450 et 800 MJ/m².an**. Au-dessus du seuil qui justifie un audit, en dessous de celui qui force des travaux.
+Le chiffre le plus instructif n'est pas le 32,2 % de bâtiments au-dessus du seuil d'audit. C'est la bande intermédiaire : **5'739 bâtiments, 30,7 % des éligibles, vivent entre 450 et 800 MJ/m².an**. Au-dessus du seuil qui justifie un audit, en dessous de celui qui force des travaux.
 
 Dans cette bande, l'obligation est légère et rien ne déclenche la décision. Le résultat ne porte donc pas sur l'état du parc genevois — il porte sur **l'efficacité du dispositif**. Un seuil de contrainte placé là où presque aucun bâtiment ne se trouve ne produit pas de rénovation ; il produit de l'attente.
 
-## Qui bascule, et la fausse piste communale
+## Qui bascule, et ce qui explique le classement
 
-Le classement par commune de l'exposition au palier 2031 est tentant. En tête, pour les communes de plus de 150 bâtiments mesurés : Le Grand-Saconnex 23,5%, Collonge-Bellerive 23,3%, Chêne-Bourg 21,8%, Cologny 20,7%, Chêne-Bougeries 20,1%.
+L'exposition au palier 2031 varie fortement d'une commune à l'autre. Sur les 26 communes comptant au moins 150 bâtiments éligibles, elle va de **3,8 % à 23,2 %** — un rapport de six entre les extrêmes. En tête : Le Grand-Saconnex 23,2 %, Chêne-Bourg 22,0 %, Satigny 20,7 %, Thônex 20,3 %, Chêne-Bougeries 20,3 %.
 
-Des communes parmi les plus aisées du canton. La lecture qui vient à l'esprit — « les quartiers riches chauffent mal » — est fausse.
+La tentation est d'y chercher une explication sociologique. Elle n'en a pas besoin : une seule variable suffit, et elle est dans la donnée.
 
 La couche publie la surface de référence énergétique. En séparant le parc à 400 m² de SRE :
 
@@ -100,7 +100,7 @@ La couche publie la surface de référence énergétique. En séparant le parc �
 
 *Sur les 18'668 bâtiments dont la moyenne triennale et la surface sont toutes deux connues.*
 
-**Un petit bâtiment est près de trois fois plus exposé au palier 2031 qu'un grand** — 2,97 fois exactement. Et les communes en tête du classement le sont parce qu'elles comptent 1,6 fois plus de petits bâtiments que la moyenne cantonale — 36,5% contre 23,1% — pas parce que leurs habitants se chauffent différemment.
+**Un petit bâtiment est près de trois fois plus exposé au palier 2031 qu'un grand** — 2,97 fois exactement. Et les communes de tête comptent **1,3 fois plus de petits bâtiments** que la moyenne cantonale : 21,9 % contre 16,9 %. Le classement communal ne mesure donc pas une façon de se chauffer, il mesure une composition du bâti.
 
 Testé contre le RegBL sur un échantillon de 706 bâtiments : sous 400 m² de SRE, la médiane est d'**un** logement et 68,6% sont mono-logement ; au-dessus, la médiane passe à neuf et le mono-logement tombe à 17,5%. Le proxy tient — avec la nuance qu'un tiers des petits bâtiments comptent plusieurs logements. La formulation juste n'est donc pas « les villas », mais **le petit bâti, majoritairement mono-logement**.
 
@@ -112,7 +112,7 @@ Ce que coûte la sortie du seuil se mesure sur des cas réels : l'immeuble de 19
 
 ## Le point aveugle : plus de la moitié du parc
 
-Sur les 49'734 bâtiments de la couche, **28'687 ne portent aucune mesure exploitable — 57,7%**. Ni dernier IDC, ni moyenne triennale.
+Sur les 49'734 bâtiments de la couche, **28'677 ne portent aucune mesure exploitable — 57,7 %**. Ni dernier IDC, ni moyenne triennale.
 
 La donnée publique ne permet pas de distinguer un bâtiment non assujetti d'un bâtiment non déclaré, ou déclaré à zéro. Le constat reste : on légifère par paliers sur un indice dont la valeur n'est pas publiée pour la majorité des bâtiments concernés. Tous les chiffres ci-dessus portent sur les 42,3% restants.
 
@@ -128,9 +128,9 @@ Le nombre de bâtiments qui basculent à chaque palier est mesuré et sourcé. L
 
 Les chiffres ci-dessus ne valent que si quelqu'un peut les contredire. Le script qui les produit est public : [github.com/marou-dev/idc-geneve](https://github.com/marou-dev/idc-geneve). Il télécharge la couche, recalcule tout, et compare au chiffre publié en signalant chaque écart. Ce qui suit en décrit la substance.
 
-**La source.** Couche `OCEN_ETAT_IDC_PUBLIC` du SITG, interrogée en lecture seule par son service de requête. Pagination complète — filtre `1=1`, tri par EGID, pages de 2 000 — pour prendre le parc tel que l'office le publie plutôt qu'un échantillon. Champs retenus : `EGID`, `dernier_idc`, `moyenne_3ans`, `sre_m2`, `annee_dernier_idc`, commune.
+**La source.** Extraction du **6 octobre 2026** — tous les chiffres de cet essai en proviennent, aucun ne vient d'un relevé antérieur. Couche `OCEN_ETAT_IDC_PUBLIC` du SITG, interrogée en lecture seule par son service de requête. Pagination complète — filtre `1=1`, tri par EGID, pages de 2 000 — pour prendre le parc tel que l'office le publie plutôt qu'un échantillon. Champs retenus : `EGID`, `dernier_idc`, `moyenne_3ans`, `sre_m2`, `annee_dernier_idc`, commune.
 
-**Les règles appliquées.** Le seuil d'audit (450 MJ/m².an) et le dépassement significatif (800, puis 650 dès 2027, puis 550 dès 2031) se calculent tous deux sur `moyenne_3ans`, conformément à l'art. 14 al. 1 et 2 — et non sur `dernier_idc`. C'est la distinction qui change le résultat : 275 bâtiments concernés au lieu de 374 si l'on se trompe de colonne. Un enregistrement est compté « sans mesure exploitable » lorsque `dernier_idc` **et** `moyenne_3ans` sont absents ou nuls.
+**Les règles appliquées.** Le seuil d'audit (450 MJ/m².an) et le dépassement significatif (800, puis 650 dès 2027, puis 550 dès 2031) se calculent tous deux sur `moyenne_3ans`, conformément à l'art. 14 al. 1 et 2 — et non sur `dernier_idc`. C'est la distinction qui change le résultat : sur la moyenne triennale, 276 bâtiments atteignent le dépassement significatif et 6'015 le seuil d'audit ; calculés sur la dernière mesure, les mêmes seuils donneraient 374 et 6'256. L'erreur de colonne se paie deux fois. Un enregistrement est compté « sans mesure exploitable » lorsque `dernier_idc` **et** `moyenne_3ans` sont absents ou nuls.
 
 **Le découpage par taille** sépare le parc à 400 m² de `sre_m2`. La validation du proxy passe par le registre fédéral des bâtiments : la longueur de la liste `warea` d'un EGID donne son nombre de logements.
 
