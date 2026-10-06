@@ -125,7 +125,7 @@ Le nombre de bâtiments qui basculent à chaque palier est mesuré et sourcé. L
 
 ## Méthode — de quoi refaire le calcul
 
-Les chiffres ci-dessus ne valent que si quelqu'un peut les contredire. Voici ce qu'il faut pour les reproduire.
+Les chiffres ci-dessus ne valent que si quelqu'un peut les contredire. Le script qui les produit est public : [github.com/marou-dev/idc-geneve](https://github.com/marou-dev/idc-geneve). Il télécharge la couche, recalcule tout, et compare au chiffre publié en signalant chaque écart. Ce qui suit en décrit la substance.
 
 **La source.** Couche `OCEN_ETAT_IDC_PUBLIC` du SITG, interrogée en lecture seule par son service de requête. Pagination complète — filtre `1=1`, tri par EGID, pages de 2 000 — pour prendre le parc tel que l'office le publie plutôt qu'un échantillon. Champs retenus : `EGID`, `dernier_idc`, `moyenne_3ans`, `sre_m2`, `annee_dernier_idc`, commune.
 

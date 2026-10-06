@@ -22,7 +22,13 @@ export const person = {
     { "@type": "AdministrativeArea", name: "Canton de Vaud" },
     { "@type": "AdministrativeArea", name: "Suisse romande" },
   ],
-  sameAs: ["https://www.linkedin.com/in/mbridi/"],
+  sameAs: [
+    "https://www.linkedin.com/in/mbridi/",
+    // Ajoute le 06.10.2026. La these personnelle nommait l'absence de preuve
+    // publique de la moitie systeme comme « le manque principal » : ce depot
+    // la fournit, sur donnee cantonale ouverte uniquement.
+    "https://github.com/marou-dev/idc-geneve",
+  ],
   knowsLanguage: ["fr", "en", "ar"],
   worksFor: {
     "@type": "Organization",
