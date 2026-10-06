@@ -22,7 +22,7 @@ C'est en train de changer.
 
 La plupart des bases-vie en service aujourd'hui ont une enveloppe thermique de base — coefficient U de 0.57 W/m²K pour les panneaux standard. C'est l'équivalent d'un bâtiment des années 60, sans isolation digne de ce nom. Les portes ne sont pas étanches, les fenêtres sont en simple vitrage, et le chauffage tourne à plein régime tout l'hiver.
 
-Le parc est vieillissant. Les constructeurs de modules ont des containers qui ne sont plus adaptés aux standards actuels. Et sur un chantier de 2-3 ans, l'énergie gaspillée pour chauffer ces boîtes métalliques représente un poste non négligeable — en coûts et en émissions.
+Le parc est vieillissant. Les constructeurs de modules ont des containers qui ne sont plus adaptés aux standards actuels. Et sur un chantier de 2-3 ans, l'énergie gaspillée pour chauffer ces boîtes métalliques représente un poste non négligeable — en coûts et en émissions. On cherche volontiers le gain de productivité du côté de [la robotique de chantier](/reflexions/chine-construction-robotique-terrain/) ; il se trouve aussi dans ce que l'ouvrier endure huit heures par jour.
 
 ## Ce qui existe déjà
 
