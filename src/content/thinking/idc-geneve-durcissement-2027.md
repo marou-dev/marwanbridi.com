@@ -121,7 +121,7 @@ La suite naturelle serait de convertir les paliers en décote de valeur, via le 
 
 Les fourchettes disponibles — de l'ordre de −5% à −15% pour une étiquette CECB faible — sont des ordres de grandeur de marché, pas des références opposables. Et une décote est un pourcentage *de quelque chose* : aucune valeur de bâtiment n'accompagne cette couche. Multiplier une fourchette estimée par une valeur qu'on ne possède pas produit un montant en francs entièrement fabriqué, et c'est exactement le genre de chiffre qui circule ensuite sans sa méthode.
 
-Le nombre de bâtiments qui basculent à chaque palier est mesuré et sourcé. Le pont vers la valeur, le propriétaire qui connaît son immeuble le fera mieux que moi.
+Le nombre de bâtiments qui basculent à chaque palier est mesuré et sourcé. Le pont vers la valeur, le propriétaire qui connaît son immeuble le fera mieux que moi — mais la question qui précède celle de la valeur, [ce que coûte de ne PAS rénover](/reflexions/ne-pas-renover-le-calcul-manquant/), se chiffre en partie, et c'est l'objet d'un autre texte.
 
 ## Méthode — de quoi refaire le calcul
 
