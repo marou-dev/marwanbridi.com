@@ -5,7 +5,7 @@ import { person } from '../data/person';
 const faq = [
   {
     q: "Comment rendre une décision immobilière calculable ?",
-    a: "En séparant d'abord ce qui relève du calcul de ce qui relève du jugement. Une surface, un seuil réglementaire, une distribution se calculent : c'est du code, et le résultat doit être reproductible. Un arbitrage de financement, une lecture de marché, l'intérêt doctrinal d'une jurisprudence relèvent du jugement. Confier l'arithmétique à un modèle de langage ou le jugement à un script produit des réponses qui semblent justes exactement quand elles sont fausses.",
+    a: "En séparant d'abord ce qui relève du calcul de ce qui relève du jugement. Une surface, un seuil réglementaire, une distribution se calculent : c'est du code, et le résultat doit être reproductible. Un arbitrage de financement, une lecture de marché, l'intérêt doctrinal d'une jurisprudence relèvent du jugement. Confier un calcul à une appréciation, ou faire passer une appréciation pour un calcul, produit des réponses qui semblent justes exactement quand elles sont fausses.",
   },
   {
     q: "Qu'est-ce qui distingue une donnée publique exploitable d'une donnée brute ?",
@@ -16,8 +16,8 @@ const faq = [
     a: "Parce qu'un montant en francs issu d'une fourchette estimée multipliée par une valeur qu'on ne possède pas est entièrement fabriqué — et il circulera ensuite sans sa méthode. L'étude sur l'indice de dépense de chaleur du parc genevois s'arrête volontairement au nombre de bâtiments qui basculent à chaque palier réglementaire, qui est mesuré, plutôt que de le convertir en décote de valeur, qui ne l'est pas.",
   },
   {
-    q: "Quels outils sont utilisés pour ce travail ?",
-    a: "Python et SQL pour tout ce qui se calcule, un graphe de connaissances pour les relations entre acteurs, parcelles et transactions, des modèles de langage pour les seules tâches de jugement, et Markdown versionné comme source de vérité. Les outils comptent moins que la frontière entre les deux : un wrapper déterministe et testable est préférable à une infrastructure qui dépend d'un service vivant.",
+    q: "Qu'est-ce qui rend un chiffre opposable dans une expertise immobilière ?",
+    a: "La possibilité de le refaire. Un chiffre opposable s'accompagne de sa source nommée, du périmètre exact sur lequel il porte, de la règle appliquée et de ce qui en a été écarté. Un indice calculé sur la moyenne de trois années n'est pas le même que celui de la dernière mesure, et l'écart peut inverser une conclusion : sur le parc genevois, 275 bâtiments en dépassement significatif contre 374 selon la colonne retenue. Un chiffre qu'on ne peut pas rejouer n'est pas un résultat, c'est une opinion chiffrée.",
   },
 ];
 
@@ -70,10 +70,14 @@ const jsonLd = [
       lecture de marché, l'intérêt doctrinal d'un arrêt : cela se juge.
     </p>
     <p class="desc">
-      La frontière n'est pas un détail d'implémentation. Demander l'arithmétique
-      à un modèle de langage, ou le jugement à un script, produit des réponses
-      qui sonnent justes exactement quand elles sont fausses. <strong>Si c'est
-      calculable, c'est du code ; si c'est du jugement, c'est un modèle.</strong>
+      La frontière n'est pas un détail technique, c'est une question
+      d'opposabilité. Un chiffre qu'on ne peut pas rejouer n'est pas un
+      résultat, c'est une opinion chiffrée — et une appréciation qu'on
+      présente comme un calcul est pire encore, parce qu'elle emprunte une
+      autorité qu'elle n'a pas. <strong>Ce qui se mesure se calcule et doit
+      pouvoir être refait à l'identique. Ce qui s'apprécie s'argumente et doit
+      pouvoir être discuté.</strong> Les confondre produit des réponses qui
+      sonnent justes exactement quand elles sont fausses.
     </p>
   </section>
 
@@ -135,24 +139,21 @@ const jsonLd = [
   <hr class="separator" />
 
   <section class="section reveal">
-    <h2>L'outillage</h2>
+    <h2>L'outillage vient en dernier</h2>
     <p class="desc">
-      Il vient en dernier, et c'est voulu : il change, la méthode non.
-      Python et SQL pour ce qui se calcule, un graphe de connaissances pour les
-      relations entre acteurs, parcelles et transactions, des modèles de langage
-      pour les seules tâches de jugement, Markdown versionné comme source de
-      vérité. Un wrapper déterministe et testable est préférable à une
-      infrastructure qui dépend d'un service vivant.
+      Et c'est voulu : il change, la méthode non. Les registres publics se
+      dépouillent par le calcul plutôt qu'à la main — un parc de cinquante
+      mille bâtiments ne se lit pas autrement. Les liens entre propriétaires,
+      parcelles et transactions se tiennent dans un graphe, parce qu'une
+      question de réseau ne se pose pas à un tableur. Et l'écrit reste la
+      source de vérité : une note datée vaut mieux qu'un tableau de bord dont
+      personne ne connaît la requête.
     </p>
-    <div class="chip-grid">
-      <span class="chip">Python</span>
-      <span class="chip">SQL</span>
-      <span class="chip">Neo4j</span>
-      <span class="chip">RAG / LLM</span>
-      <span class="chip">n8n</span>
-      <span class="chip">Obsidian</span>
-      <span class="chip">Procore</span>
-      <span class="chip">SITG / données publiques</span>
-    </div>
+    <p class="desc">
+      Une règle de prudence en découle, et c'est la seule qui mérite d'être
+      retenue : <strong>préférer un calcul qu'on peut rejouer soi-même à un
+      service qu'il faut croire sur parole.</strong> Un expert répond de ses
+      chiffres ; il ne peut pas répondre de ceux d'une boîte noire.
+    </p>
   </section>
 </BaseLayout>
