@@ -1,43 +1,22 @@
-# Tout est ouvert, y compris aux moteurs generatifs : le site existe pour etre
-# lu et cite. Les agents sont nommes explicitement plutot que couverts par le
-# seul joker — plusieurs crawlers cherchent leur propre nom avant de retomber
-# sur "*", et une regle nommee leve l'ambiguite au lieu de la laisser deduire.
+# Une seule regle pour TOUS les agents, presents et futurs.
+#
+# Les dix agents nommes qui figuraient ici ont ete retires le 22.10.2026 :
+# la note normative d'AgentReady (AR-FIND, « Crawl policy ») demande l'inverse
+# d'une liste blanche. Deux raisons, l'une immediate et l'autre differee.
+#   · Les agents passent aussi par des API de recherche — Brave, Exa, Parallel,
+#     Tavily — qui ont leurs propres robots. Le joker les couvre, une liste de
+#     noms non.
+#   · Un groupe nomme PRIME sur le groupe « * » (RFC 9309). Tant que tous
+#     disaient « Allow: / », l'effet etait nul ; le jour ou l'on ajoute un
+#     Disallow au joker, les dix nommes ne l'heritent pas. La liste blanche
+#     creait donc un piege differe, pas une protection.
 
 User-agent: *
-Allow: /
-
-# Moteurs de reponse et agents d'indexation generative
-User-agent: GPTBot
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Perplexity-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Claude-SearchBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: CCBot
 Allow: /
 
 Sitemap: https://marwanbridi.com/sitemap-index.xml
 
 # Resume du site destine aux modeles de langage, genere au build :
 # https://marwanbridi.com/llms.txt
+# Catalogue des ressources exposees aux agents (ARD) :
+# https://marwanbridi.com/.well-known/ai-catalog.json
