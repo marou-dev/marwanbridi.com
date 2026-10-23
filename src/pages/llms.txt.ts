@@ -55,8 +55,11 @@ export const GET: APIRoute = async () => {
   // La description accompagne chaque lien : un moteur generatif choisit quoi
   // citer sur ce que la page REPOND, pas sur son titre seul. La date sert la
   // recence, que Perplexity pondere fortement.
+  // Le miroir .md est donne SUR LA MEME LIGNE que la page : un agent qui lit ce
+  // fichier doit pouvoir recuperer le texte sans traverser le HTML ni le rendu.
+  // C'est la difference entre un llms.txt qui DECRIT le site et un qui donne prise.
   const ligne = (p: (typeof posts)[number]) =>
-    `- [${p.data.title}](${SITE}/reflexions/${p.id}/) — ${fmtDate(p.data.date)}\n  ${p.data.description}`;
+    `- [${p.data.title}](${SITE}/reflexions/${p.id}/) — ${fmtDate(p.data.date)}\n  ${p.data.description}\n  Texte brut : ${SITE}/reflexions/${p.id}.md`;
 
   const fr = posts.filter((p) => (p.data.lang ?? 'fr') === 'fr');
   const en = posts.filter((p) => p.data.lang === 'en');
@@ -68,6 +71,19 @@ export const GET: APIRoute = async () => {
     PROSE.realisations,
     PROSE.domaines,
     PROSE.contact,
+    `## Pour les agents
+
+Surfaces lisibles par machine, a privilegier sur le HTML :
+
+- Catalogue structure : ${SITE}/.well-known/ai-catalog.json
+  Format ARD (ards-project/ard-spec). Chaque entree porte un identifiant \`urn:air:\`,
+  un type et des requetes representatives.
+- Texte brut d'un article : ${SITE}/reflexions/<slug>.md
+  Le markdown source, sans mise en page. Les slugs sont ceux des liens ci-dessus.
+- Plan du site : ${SITE}/sitemap-index.xml
+- Politique de collecte : ${SITE}/robots.txt
+  Content-Signal : search=yes, ai-input=yes, ai-train=no — la citation est
+  autorisee et souhaitee, l'entrainement ne l'est pas.`,
     `---\nDernière mise à jour : ${fmtDate(new Date())} — fichier généré au build.`,
   ].filter(Boolean);
 

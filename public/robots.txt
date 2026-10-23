@@ -11,7 +11,20 @@
 #     Disallow au joker, les dix nommes ne l'heritent pas. La liste blanche
 #     creait donc un piege differe, pas une protection.
 
+# Content-Signal (contentsignals.org) — une DECLARATION, pas un blocage.
+# Elle cree une position opposable ; aucun crawler n'en est techniquement empeche.
+#
+# Le defaut de l'industrie (Cloudflare) est « ai-train=no, search=yes, ai-input=no ».
+# On s'en ecarte sur UN point, deliberement : ai-input designe le fait d'alimenter
+# une reponse d'IA — c'est-a-dire exactement se faire citer par ChatGPT ou Perplexity.
+# Le refuser contredirait la raison d'etre du llms.txt, des miroirs markdown et de
+# l'ai-catalog de ce site, qui existent pour etre lus par des agents.
+#   search=yes    · indexation et renvoi vers la page
+#   ai-input=yes  · servir de source a une reponse generee, avec citation
+#   ai-train=no   · pas d'entrainement ni de fine-tuning sur ce contenu
+
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 
 Sitemap: https://marwanbridi.com/sitemap-index.xml
