@@ -45,9 +45,14 @@ import '../styles/global.css';
     <meta name="description" content={description} />
     <meta name="author" content="Marwan Bridi" />
     <link rel="canonical" href={canonicalURL} />
-    {/* Fichiers de decouverte lies depuis la page elle-meme, et pas seulement
-        depuis robots.txt : AR-READ-06 demande qu'ils soient atteignables
-        depuis le contenu que les agents visitent deja. */}
+    {/* AR-FIND-04 (MAY) : « Publish an AI Catalog and link it » — le « and link it »
+        est la seule exigence de lien que porte la spec, et elle vise CE tag.
+        Le miroir markdown releve d'AR-READ-09 (MAY) ; le lien vers llms.txt
+        (AR-READ-07, SHOULD) est notre choix, la regle demande le FICHIER.
+        Correctif du 23.10.2026 : ce bloc citait « AR-READ-06 demande qu'ils soient
+        atteignables depuis le contenu ». AR-READ-06 porte sur `.well-known/*`
+        (« Protocol and metadata discovery ») et ne dit rien de tel. Citation
+        inventee, verifiee a la source puis retiree. */}
     <link rel="ai-catalog" href="/.well-known/ai-catalog.json" type="application/ai-catalog+json" />
     <link rel="alternate" href="/llms.txt" type="text/markdown" title="Résumé du site pour modèles de langage" />
     {markdownUrl && <link rel="alternate" href={markdownUrl} type="text/markdown" title="Cette page en markdown" />}
