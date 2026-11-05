@@ -2,13 +2,13 @@
 title: "IDC à Genève : le durcissement de 2027, et qui va le subir"
 date: 2026-09-30
 updated: 2026-10-06
-description: "Le REn abaisse le seuil d'IDC en 2027 puis en 2031. Extraction de la couche OCEN sur 49'734 bâtiments : 1,5% du parc mesuré est aujourd'hui en dépassement significatif, 4,9% le seront en 2027, 12,9% en 2031 — et ce sont d'abord les petits bâtiments, pas le locatif institutionnel."
+description: "Le REn abaisse le seuil d'IDC en 2027 puis en 2031. Extraction de la couche OCEN sur 49'734 bâtiments : 1,5% du parc mesuré est aujourd'hui en dépassement significatif, 4,8% le seront en 2027, 12,7% en 2031 — et ce sont d'abord les petits bâtiments, pas le locatif institutionnel."
 tags: [immobilier, énergie, genève, réglementation, données]
 cartouche:
   - { l: "Source", v: "OCEN_ETAT_IDC_PUBLIC (SITG)" }
-  - { l: "Extraction", v: "29.09.2026" }
+  - { l: "Extraction", v: "06.10.2026" }
   - { l: "Parc interrogé", v: "49'734 bâtiments" }
-  - { l: "Avec IDC mesuré", v: "21'047 — 42,3%" }
+  - { l: "Avec IDC mesuré", v: "21'052 — 42,3%" }
   - { l: "Base légale", v: "REn art. 14" }
 faq:
   - q: "Quel est le seuil d'IDC à Genève en 2026 ?"
