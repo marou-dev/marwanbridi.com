@@ -1,23 +1,25 @@
 ---
 title: "LCI 117-118 : ce que les nouvelles limites carbone changent pour construire à Genève"
 date: 2026-03-10
-updated: 2026-10-05
+updated: 2026-11-04
 description: "Les articles 117 et 118 LCI imposent des budgets carbone sur tout le cycle de vie. Ce que ça signifie concrètement pour les promoteurs et les entreprises générales."
 tags: [immobilier, construction, réglementation, énergie, genève]
 faq:
-  - q: "Combien coûte un bilan carbone cycle de vie pour un projet neuf à Genève ?"
-    a: "Le calcul carbone cycle de vie couvre 5 lots (fondations, structure, enveloppe, aménagements intérieurs, installations techniques) sur 60 ans avec renouvellements. Les données KBOB sont gratuites, mais le mandat d'ingénieur pour un bilan complet représente 15'000 à 40'000 CHF selon la taille du projet. C'est un investissement à intégrer dès la phase de concours."
+  - q: "Que couvre un bilan carbone cycle de vie pour un projet neuf à Genève ?"
+    a: "Le calcul couvre cinq lots — fondations et constructions souterraines, structures horizontales et verticales, enveloppe, aménagements intérieurs, installations techniques — sur une durée de vie du bâtiment de 60 ans. Il additionne les émissions de la construction, celles des remplacements nécessaires sur ces 60 ans et celles de l'élimination en fin de vie, puis les rapporte au m² de surface de référence énergétique et à l'année."
   - q: "Quand les limites carbone LCI deviennent-elles obligatoires pour les projets privés à Genève ?"
-    a: "De 2027 à 2034, l'obligation ne concerne que les bâtiments de l'État de Genève. Après 2034, elle s'applique à tous les projets privés. Les promoteurs qui intègrent ces calculs dès maintenant auront un avantage compétitif — la courbe d'apprentissage est réelle."
+    a: "Il y a deux échéances, pas une, selon le guide de mise en œuvre publié par le canton. L'obligation de produire un concept bas-carbone et de calculer l'empreinte du projet s'applique à toute demande d'autorisation déposée dès le 1er janvier 2029. L'obligation d'atteindre les valeurs limites s'applique aux demandes déposées dès le 1er janvier 2034. Entre 2027 et 2034, seuls les bâtiments de l'État de Genève doivent respecter ces valeurs limites."
   - q: "Quelle différence entre les normes carbone SIA 390/1 et les limites LCI Genève ?"
-    a: "La SIA 390/1 fixe une valeur de base de 9 kg CO₂-eq/m²/an pour le neuf. Genève accorde une marge de 25 à 40% : 11.3 kg pour les habitations, 12.6 kg pour les autres constructions. Pour les rénovations, aucune marge — la limite LCI est identique à la SIA à 5 kg CO₂-eq/m²/an."
+    a: "La norme SIA 390/1:2025 est payante et n'a pas été consultée pour cet article ; les valeurs qui suivent sont celles que le guide cantonal lui attribue. Sa valeur de base est de 9 kg CO₂-eq par m² de surface de référence énergétique et par an pour le neuf. Le règlement genevois accorde une marge : 125% de cette valeur de base pour les bâtiments d'habitation, soit 11.3 kg, et 140% pour les autres affectations et les affectations mixtes, soit 12.6 kg. Pour les rénovations, aucune marge — la limite est identique à la valeur de base, 5 kg."
   - q: "Comment réduire l'empreinte carbone d'une construction neuve à Genève ?"
-    a: "Quatre leviers principaux : ciment CEM III au laitier (−40% d'émissions), dalles préfabriquées nervurées (−30% de béton), isolants biosourcés et fenêtres bois-alu (−50% vs PVC), et VMC simple flux hygroréglable. L'écoquartier Plaine du Loup a démontré un passage de 8.6 à 6.2 kg CO₂-eq/m²/an avec ces leviers."
-  - q: "Le béton bas carbone coûte-t-il vraiment plus cher en Suisse ?"
-    a: "Le ciment CEM III coûte 5 à 10% de plus que le CEM II standard. Mais le bois lamellé-collé en structure secondaire peut être compétitif. L'arbitrage coût-carbone remplace progressivement l'arbitrage coût-qualité traditionnel — et parfois, la solution la moins carbonée n'est pas la plus chère."
+    a: "Une étude citée par le guide cantonal part d'un bâtiment déjà construit de l'écoquartier des Plaines-du-Loup, à Lausanne, dont l'empreinte est de 8.9 kg CO₂-eq par m² de SRE et par an, et calcule ce qu'auraient donné les leviers d'optimisation encore envisageables : 6.9 kg. C'est un scénario calculé, pas une performance mesurée. Les quatre registres : le facteur de forme et le nombre de niveaux de sous-sol, décidés avant tout choix de matériau ; le béton, par la quantité, le ciment CEM III au laitier plutôt que CEM II, les graves recyclées et le taux d'armatures ; une dalle préfabriquée nervurée de 16 cm, de la laine de roche et une chape anhydrite ; enfin une ventilation simple flux hygroréglable et le réemploi des appareils sanitaires."
+  - q: "Réduire l'empreinte carbone d'un projet coûte-t-il nécessairement plus cher ?"
+    a: "Pas nécessairement, mais la réponse ne se généralise pas. Dans le scénario d'optimisation étudié sur un bâtiment des Plaines-du-Loup, le guide cantonal indique que la valeur cible de 6.9 kg CO₂-eq/m² de SRE et par an aurait été atteinte sans altérer les paramètres économiques du projet. C'est une conclusion sur ce bâtiment et ce scénario, pas une règle de coût. Une part du gain y vient de décisions de conception — facteur de forme, nombre de niveaux de sous-sol — qui ne coûtent rien de plus si elles sont prises assez tôt. L'arbitrage coût-carbone remplace progressivement l'arbitrage coût-qualité traditionnel."
 ---
 
-À Genève, le bâtiment représente 40% des émissions CO₂ du canton. Pour atteindre la neutralité carbone en 2050, le Canton a adopté en décembre 2021 les articles 117 et 118 de la LCI — et leur règlement d'application est sorti en novembre 2025.
+Les articles 117 et 118 de la LCI genevoise imposent un budget carbone sur tout le cycle de vie du bâtiment, calculé sur 60 ans et réparti en cinq lots. Ce qui suit est repris du **guide de mise en œuvre publié par le canton** ; le texte du règlement lui-même n'a pas été consulté pour cet article. Deux obligations distinctes, à deux échéances distinctes : établir un concept bas-carbone et calculer l'empreinte du projet, pour toute demande d'autorisation déposée dès le 1er janvier 2029 ; atteindre les valeurs limites, dès le 1er janvier 2034. Ces limites sont de 11.3 kg CO₂-eq par m² de surface de référence énergétique et par an pour l'habitation neuve, 12.6 pour les autres affectations et les affectations mixtes, 5 en rénovation. Les bâtiments de l'État de Genève, eux, y sont soumis dès 2027.
+
+À Genève, le bâtiment représente près de 40% des émissions de gaz à effet de serre du canton. Pour atteindre la neutralité carbone en 2050, le Canton s'est doté des articles 117 et 118 de la LCI, dont le règlement d'application est entré en vigueur en 2025.
 
 Ce n'est pas un label volontaire. C'est une obligation légale. Et ce n'est pas la seule : sur le parc existant, le [calendrier d'IDC du REn](/reflexions/idc-geneve-durcissement-2027/) resserre ses seuils en 2027 puis en 2031, selon une logique de paliers identique.
 
@@ -25,76 +27,75 @@ Ce n'est pas un label volontaire. C'est une obligation légale. Et ce n'est pas 
 
 Toute construction neuve ou rénovation d'importance devra respecter un budget carbone calculé sur l'ensemble du cycle de vie — fabrication des matériaux, remplacements sur 60 ans, et élimination en fin de vie.
 
-Les valeurs limites sont claires :
+Les valeurs ci-dessous sont celles que le guide cantonal attribue au règlement d'application (p. 45). Elles sont exprimées en **kg CO₂-eq par m² de surface de référence énergétique (SRE) et par an** — pas par m² de surface de plancher.
 
-| Type de projet | Limite LCI | Référence SIA 390/1 |
+| Type de projet | Limite LCI | Référence SIA 390/1:2025 |
 |---|---|---|
-| Construction neuve — habitation | **11.3 kg CO₂-eq/m²/an** | 9 kg (base) |
-| Construction neuve — autres | **12.6 kg CO₂-eq/m²/an** | 9 kg (base) |
-| Rénovation — tous types | **5 kg CO₂-eq/m²/an** | 5 kg (base) |
+| Construction neuve — habitation | **11.3** | 9 (valeur de base) |
+| Construction neuve — autres affectations et affectations mixtes | **12.6** | 9 (valeur de base) |
+| Rénovation — tous types d'affectations | **5** | 5 (valeur de base) |
 
-Pour les constructions neuves, Genève accorde une marge de 25 à 40% au-dessus de la norme SIA pour faciliter l'appropriation. Pour les rénovations, aucune marge — les études pilotes montrent que les projets performants respectent déjà le seuil.
+Pour les constructions neuves, le guide indique que Genève accorde une marge de 25 à 40% au-dessus de la valeur de base de la norme SIA pour faciliter l'appropriation. Pour les rénovations, aucune marge : le guide justifie ce choix par les résultats des projets pilotes, dont il indique qu'ils respectent déjà ce seuil.
 
 ## Le calendrier qui compte
 
-C'est là que beaucoup de promoteurs décrochent :
+Le calendrier d'application des articles 117-118 LCI est l'endroit où beaucoup de promoteurs décrochent, parce qu'il porte **deux obligations différentes** qu'on résume trop vite en une seule date d'entrée en vigueur : produire un **concept bas-carbone** et calculer l'empreinte du projet d'un côté, **atteindre les valeurs limites** de l'autre.
 
-- **2027-2034** : obligation uniquement pour les **bâtiments de l'État de Genève**
-- **Après 2034** : obligation pour **tous les projets privés**
+Ce calendrier est celui que le guide cantonal présente (p. 16-17 et 39).
 
-Huit ans, ça paraît loin. Mais la courbe d'apprentissage est réelle. Les équipes de projet — architectes, ingénieurs, entreprises — doivent apprendre à calculer une empreinte carbone cycle de vie, choisir les bons matériaux, et documenter leur conformité dans le dossier de demande d'autorisation. Ce n'est pas quelque chose qu'on improvise en dernière minute.
+| Échéance | Qui | Quoi |
+|---|---|---|
+| **Dès 2027** | bâtiments de l'État de Genève sous gestion de l'Office cantonal des bâtiments, pour les projets ne faisant pas l'objet d'une loi d'investissement ou d'un crédit d'étude au 1er janvier 2027 | concept bas-carbone **et** réalisation à faible empreinte carbone |
+| **Dès 2029** | l'ensemble des bâtiments — toute demande d'autorisation déposée à partir du 1er janvier 2029 | concept bas-carbone **et** calcul de l'empreinte carbone globale du projet |
+| **Dès 2034** | les mêmes, pour toute demande déposée à partir du 1er janvier 2034 | en plus des obligations de 2029, **atteinte des valeurs limites** de l'art. 3 du règlement |
 
-Les promoteurs qui commencent à intégrer ces calculs dès maintenant auront un avantage compétitif en 2034. Les autres devront rattraper le retard sous la pression des délais.
+C'est la nuance qui change le planning d'un promoteur privé. Il est exact que, entre 2027 et 2034, seuls les bâtiments de l'État doivent respecter les valeurs limites. Mais **dès le 1er janvier 2029, tout projet déposé doit porter un concept bas-carbone et un calcul d'empreinte** : la première échéance qui concerne le privé n'est pas 2034, elle est cinq ans plus tôt.
+
+La courbe d'apprentissage est réelle. Les équipes de projet — architectes, ingénieurs, entreprises — doivent apprendre à calculer une empreinte carbone cycle de vie, choisir les bons matériaux, et documenter leur conformité dans le dossier de demande d'autorisation. Ce n'est pas quelque chose qu'on improvise en dernière minute.
 
 ## Où se joue réellement l'empreinte carbone
 
-Le calcul couvre 5 lots, chacun avec sa propre durée de vie et donc son propre nombre de renouvellements sur 60 ans :
+Le calcul d'empreinte carbone exigé par la LCI couvre 5 lots, chacun avec sa propre durée de vie et donc son propre nombre de renouvellements sur 60 ans :
 
-- **Fondations** (60 ans) — aucun remplacement, mais le béton pèse lourd
-- **Structure** (40-60 ans) — le plus gros poste en masse
-- **Enveloppe** (30-40 ans) — 1 à 2 renouvellements sur le cycle
-- **Aménagements intérieurs** (30 ans) — 2 renouvellements, souvent sous-estimés
-- **Installations techniques** (20-40 ans) — jusqu'à 3 renouvellements
+- **Fondations et constructions souterraines** (60 ans) — aucun remplacement à prendre en compte, mais le béton pèse lourd
+- **Structures horizontales et verticales** (40-60 ans selon le graphique du guide, voir la réserve ci-dessous) — le plus gros poste en masse
+- **Enveloppe du bâtiment** (30-40 ans)
+- **Aménagements intérieurs** (30 ans) — souvent sous-estimés
+- **Installations techniques** (20-40 ans)
+
+Ces durées sont celles du graphique de la page 49 du guide cantonal, qui renvoie au cahier technique SIA 2032. Une réserve sur le lot Structures : **le texte de cette même page et son graphique ne disent pas la même chose** — le texte indique que « pour les matériaux des lots Fondations et Structures, aucun remplacement n'est à prendre en compte (durée de vie de 60 ans) », tandis que le graphique attribue 40-60 ans aux Structures. Je n'ai pas de quoi départager les deux, et le cahier technique SIA 2032 n'a pas été consulté. Pour un projet réel, c'est un point à faire trancher par l'ingénieur qui établit le bilan.
+
+Pour les éléments dont la durée de vie est inférieure à 60 ans, le guide indique qu'ils sont supposés être renouvelés 1 à 3 fois, avec un taux de remplacement **fractionnaire** : un matériau d'une durée de vie de 40 ans se voit appliquer un facteur de 1.5 à son facteur d'émissions — 40 ans, plus 20 ans de la durée de vie suivante.
 
 C'est d'ailleurs sur ce type de calcul que se joue la viabilité d'une [rénovation d'immeuble ancien](/reflexions/renovation-1952-suisse/) — chaque composant a sa propre durée de vie et son propre impact.
 
-Le piège classique : se concentrer sur la construction initiale et oublier les renouvellements. Un revêtement de sol avec une durée de vie de 15 ans sera remplacé 4 fois en 60 ans. Son empreinte réelle est 4 fois celle de sa pose initiale. Un parquet massif à 40 ans de durée de vie ne se renouvelle qu'une fois — deux fois moins d'impact.
+Le piège classique : se concentrer sur la construction initiale et oublier les renouvellements. Plus un élément a une durée de vie courte, plus son empreinte réelle s'écarte de celle de sa pose initiale — et ce sont les aménagements intérieurs et les installations techniques, pas la structure, qui portent cet écart.
 
 ## Les leviers concrets
 
-Les études pilotes suisses montrent que les seuils sont atteignables. L'écoquartier Plaine du Loup à Lausanne, par exemple, a démontré qu'un projet qui démarre à 8.6 kg CO₂-eq/m²/an peut descendre à 6.2 avec quatre leviers :
+Le guide cantonal cite plusieurs études menées sur des projets pilotes pour étayer les valeurs limites. L'une d'elles porte sur un bâtiment **déjà construit** de l'écoquartier des Plaines-du-Loup, à Lausanne, dont l'empreinte est de **8.9 kg CO₂-eq/m² de SRE et par an** : elle analyse les leviers d'optimisation qui auraient **encore été envisageables**, et aboutit à une valeur calculée de **6.9 kg**, proche de la valeur ambitieuse de la SIA 390/1:2025. Ces 6.9 kg sont donc le résultat d'un **scénario d'optimisation**, pas une performance mesurée sur un bâtiment réalisé. Le guide ajoute que, dans ce scénario, la valeur cible serait atteinte « sans altérer les paramètres économiques du projet » — c'est une conclusion de cette étude sur ce bâtiment, pas une règle générale sur le coût de la construction bas carbone. Les leviers, tels que l'étude les énumère :
 
-**Le béton.** C'est le premier poste. Utiliser du ciment CEM III (au laitier) au lieu de CEM II réduit les émissions du ciment de 40%. Optimiser le dimensionnement des fondations grâce à des études géotechniques précises évite le surdimensionnement par défaut. Chaque niveau de sous-sol supplémentaire ajoute 1 à 2 kg CO₂-eq/m²/an.
+**Les décisions de départ.** Le facteur de forme du bâtiment et le nombre de niveaux de sous-sol se jouent avant tout choix de matériau, et c'est là que la première part du gain a été prise.
 
-**La structure.** Des dalles préfabriquées nervurées au lieu de dalles pleines réduisent le volume de béton de 30% pour une portance équivalente. Le bois lamellé-collé pour les structures secondaires divise l'empreinte par 3 à 5 selon les cas.
+**Le béton.** C'est le premier poste. Réduire la quantité de béton, utiliser du ciment CEM III au laitier plutôt que du CEM II, remplacer les graves naturelles par des graves recyclées, optimiser le taux d'armatures.
 
-**L'enveloppe.** Le choix des matériaux isolants n'est pas neutre. La laine de roche ou la cellulose biosourcée ont une empreinte carbone nettement inférieure au polystyrène expansé. Les fenêtres bois-aluminium ont 50% d'empreinte en moins que le PVC.
+**La structure et l'enveloppe.** Une dalle préfabriquée nervurée de 16 cm plutôt qu'une dalle pleine, de la laine de roche, une chape anhydrite.
 
-**Les installations.** Une VMC simple flux hygroréglable bien dimensionnée a moins d'impact qu'une double flux surdimensionnée — moins de matériel, moins d'entretien, moins de renouvellements.
+**Les installations.** Une ventilation simple flux hygroréglable bien dimensionnée plutôt qu'une double flux surdimensionnée, et le réemploi des appareils sanitaires — moins de matériel, moins d'entretien, moins de renouvellements.
 
 ## Ce que ça change pour l'industrie
 
-Trois conséquences concrètes.
+Les budgets carbone des articles 117-118 LCI ont trois conséquences concrètes pour la filière genevoise de la construction.
 
-**Les appels d'offres vont changer.** Les soumissions devront intégrer les données d'empreinte carbone des matériaux proposés. Les entreprises qui ne peuvent pas fournir ces données seront exclues de fait. La base KBOB (données d'écobilan construction, Confédération) deviendra aussi importante que le catalogue de prix CFC.
+**Les appels d'offres vont changer.** Les soumissions devront intégrer les données d'empreinte carbone des matériaux proposés. Les entreprises incapables de fournir les données environnementales demandées pourraient être désavantagées dans les projets qui les exigent. À mon sens, la maîtrise des données environnementales KBOB (écobilans de la construction, Confédération) pourrait prendre une place croissante aux côtés des références de coûts CFC.
 
-**Le réemploi sort du gadget.** Et la logique carbone s'étend au-delà du bâtiment lui-même — jusqu'aux [bases-vie de chantier](/reflexions/bases-vie-durables-chantiers/), où les déperditions thermiques et l'énergie gaspillée pèsent aussi dans le bilan. Réemployer des éléments existants (mobilier, sanitaires, structure si possible) a un double effet : réduction des émissions de fabrication ET d'élimination. Les projets pilotes montrent des gains de 0.1 à 0.5 kg CO₂-eq/m²/an — significatifs quand chaque kilo compte.
+**Le réemploi sort du gadget.** Et la logique carbone s'étend au-delà du bâtiment lui-même — jusqu'aux [bases-vie de chantier](/reflexions/bases-vie-durables-chantiers/), où les déperditions thermiques et l'énergie gaspillée pèsent aussi dans le bilan. Réemployer des éléments existants (mobilier, sanitaires, structure si possible) a un double effet : réduction des émissions de fabrication ET d'élimination. Le réemploi des appareils sanitaires figure parmi les leviers de l'étude pilote citée plus haut.
 
-**L'arbitrage coût-carbone remplace l'arbitrage coût-qualité.** Aujourd'hui, les décisions de projet se prennent sur deux axes : le coût et la qualité technique. Demain, un troisième axe s'impose — le carbone. Et parfois, la solution la moins chère n'est pas la plus carbonée. Le béton bas carbone coûte 5 à 10% de plus, mais le bois lamellé peut être compétitif en structure secondaire.
+**L'arbitrage coût-carbone remplace l'arbitrage coût-qualité.** Aujourd'hui, les décisions de projet se prennent sur deux axes : le coût et la qualité technique. Demain, un troisième axe s'impose — le carbone. Et la solution la moins carbonée n'est pas toujours la plus chère : dans le scénario étudié aux Plaines-du-Loup, la valeur cible était atteinte sans altérer les paramètres économiques du projet. Un cas, pas une loi — le surcoût réel dépend des arbitrages de chaque opération.
 
 ## Conclusion
 
 Les articles 117-118 LCI ne sont pas une contrainte de plus. C'est un changement de paradigme : passer d'une construction pensée pour les 3 prochaines années (chantier) à une construction pensée pour les 60 prochaines (cycle de vie). Les promoteurs qui le comprennent tôt auront un avantage structurel. Les autres subiront le calendrier.
 
-## Cas pratique
-
-**Profil** : Promoteur développant un projet de 30 logements en PPE à Genève, SDP de 4'200 m², 2 niveaux de sous-sol, structure béton classique.
-
-**Situation** : Le bilan carbone initial du projet donne **14.2 kg CO₂-eq/m²/an** — au-dessus de la limite LCI de 11.3 kg. Les deux sous-sols en béton armé CEM II pèsent à eux seuls 3.8 kg CO₂-eq/m²/an. Les aménagements intérieurs (sols PVC, menuiseries PVC) ajoutent 2.1 kg avec leurs 3-4 renouvellements sur 60 ans.
-
-**Leviers activés** : Passage au ciment CEM III pour les fondations et la structure (−1.5 kg). Dalles nervurées préfabriquées au lieu de dalles pleines (−0.9 kg). Remplacement des fenêtres PVC par du bois-alu et des sols PVC par du parquet massif 40 ans (−1.1 kg). Suppression du 2e sous-sol par optimisation du plan de stationnement (−1.4 kg).
-
-**Résultat** : Le projet passe de 14.2 à **9.3 kg CO₂-eq/m²/an** — sous la limite LCI de 11.3 kg et même sous la valeur de base SIA de 9 kg. **Surcoût total : 380'000 CHF**, soit 90 CHF/m² SDP ou +2.1% sur le coût de construction. La suppression du 2e sous-sol a en réalité **économisé** 420'000 CHF, rendant l'opération globalement neutre en coût.
-
 ---
-*Sources : [LCI — Loi sur les constructions et installations, art. 117-118](https://silgeneve.ch/legis/), [Norme SIA 390/1 — Bilan carbone des bâtiments](https://www.sia.ch/fr/services/sia-norm/)*
+*Sources : [Guide de mise en œuvre des articles 117 et 118 LCI et de leur règlement d'application — République et Canton de Genève, édition novembre 2025](https://www.ge.ch/document/guide-constructions-renovations-bas-carbone) — part du bâtiment dans les émissions cantonales p. 5, calendrier de mise en œuvre p. 16-17, obligations de 2029 et 2034 p. 39, valeurs limites et unité de surface p. 45, étude des Plaines-du-Loup p. 47, durées de vie par lot p. 49 ; [LCI — Loi sur les constructions et installations diverses, art. 117-118](https://silgeneve.ch/legis/) ; [norme SIA 390/1:2025](https://www.sia.ch/fr/services/sia-norm/), payante — ses valeurs de base sont citées ici d'après le guide cantonal, pas d'après la norme.*

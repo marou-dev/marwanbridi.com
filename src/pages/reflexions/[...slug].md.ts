@@ -36,7 +36,27 @@ export const GET: APIRoute = ({ props }) => {
     '',
   ].filter((l) => l !== null).join('\n');
 
-  return new Response(entete + '\n' + post.body.trim() + '\n', {
+  // La FAQ vit dans le FRONTMATTER (post.data.faq), jamais dans post.body : servir
+  // le corps seul la perdait entierement. Mesure du 04.11.2026 : 0 des 5 questions de
+  // l'article LCI 117-118 dans son miroir contre 5 dans le HTML, et 52 Q/R sur les
+  // 11 articles publies dans le meme cas (55 sur 12 en comptant le brouillon, qui n'a
+  // ni HTML ni miroir) — alors que le llms.txt designe ce fichier aux agents
+  // comme le « texte brut » de la page. C'etait la surface la plus citable de chaque
+  // article (une question explicite, une reponse qui se tient seule) absente de la
+  // seule surface ecrite pour etre lue par une machine.
+  //
+  // Chaque question devient un titre de niveau 3 sous un h2, comme dans le HTML, pour
+  // qu'un agent qui segmente par titre retrouve la paire question/reponse entiere.
+  // La garde sur 'Questions fréquentes' evite le doublon si un corps portait un jour
+  // sa propre section : le frontmatter ne s'ajoute alors pas une seconde fois.
+  const corps = post.body.trim();
+  const faq = post.data.faq as { q: string; a: string }[] | undefined;
+  const sectionFaq = faq?.length && !corps.includes('Questions fréquentes')
+    ? '\n\n## Questions fréquentes\n\n'
+      + faq.map((item) => `### ${item.q}\n\n${item.a}`).join('\n\n')
+    : '';
+
+  return new Response(entete + '\n' + corps + sectionFaq + '\n', {
     headers: {
       'Content-Type': 'text/markdown; charset=utf-8',
       'Access-Control-Allow-Origin': '*',
