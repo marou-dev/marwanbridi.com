@@ -17,7 +17,7 @@ faq:
     a: "Pas nécessairement, mais la réponse ne se généralise pas. Dans le scénario d'optimisation étudié sur un bâtiment des Plaines-du-Loup, le guide cantonal indique que la valeur cible de 6.9 kg CO₂-eq/m² de SRE et par an aurait été atteinte sans altérer les paramètres économiques du projet. C'est une conclusion sur ce bâtiment et ce scénario, pas une règle de coût. Une part du gain y vient de décisions de conception — facteur de forme, nombre de niveaux de sous-sol — qui ne coûtent rien de plus si elles sont prises assez tôt. L'arbitrage coût-carbone remplace progressivement l'arbitrage coût-qualité traditionnel."
 ---
 
-Les articles 117 et 118 de la LCI genevoise imposent un budget carbone sur tout le cycle de vie du bâtiment, calculé sur 60 ans et réparti en cinq lots. Ce qui suit est repris du **guide de mise en œuvre publié par le canton**, puis vérifié contre le texte du règlement lui-même. Le règlement ne fixe pas ces limites en valeur absolue : son art. 3 les exprime en **pourcentage de la valeur de base de la norme SIA 390/1 édition 2025** — 125 % pour l'habitation, 140 % pour les autres affectations et les affectations mixtes, et la valeur de base elle-même en rénovation importante. C'est son annexe qui en tabule le résultat. Deux obligations distinctes, à deux échéances distinctes : établir un concept bas-carbone et calculer l'empreinte du projet, pour toute demande d'autorisation déposée dès le 1er janvier 2029 ; atteindre les valeurs limites, dès le 1er janvier 2034. Ces limites sont de 11.3 kg CO₂-eq par m² de surface de référence énergétique et par an pour l'habitation neuve, 12.6 pour les autres affectations et les affectations mixtes, 5 en rénovation. Les bâtiments de l'État de Genève, eux, y sont soumis dès 2027.
+Les articles 117 et 118 de la LCI genevoise posent le principe — concevoir et réaliser à base de matériaux propres à minimiser l'empreinte carbone, réemploi d'abord, recyclé ou bas carbone à défaut — et délèguent au Conseil d'État les modalités de calcul (art. 118 al. 2). C'est le règlement qui en fait un budget : l'empreinte du projet sur tout son cycle de vie, répartie en cinq lots (RECMC art. 6), le guide y ajoutant l'horizon de 60 ans. Ce qui suit est repris du **guide de mise en œuvre publié par le canton**, puis vérifié contre le texte du règlement lui-même. Le règlement ne fixe pas ces limites en valeur absolue : son art. 3 les exprime en **pourcentage de la valeur de base de la norme SIA 390/1 édition 2025** — 125 % pour l'habitation, 140 % pour les autres affectations et les affectations mixtes, et la valeur de base elle-même en rénovation importante. C'est son annexe qui en tabule le résultat. Deux obligations distinctes, à deux échéances distinctes : établir un concept bas-carbone et calculer l'empreinte du projet, pour toute demande d'autorisation déposée dès le 1er janvier 2029 ; atteindre les valeurs limites, dès le 1er janvier 2034. Ces limites sont de 11.3 kg CO₂-eq par m² de surface de référence énergétique et par an pour l'habitation neuve, 12.6 pour les autres affectations et les affectations mixtes, 5 en rénovation. Les bâtiments de l'État de Genève, eux, y sont soumis dès 2027.
 
 À Genève, le bâtiment représente près de 40% des émissions de gaz à effet de serre du canton. Pour atteindre la neutralité carbone en 2050, le Canton s'est doté des articles 117 et 118 de la LCI, dont le règlement d'application — le RECMC, rsGE L 5 05.05 — a été adopté le 15 octobre 2025 et est entré en vigueur le 22 octobre 2025.
 
@@ -29,13 +29,13 @@ Toute construction neuve ou rénovation d'importance devra respecter un budget c
 
 Les deux premières valeurs ci-dessous figurent à l'annexe du règlement ; la troisième vient du guide (p. 45), l'annexe ne tabulant que la construction. Elles sont exprimées en **kg CO₂-eq par m² de surface de référence énergétique (SRE) et par an** — pas par m² de surface de plancher.
 
-| Type de projet | Limite LCI | Référence SIA 390/1:2025 |
-|---|---|---|
-| Construction neuve — habitation | **11.3** | 9 (valeur de base) |
-| Construction neuve — autres affectations et affectations mixtes | **12.6** | 9 (valeur de base) |
-| Rénovation — tous types d'affectations | **5** | 5 (valeur de base) |
+| Type de projet | Limite LCI | Référence SIA 390/1:2025 | Valeur ambitieuse SIA |
+|---|---|---|---|
+| Construction neuve — habitation | **11.3** | 9 (valeur de base) | 6 |
+| Construction neuve — autres affectations et affectations mixtes | **12.6** | 9 (valeur de base) | 6 |
+| Rénovation — tous types d'affectations | **5** | 5 (valeur de base) | non tabulée |
 
-Pour les constructions neuves, le guide indique que Genève accorde une marge de 25 à 40% au-dessus de la valeur de base de la norme SIA pour faciliter l'appropriation. Pour les rénovations, aucune marge : le guide justifie ce choix par les résultats des projets pilotes, dont il indique qu'ils respectent déjà ce seuil.
+Pour les constructions neuves, le guide indique que Genève accorde une marge de 25 à 40% au-dessus de la valeur de base de la norme SIA pour faciliter l'appropriation. L'annexe du règlement tabule aussi la **valeur ambitieuse** de la norme, à 6 : la limite genevoise de 11.3 vaut 1,9 fois cette cible, celle de 12.6 en vaut 2,1 fois. La marge se prend donc au-dessus de la valeur de base, pas au-dessus de ce que la SIA désigne comme ambitieux. Pour les rénovations, aucune marge : le guide justifie ce choix par les résultats des projets pilotes, dont il indique qu'ils respectent déjà ce seuil.
 
 ## Le calendrier qui compte
 
