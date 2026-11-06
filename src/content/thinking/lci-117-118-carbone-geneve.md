@@ -2,7 +2,7 @@
 title: "LCI 117-118 : ce que les nouvelles limites carbone changent pour construire à Genève"
 date: 2026-03-10
 updated: 2026-11-04
-description: "Les articles 117 et 118 LCI imposent des budgets carbone sur tout le cycle de vie. Ce que ça signifie concrètement pour les promoteurs et les entreprises générales."
+description: "Le règlement RECMC fixe les limites carbone annoncées par les art. 117-118 LCI : concept bas-carbone dès 2029, valeurs limites dès 2034. Ce que ça change pour les promoteurs."
 tags: [immobilier, construction, réglementation, énergie, genève]
 faq:
   - q: "Que couvre un bilan carbone cycle de vie pour un projet neuf à Genève ?"

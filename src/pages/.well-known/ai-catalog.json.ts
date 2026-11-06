@@ -22,7 +22,7 @@ const PUB = 'marwanbridi.com';
 export const GET: APIRoute = async () => {
   const posts = (await getCollection('thinking'))
     .filter((p) => !p.data.draft)
-    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+    .sort((a, b) => (b.data.updated ?? b.data.date).getTime() - (a.data.updated ?? a.data.date).getTime());
 
   const catalogue = {
     specVersion: '1.0',

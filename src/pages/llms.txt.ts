@@ -47,10 +47,19 @@ Certains de ces articles reposent sur des données publiques cantonales retrait�
 
 const fmtDate = (d: Date) => d.toISOString().slice(0, 10);
 
+// Recence = derniere revision de FOND si elle existe, sinon publication.
+// Pourquoi (06.11.2026) : ce fichier triait et n'affichait que `date`, alors que son
+// propre commentaire dit viser la recence. Quatre essais sur douze portent un `updated`,
+// et l'ecart allait jusqu'a treize mois — le LDTR etait annonce 2025-09-01 pour une
+// revision du 2026-10-05. Pire, .well-known/ai-catalog.json emettait DEJA
+// `updated ?? date` : les deux surfaces agent du meme site se contredisaient sur la
+// fraicheur du meme article. On adopte ici l'expression du catalogue.
+const recence = (p: { data: { date: Date; updated?: Date } }) => p.data.updated ?? p.data.date;
+
 export const GET: APIRoute = async () => {
   const posts = (await getCollection('thinking'))
     .filter((p) => !p.data.draft)
-    .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+    .sort((a, b) => recence(b).getTime() - recence(a).getTime());
 
   // La description accompagne chaque lien : un moteur generatif choisit quoi
   // citer sur ce que la page REPOND, pas sur son titre seul. La date sert la
@@ -59,14 +68,14 @@ export const GET: APIRoute = async () => {
   // fichier doit pouvoir recuperer le texte sans traverser le HTML ni le rendu.
   // C'est la difference entre un llms.txt qui DECRIT le site et un qui donne prise.
   const ligne = (p: (typeof posts)[number]) =>
-    `- [${p.data.title}](${SITE}/reflexions/${p.id}/) — ${fmtDate(p.data.date)}\n  ${p.data.description}\n  Texte brut : ${SITE}/reflexions/${p.id}.md`;
+    `- [${p.data.title}](${SITE}/reflexions/${p.id}/) — ${fmtDate(p.data.date)}${p.data.updated ? `, révisé le ${fmtDate(p.data.updated)}` : ''}\n  ${p.data.description}\n  Texte brut : ${SITE}/reflexions/${p.id}.md`;
 
   const fr = posts.filter((p) => (p.data.lang ?? 'fr') === 'fr');
   const en = posts.filter((p) => p.data.lang === 'en');
 
   const blocs = [
     PROSE.intro,
-    `## Réflexions\n\nArticles sur la construction, l'immobilier et la réglementation en Suisse, du plus récent au plus ancien :\n\n${fr.map(ligne).join('\n')}`,
+    `## Réflexions\n\nArticles sur la construction, l'immobilier et la réglementation en Suisse, du plus récemment révisé au plus ancien. La date de publication vient d'abord, celle de la révision de fond ensuite lorsqu'il y en a une :\n\n${fr.map(ligne).join('\n')}`,
     en.length ? `## Articles (English)\n\n${en.map(ligne).join('\n')}` : '',
     PROSE.realisations,
     PROSE.domaines,
