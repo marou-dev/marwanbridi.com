@@ -47,12 +47,13 @@ export const GET: APIRoute = ({ props }) => {
   //
   // Chaque question devient un titre de niveau 3 sous un h2, comme dans le HTML, pour
   // qu'un agent qui segmente par titre retrouve la paire question/reponse entiere.
-  // La garde sur 'Questions fréquentes' evite le doublon si un corps portait un jour
-  // sa propre section : le frontmatter ne s'ajoute alors pas une seconde fois.
+  // Le titre suit la langue de l'article, comme le fait le HTML, et sert aussi de
+  // garde : si le corps porte deja sa propre section, elle ne s'ajoute pas deux fois.
   const corps = post.body.trim();
   const faq = post.data.faq as { q: string; a: string }[] | undefined;
-  const sectionFaq = faq?.length && !corps.includes('Questions fréquentes')
-    ? '\n\n## Questions fréquentes\n\n'
+  const titreFaq = post.data.lang === 'en' ? 'Frequently asked questions' : 'Questions fréquentes';
+  const sectionFaq = faq?.length && !corps.includes(titreFaq)
+    ? `\n\n## ${titreFaq}\n\n`
       + faq.map((item) => `### ${item.q}\n\n${item.a}`).join('\n\n')
     : '';
 
